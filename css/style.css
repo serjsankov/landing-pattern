@@ -121,3 +121,25 @@ body {
 /*=================== $MAIN BANNER STYLE ===================*/
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.main-banner {
+    background: url(../img/main-banner.webp)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-banner__title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    font-family: var(--family-sans);
+    color: var(--color-red);
+    text-transform: uppercase;
+}
+
+.main-banner__sub-title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--color-black);
+}
