@@ -46,12 +46,73 @@
         <h1 class="main-banner__title">СНИЖАЕМ ЦЕНЫ НА CHERY</h1>
         <h3 class="main-banner__sub-title">ФИНАЛЬНАЯ АКЦИЯ НА АВТО В НАЛИЧИИ</h3>
       </div>
+      <button class="main-banner__button btn" data-fancybox data-src="#popupCallback">обратный звонок</button>
+    </div>
+  </section>
+  <section class="action">
+    <div class="container">
+      <div class="action-container">
+        <div class="action-info">
+          <span class="action-info__head">программа рассрочки 0%</span>
+          <span class="action-info__text">при первом взносе от 50%</span>
+          <button class="action-info__button mob_hide btn">получить предложение</button>
+        </div>
+        <div class="action-time">
+          <span class="action-time__text">до конца акции:</span>
+          <div class="timer">
+            <div class="time-count__item time-count__days">
+                <div class="time-count__val">00</div>
+                <span class="time-count__text">дней</span>
+                <div class="count-line progress-days"></div>
+                <div class="count-round">
+                    <svg viewBox="0 0 64 64" class="pie">
+                        <circle class="background" r="25%" cx="50%" cy="50%"></circle>
+                        <circle class="chart chart-days" r="25%" cx="50%" cy="50%" stroke-dasharray="100 100"></circle>
+                    </svg>
+                </div>
+            </div>
+            <div class="time-count__item time-count__hours">
+                <div class="time-count__val">00</div>
+                <span class="time-count__text">часов</span>
+                <div class="count-round">
+                    <svg viewBox="0 0 64 64" class="pie">
+                        <circle class="background" r="25%" cx="50%" cy="50%"></circle>
+                        <circle class="chart chart-hours" r="25%" cx="50%" cy="50%" stroke-dasharray="100 100"></circle>
+                    </svg>
+                </div>
+            </div>
+            <div class="time-count__item time-count__minutes">
+                <div class="time-count__val">00</div>
+                <span class="time-count__text">минут</span>
+                <div class="count-round">
+                    <svg viewBox="0 0 64 64" class="pie">
+                        <circle class="background" r="25%" cx="50%" cy="50%"></circle>
+                        <circle class="chart chart-minutes" r="25%" cx="50%" cy="50%" stroke-dasharray="100 100"></circle>
+                    </svg>
+                </div>
+            </div>
+            <div class="time-count__item time-count__seconds">
+                <div class="time-count__val">00</div>
+                <span class="time-count__text">секунд</span>
+                <div class="count-line progress-seconds"></div>
+                <div class="count-round">
+                    <svg viewBox="0 0 64 64" class="pie">
+                        <circle class="background" r="25%" cx="50%" cy="50%"></circle>
+                        <circle class="chart chart-seconds" r="25%" cx="50%" cy="50%" stroke-dasharray="100 100"></circle>
+                    </svg>
+                </div>
+            </div>
+            </div>
+        </div>
+        <button class="action-info__button desk_hide btn" data-fancybox data-src="#callBack">ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ</button>
+      </div>
     </div>
   </section>
     <script src="./libs/jquery.min.js"></script>
     <script src="./libs/masked-input.min.js"></script>
     <script src="./libs/fancybox.min.js"></script>
     <script src="./libs/select2.js"></script>
+    <script src="./js/timer.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

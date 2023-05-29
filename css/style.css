@@ -28,6 +28,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Tactic Sans';
+    src: local('Tactic Sans Black'), local('Tactic-Sans-Black'),
+        url('../fonts/TacticSans-Blk.woff2') format('woff2'),
+        url('../fonts/TacticSans-Blk.woff') format('woff'),
+        url('../fonts/TacticSans-Blk.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+
 
 :root {
     --family-gothic: 'Century Gothic';
@@ -43,8 +53,8 @@
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
-body {
-    font-family: var(--family-gothic);
+html, body {
+    font-family: 'Century Gothic';
 }
 
 .btn {
@@ -82,12 +92,19 @@ body {
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
 .header-container {
     padding: 16px 0;
 }
 
 .header__img {
-    max-width: 113px;
+    max-width: 82px;
 }
 
 .header-left {
@@ -126,15 +143,19 @@ body {
     background: url(../img/main-banner.webp)no-repeat;
     background-size: cover;
     background-position: center;
+
+    padding-bottom: 82px;
+    padding-top: 77px;
 }
 
 .main-banner__title {
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 38px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 28px;
     font-family: var(--family-sans);
     color: var(--color-red);
     text-transform: uppercase;
+    text-align: center;
 }
 
 .main-banner__sub-title {
@@ -142,4 +163,144 @@ body {
     font-size: 20px;
     line-height: 25px;
     color: var(--color-black);
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-top: 10px;
+}
+
+.main-banner__button {
+    background: var(--color-red);
+
+    height: 60px;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    margin-top: 225px;
+}
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*=================== $ACTION STYLE ===================*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.action {
+    margin-top: -62px;
+}
+
+.action-container {
+    padding: 10px;
+
+    background: #FFFFFF;
+}
+
+.action-info__head {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: var(--color-black);
+}
+
+.action-info__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: var(--color-black);
+}
+
+.action-info__button {
+    height: 60px;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--color-black);
+
+    border: 1px solid var(--color-black);
+    border-radius: 60px;
+}
+
+.action-info__button.mob_hide {
+    display: none;
+}
+
+
+.timer {
+    display: flex;
+    width: 68%;
+    justify-content: space-between;
+    margin: 24px auto 0;
+}
+.time-count__item {
+    width: 40px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    position: relative;
+}
+.time-count__val {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+}
+.time-count__text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.pie {
+    display: block;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: -45px;
+    left: -46px;
+  }
+  .pie .background{
+    fill:none;
+    stroke:#ed060382;
+    stroke-width:3;
+   
+  }
+  .pie .chart{
+    fill:none;
+    stroke: #E11903;
+    stroke-width:3;
+  }
+
+
+
+  /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+@media screen and (min-width: 360px) {
+    .header__img {
+        max-width: 113px;
+    }
+
+    .main-banner__title {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    .main-banner__button {
+        margin-top: 360px;
+    }
+    
+}
+
+@media screen and (min-width: 375px) {
+    .main-banner__button {
+        margin-top: calc(100% + 40px);
+    }
 }
