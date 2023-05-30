@@ -9,6 +9,20 @@
 }
 
 
+.section__title {
+    font-size: 38px;
+    line-height: 46px;
+}
+
+.section__title::after {
+    height: 6px;
+}
+
+.section__upper {
+    padding: 150px 0 20px;
+}
+
+
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -65,9 +79,246 @@
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
 
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*=================== $ACTION STYLE ===================*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+.action-container {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 25px 30px;
+}
+
+.action-info__button.desk_hide {
+    display: none;
+}
+
+.action-info__button.mob_hide {
+    display: flex;
+
+    margin-top: 13px;
+
+    width: 350px;
+}
+
+.action-time {
+    margin-top: 0;
+
+    flex-basis: 65%;
+}
+
+.timer {
+    width: 75%;
+}
+
+.pie {
+    width: 127px;
+    height: 127px;
+    bottom: -13px;
+    left: -45px;
+}
+
+.action-info__head {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+
+.action-time__text {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+.time-count__val {
+    font-size: 65px;
+    line-height: 74px;
+}
+
+.time-count__text {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*=================== $MODELS STYLE ===================*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+.models__list-item {
+    width: 100%;
+
+    padding: 0;
+
+    box-shadow: none;
+}
+
+.models__list-item-top.desk_hide {
+    display: none;
+}
+
+.models__list-item-top.mob_hide {
+    display: flex;
+}
+
+.models__list-item-top {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.models__list-item-head {
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.models__list-item-number {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.models__list-item-stocks {
+    margin-top: 20px;
+
+    gap: 5px;
+}
+
+.models__list-item-stocks-el {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.models__list-item-stocks-el::before {
+    margin-left: -20px;
+}
+
+.models__list-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.models__link-img {
+    width: 127px;
+}
+
+.models__link-img img {
+    width: 100%;
+}
+
+
+.models__list-item-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.models__list-item-ball {
+    width: 464px;
+    height: 464px;
+}
+
+.models__img {
+    max-width: 540px;
+
+    bottom: 73px;
+}
+
+.models__list-item-line {
+    height: 238px;
+
+    left: -320px;
+    bottom: 103px;
+}
+
+.models__list-item-info {
+    padding: 20px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 134px rgba(139, 139, 139, 0.25);
+
+    flex-basis: 49%;
+}
+
+
+.models__list-item-price {
+    margin: 19px 0 13px;
+
+    gap: 2px;
+}
+
+.models__list-item-price-credit {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.models__list-item-price-credit.text_no_uppercase {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.models__list-item-price-text {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.models__list-item-price-text.text_no_uppercase {
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.models__list-item-btns {
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.models__list-item:nth-child(2n) .models__list-item-flex {
+    flex-direction: row-reverse;
+}
+
+.models__list-item:nth-child(2n) .models__list-item-line {
+    right: -320px;
+}
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+@media screen and (max-width: 1810px) {
+    .models__list-item-head {
+        font-size: 25px;
+        line-height: 27px;
+    }
+}
+
+
 @media screen and (max-width: 1800px) {
     .container {
         padding: 150px;
+    }
+
+    .models__list-item-line {
+        width: 90%;
+
+        left: -150px;
+    }
+
+    .models__list-item:nth-child(2n) .models__list-item-line {
+        right: -150px;
     }
 }
 
@@ -75,6 +326,14 @@
 @media screen and (max-width: 1600px) {
     .container {
         padding: 0 70px;
+    }
+
+    .models__list-item-line {
+        left: -70px;
+    }
+
+    .models__list-item:nth-child(2n) .models__list-item-line {
+        right: -70px;
     }
 }
 
@@ -88,5 +347,64 @@
 @media screen and (max-width: 1280px) {
     .main-banner {
         padding-top: 108px;
+    }
+    .action-time {
+        flex-basis: 60%;
+    }
+
+    .timer {
+        width: 70%;
+    }
+
+    .pie {
+        width: 80px;
+        height: 80px;
+        bottom: 31px;
+        left: -21px;
+    }
+
+    .time-count__val {
+        font-size: 37px;
+        line-height: 39px;
+    }
+
+    .time-count__text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .models__img {
+        max-width: 435px;
+    }
+
+    .models__list-item-ball {
+        width: 400px;
+        height: 400px;
+    }
+
+    .models__list-item-price-text.text_no_uppercase {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .models__list-item-price-credit.text_no_uppercase {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .models__list-item-head {
+        font-size: 22px;
+        line-height: 24px;
+    }
+}
+
+
+@media screen and (max-width: 1140px) {
+    .action-time {
+        flex-basis: 57%;
+    }
+
+    .timer {
+        width: 65%;
     }
 }
