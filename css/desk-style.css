@@ -14,6 +14,11 @@
     line-height: 46px;
 }
 
+.section__sub-title {
+    font-size: 24px;
+    line-height: 29px;
+}
+
 .section__title::after {
     height: 6px;
 }
@@ -298,17 +303,59 @@
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*=================== $EQUIP STYLE ===================*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.equip__card {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.equip__card-info {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+}
+
+.equip__card-text {
+    margin-top: 0;
+
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.equip__card-btns {
+    margin-top: 0;
+
+    flex-basis: 63%;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
 @media screen and (max-width: 1810px) {
     .models__list-item-head {
-        font-size: 25px;
-        line-height: 27px;
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .models__img {
+        max-width: 440px;
+
+        bottom: 102px;
     }
 }
 
 
 @media screen and (max-width: 1800px) {
     .container {
-        padding: 150px;
+        padding: 0 150px;
     }
 
     .models__list-item-line {
@@ -345,9 +392,14 @@
 }
 
 @media screen and (max-width: 1280px) {
+    .section__upper {
+        padding: 70px 0 20px;
+    }
+
     .main-banner {
         padding-top: 108px;
     }
+
     .action-time {
         flex-basis: 60%;
     }
@@ -374,27 +426,65 @@
     }
 
     .models__img {
-        max-width: 435px;
+        max-width: 300px;
+
+        bottom: 72px;
+    }
+
+    .models__list-item-number {
+        font-size: 14px;
+        line-height: 16px;
     }
 
     .models__list-item-ball {
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .models__list-item-line {
+        bottom: 43px;
     }
 
     .models__list-item-price-text.text_no_uppercase {
-        font-size: 28px;
-        line-height: 30px;
-    }
-
-    .models__list-item-price-credit.text_no_uppercase {
         font-size: 20px;
         line-height: 22px;
     }
 
+    .models__list-item-price-credit.text_no_uppercase {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
     .models__list-item-head {
-        font-size: 22px;
-        line-height: 24px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .models__list-item-stocks-el {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .models__list-item-price-credit {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .models__list-item-button {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .models__link-img {
+        width: 94px;
+    }
+
+    .equip__card-info {
+        flex-basis: 98%;
+    }
+
+    .equip__card-btns {
+        flex-basis: 60%;
     }
 }
 
@@ -406,5 +496,9 @@
 
     .timer {
         width: 65%;
+    }
+
+    .main-banner__sub-title {
+        margin-bottom: calc(100% - 560px);
     }
 }
