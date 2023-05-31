@@ -310,6 +310,17 @@
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
+.equip {
+    overflow: hidden;
+}
+
+.equip__img {
+    right: auto;
+    left: 0;
+    top: 298px;
+    height: 100%;
+}
+
 .equip__card {
     width: 100%;
 
@@ -339,6 +350,331 @@
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*=================== $CREDIT STYLE ===================*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.credit-info__head {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: left;
+}
+
+.credit-info__list {
+    gap: 18px;
+}
+
+.credit-info__list-item::before {
+    margin-left: -320px;
+
+    flex-basis: auto;
+    width: 320px;
+}
+
+.credit-info__list-item {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+
+.credit-img__car {
+    max-width: 739px;
+}
+
+.credit-img__ball {
+    width: 425px;
+    height: 425px;
+
+    margin-right: 0;
+}
+
+.credit-img__line {
+    height: auto;
+
+    right: -320px;
+}
+
+.credit-container {
+    align-items: center;
+}
+
+.credit-info {
+    flex-basis: 41%;
+}
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*=================== $TRADE STYLE ===================*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.trade-container {
+    display: flex;
+
+    gap: 66px;
+
+    margin-top: 21px;
+}
+
+.trade-img__ball {
+    width: 295px;
+    height: 295px;
+}
+
+.trade-img {
+    flex-basis: 60%;
+
+    padding-bottom: 156px;
+}
+
+.trade-info {
+    width: auto;
+    flex-basis: 45%;
+
+    margin-top: 54px;
+}
+
+.trade-img__line {
+    height: auto;
+
+    left: -320px;
+
+    width: calc(100% + 200px);
+}
+
+.trade-img__car {
+    max-width: 913px;
+
+    left: auto;
+    right: 0;
+}
+
+.trade-img__ball {
+    margin-left: auto;
+}
+
+.trade-info__head {
+    font-size: 24px;
+    line-height: 29px;
+
+    display: block;
+}
+
+.trade-info__list-item {
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.trade-info__list-item::before {
+    margin-left: -188px;
+
+    flex-basis: auto;
+    width: 179px;
+}
+
+.trade-info__list {
+    margin-top: 40px;
+
+    gap: 18px;
+}
+
+.trade__btn {
+    margin-top: 50px;
+}
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*=================== $CONTACTS STYLE ===================*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.contacts-map {
+    margin-top: 20px;
+}
+
+.contacts-map__container {
+    padding: 50px;
+
+    width: 516px;
+}
+
+.contacts-map__list {
+    gap: 30px;
+}
+
+.contacts-map__list-item {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.contacts-map__list-item::before {
+    flex-basis: auto;
+    margin-left: -50px;
+    width: 50px;
+}
+
+.contacts-map__btn {
+    margin-top: 30px;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*=================== $FOOTER STYLE ===================*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+.footer {
+    padding: 60px 0 56px;
+
+    margin-top: 150px;
+}
+
+
+.footer-flex {
+    display: flex;
+    gap: 137px;
+}
+
+.footer__link {
+    width: max-content;
+}
+
+.footer__info {
+    margin-top: 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+}
+
+.footer__info-flex {
+    gap: 3px;
+}
+
+.footer__info-text,
+.footer__link {
+    opacity: 0.7;
+}
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*=================== $POPUP STYLE ===================*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.pop-up {
+    width: 800px;
+
+    background: url(../img/pop-up_desk.webp)no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    padding: 10px 30px 30px;
+}
+
+.pop-up__info-text {
+    gap: 7px;
+}
+
+.pop-up__head {
+    font-size: 38px;
+    line-height: 46px;
+
+    color: #848484;
+}
+
+.head_color {
+    color: #FFFFFF;
+}
+
+.pop-up__list {
+    margin-top: 22px;
+
+    gap: 14px;
+}
+
+.pop-up__list-item {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.pop-up__list-item::before {
+    margin-left: -30px;
+}
+
+.pop-up__form {
+    margin-top: 22px;
+
+    width: 328px;
+}
+
+.pop-up__input {
+    height: 40px;
+
+    font-size: 16px;
+    line-height: 20px;
+}
+.pop-up__input::placeholder {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.pop-up__btn {
+    height: 40px;
+}
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+@media screen and (min-width: 1921px) {
+    .container {
+        width: 1920px;
+
+        margin: 0 auto;
+    }
+}
+
+
+
+@media screen and (max-width: 1877px) {
+    /* .trade-img__line {
+        left: -374px;
+    } */
+
+    .trade-info__list-item {
+        font-size: 19px;
+        line-height: 21px;
+    }
+
+    .trade-img {
+        flex-basis: 68%;
+    }
+
+    .trade-img__car {
+        max-width: 775px;
+    }
+}
+
 @media screen and (max-width: 1810px) {
     .models__list-item-head {
         font-size: 24px;
@@ -358,6 +694,12 @@
         padding: 0 150px;
     }
 
+    .credit-info__list-item::before {
+        margin-left: -150px;
+
+        width: 150px;
+    }
+
     .models__list-item-line {
         width: 90%;
 
@@ -375,6 +717,16 @@
         padding: 0 70px;
     }
 
+    .credit-info__list-item::before {
+        margin-left: -70px;
+
+        width: 70px;
+    }
+
+    /* .credit-img__line {
+        right: -70px;
+    } */
+
     .models__list-item-line {
         left: -70px;
     }
@@ -388,6 +740,28 @@
 @media screen and (max-width: 1440px) {
     .main-banner__sub-title {
         margin-bottom: calc(100% - 624px);
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .trade-img__car {
+        max-width: 629px;
+    }
+}
+
+@media screen and (max-width: 1310px) {
+    .trade-img__ball {
+        width: 250px;
+        height: 250px;
+    }
+
+    .trade-info {
+        margin-top: 27px;
+    }
+
+    .trade-info__head {
+        font-size: 19px;
+        line-height: 21px;
     }
 }
 
@@ -485,6 +859,43 @@
 
     .equip__card-btns {
         flex-basis: 60%;
+    }
+
+    .credit-img__car {
+        max-width: 539px;
+    }
+
+    .credit-img__line {
+        right: -373px;
+    }
+
+    .credit-img__ball {
+        width: 325px;
+        height: 325px;
+    }
+
+    .credit-info__list-item {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .credit-info__head {
+        font-size: 22px;
+        line-height: 23px;
+    }
+
+    .trade-info__list-item {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .contacts-map__container {
+        padding: 25px;
+        width: 420px;
+    }
+
+    .contacts-map__list-item::before {
+        margin-left: -25px;
     }
 }
 

@@ -231,7 +231,38 @@
       </div>
     </div>
   </section>
+  <section class="credit">
+    <div class="container">
+      <div class="section__upper">
+        <h2 class="section__title">экспресс кредит</h2>
+        <h3 class="section__sub-title">специальные условия по кредиту</h3>
+      </div>
+      <div class="credit-container">
+        <div class="credit-img">
+          <div class="credit-img__ball"></div>
+          <img src="./img/credit-line.svg" alt="line" class="credit-img__line">
+          <img src="./img/credit-car.webp" alt="car" class="credit-img__car">
+        </div>
+        <div class="credit-info">
+          <span class="credit-info__head">
+            покупайте новый chery сейчас платите потом!
+          </span>
+          <ul class="credit-info__list">
+            <li class="credit-info__list-item"><span><b>Низкие </b> ежемесячные платежи</span></li>
+            <li class="credit-info__list-item"><span><b>3 мес. </b> кредитных каникул</span></li>
+            <li class="credit-info__list-item"><span>Скидка по госпрограмме <b> до 20%</b></span></li>
+          </ul>
+          <button class="credit__btn btn" data-fancybox data-src="#popupCredit" data-carbrand="Chery">подать заявку</button>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="equip">
+    <picture>
+      <source srcset="./img/ball05.svg"
+      media="(max-width: 1025px)">
+      <img class="equip__img" src="./img/ball05_desk.svg" alt="ball">
+  </picture>
     <div class="container">
       <div class="section__upper">
         <h2 class="section__title equip__title">комплектации</h2>
@@ -292,9 +323,29 @@
     </div>
   </section>
   <section class="trade">
-    <div class="section__upper">
-      <h2 class="section__title trade__title">trade-in</h2>
-      <h3 class="section__sub-title trade__sub-title">обменяй автомобиль выгодно</h3>
+    <div class="container">
+      <div class="section__upper">
+        <h2 class="section__title trade__title">trade-in</h2>
+        <h3 class="section__sub-title trade__sub-title">обменяй автомобиль выгодно</h3>
+      </div>
+      <div class="trade-container">
+        <div class="trade-img">
+          <div class="trade-img__ball"></div>
+          <img src="./img/trade-line.svg" alt="line" class="trade-img__line">
+          <img src="./img/trade-car.webp" alt="car" class="trade-img__car">
+        </div>
+        <div class="trade-info">
+          <span class="trade-info__head">
+            получите дополнительные выгоды при обмене вашего авто на новый chery
+          </span>
+          <ul class="trade-info__list">
+            <li class="trade-info__list-item"><span><b>Скидка до 300 000 ₽ </b> при обмене</span></li>
+            <li class="trade-info__list-item"><span><b>Оценка до 95% </b> от рыночной стоимости</span></li>
+            <li class="trade-info__list-item"><span>Ваш старый авто в качестве <b> первого взноса</b></span></li>
+          </ul>
+          <button class="trade__btn btn" data-fancybox data-src="#popupCredit" data-carbrand="Chery">подать заявку</button>
+        </div>
+      </div>
     </div>
   </section>
   <section class="contacts">
@@ -304,7 +355,78 @@
         <h3 class="section__sub-title contacts__sub-title">остались вопросы? оставьте заявку</h3>
       </div>
     </div>
+    <div class="contacts-map">
+      <div class="container">
+        <div class="contacts-map__container">
+          <ul class="contacts-map__list">
+            <li class="contacts-map__list-item"><span>Ежедневно с 08:00 до 21:00</span></li>
+            <li class="contacts-map__list-item"><span>г. Москва, 33 км МКАД</span></li>
+            <li class="contacts-map__list-item"><a href="tel:">+7 (999) 999 - 99 - 99</a></li>
+          </ul>
+
+          <button class="contacts-map__btn btn">заказать звонок</button>
+        </div>
+      </div>
+    </div>
   </section>
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-flex">
+            <div class="footer__info-link">
+                <a href="/policy" class="footer__link">«Политика конфиденциальности»</a>
+                <a href="/credit-terms" class="footer__link">«Условия акции»</a>
+                <a href="/user-agreement" class="footer__link">«Пользовательское соглашение»</a>
+            </div>
+            <div class="footer__info">
+                <div class="footer__info-flex">
+                    <p class="footer__info-text">ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "Формат"</p>
+                    <p class="footer__info-text">ИНН 7725371767, КПП 775101001, ОГРН 1177746445381 от 1 июля 2021 г.</p>
+                    <p class="footer__info-text">Юр. адрес: 108831, город Москва, г Щербинка, Бутовский туп, д. 3 стр. 1, помещ. 3 офис 1</p>
+                </div>
+                <p class="footer__info-text">Обращаем Ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер
+                    и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса Российской Федерации.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="pop-up" id="popupCredit">
+  <div class="pop-up__info">
+    <div class="pop-up__info-text">
+      <span class="pop-up__head">акция на chery <span class="head_color"> в наличии</span></span>
+      <span class="pop-up__sub-head">до конца недели</span>
+    </div>
+    <ul class="pop-up__list">
+      <li class="pop-up__list-item"><span>подарки <b> на выбор</b></span></li>
+      <li class="pop-up__list-item"><span>минус 300 000₽ <b> при trade-in</b></span></li>
+      <li class="pop-up__list-item"><span>рассрочка 0% или кредит <b>от 4,9</b></span></li>
+    </ul>
+  </div>
+<form action="" class="pop-up__form">
+  <div class="pop-up__form-inputs">
+    <input type="text" name="name" class="pop-up__input" placeholder="Имя" required>
+    <input type="tel" name="phone" class="pop-up__input" placeholder="+7 (___)___-__-__" required>
+  </div>
+  <button class="pop-up__btn btn">получить предложение</button>
+  <div class="form-checkbox">
+    <label for="checkbox__input-text">
+      <span class="checkbox">
+        <input class="form__input-check" type="checkbox" id="check-credit-pop" checked required>
+        <span class="custom-checkbox"></span>
+      </span>
+      <span class="checkbox-text">
+        Вы даете согласие на обработку <a href="/policy" class="checkbox-link">персональных данных</a>
+      </span>
+    </label>
+  </div>
+</form>
+</div>
+<div class="pop-up" id="popup-success">
+  <div class="pop-up__info">
+    <div class="pop-up__info-text">
+      <span class="pop-up__head">Спасибо за заявку!</span>
+    </div>
+  </div>
+</div>
     <script src="./libs/jquery.min.js"></script>
     <script src="./libs/masked-input.min.js"></script>
     <script src="./libs/fancybox.min.js"></script>
