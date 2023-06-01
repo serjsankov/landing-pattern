@@ -17,14 +17,9 @@ window.addEventListener("DOMContentLoaded", () => {
   };
 
 
-  function initFancy() {
-      $("[data-fancybox]").fancybox({
-          // Скорость анимации
-          speed: 330,
-          // Бесконечная прокрутка галереи
-          loop: true,
-          // Скорость появления/угасания прозрачности элементов
-
+ function initFancy() {
+    Fancybox.bind("[data-fancybox]", {
+        // Your custom options
       });
   }
 
