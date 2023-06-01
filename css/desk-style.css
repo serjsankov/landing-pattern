@@ -8,20 +8,20 @@
   }
 
   .container {
-    padding:  0;
+    padding: 0;
 
     max-width: 1280px;
     margin: 0 auto;
   }
 
 
-   /*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*/
+  /*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*/
   /*_____________________________________________*/
 
 
 
 
-     /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+  /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
   /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
   /*================ $HEADER STYLE ===============*/
 
@@ -60,15 +60,91 @@
     text-align: left;
   }
 
-    /*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*/
+  /*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*/
   /*_____________________________________________*/
 
-/* 
-  @media screen and (max-width: 1600px) {
-    .container {
-      padding: 0 150px;
-    }
-  } */
+  /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+  /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+  /*================ $MAIN-BANNER STYLE ===============*/
+
+  .main-banner {
+    background: url(../img/main-banner_desk.webp)no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    padding: 140px 0 60px;
+  }
+
+  .main-banner__title {
+    font-size: 45px;
+    line-height: 52px;
+
+    margin-bottom: 12px;
+  }
+
+  .main-banner__sub-title {
+    font-size: 28px;
+    line-height: 27px;
+
+    margin-bottom: 692px;
+  }
+
+  .main-banner__button {
+    display: none;
+  }
+
+  .main-banner__time {
+    width: auto;
+
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .main-banner__time-text {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .main-banner__time-price {
+    font-size: 45px;
+    line-height: 43px;
+  }
+
+  .main-banner__time-action {
+    font-size: 30px;
+    line-height: 29px;
+  }
+
+  .time-count__val {
+    font-size: 65px;
+    line-height: 65px;
+  }
+
+  .time-count__text {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .timer {
+    flex-basis: 43%;
+    width: 100%;
+    margin: 0;
+  }
+
+  .pie {
+    width: 127px;
+    height: 127px;
+
+    bottom: -23px;
+    left: -44px;
+  }
+
+  /*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*/
+  /*_____________________________________________*/
 
 
 
@@ -78,7 +154,7 @@
     }
   }
 
-    @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 1280px) {
     .container {
       max-width: 1000px;
     }
