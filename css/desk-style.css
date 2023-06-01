@@ -7,6 +7,79 @@
     line-height: 142px;
   }
 
+  .container {
+    padding:  0;
+
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
 
    /*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*/
   /*_____________________________________________*/
+
+
+
+
+     /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+  /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+  /*================ $HEADER STYLE ===============*/
+
+  .header-container {
+    flex-direction: row-reverse;
+
+    padding: 30px 0;
+  }
+
+  .header-btn.mob_hide {
+    display: flex;
+
+    flex-basis: 23%;
+  }
+
+  .header__button {
+    height: 41px;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 11px;
+  }
+
+  .header__img {
+    max-width: 340px;
+  }
+
+  .header-info {
+    gap: 10px;
+  }
+
+  .header-info__text {
+    font-size: 14px;
+    line-height: 13px;
+
+    text-align: left;
+  }
+
+    /*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*/
+  /*_____________________________________________*/
+
+/* 
+  @media screen and (max-width: 1600px) {
+    .container {
+      padding: 0 150px;
+    }
+  } */
+
+
+
+  @media screen and (max-width: 1366px) {
+    .container {
+      max-width: 1160px;
+    }
+  }
+
+    @media screen and (max-width: 1280px) {
+    .container {
+      max-width: 1000px;
+    }
+  }
