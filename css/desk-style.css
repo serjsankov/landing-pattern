@@ -158,4 +158,44 @@
     .container {
       max-width: 1000px;
     }
+
+    .main-banner__time-price {
+      font-size: 34px;
+      line-height: 36px;
+    }
+
+    .main-banner__time-action {
+      font-size: 24px;
+      line-height: 26px;
+    }
+
+    .time-count__val {
+      font-size: 42px;
+      line-height: 44px;
+    }
+
+    .time-count__text {
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+    .pie {
+      width: 90px;
+      height: 90px;
+      bottom: -15px;
+      left: -27px;
+    }
+
+    .main-banner__time {
+      gap: 65px;
+      justify-content: flex-start;
+    }
+
+    .timer {
+      flex-basis: 42%;
+    }
+
+    .main-banner__sub-title {
+      margin-bottom: 560px;
+    }
   }

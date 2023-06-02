@@ -83,7 +83,6 @@ button {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 }
 
 .section__title.align_left {
@@ -266,15 +265,16 @@ button {
 
 .pie .background {
   fill: none;
-  stroke: var(--color-gold);
-  stroke-width: 1;
+  stroke: var(--color-white);
+  stroke-width: 2px;
 
 }
 
 .pie .chart {
   fill: none;
-  stroke: var(--color-white);
-  stroke-width: 1;
+  stroke: var(--color-gold);
+  stroke-width: 3;
+  z-index: 3;
 }
 
 /*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*/

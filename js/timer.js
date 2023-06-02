@@ -1,5 +1,5 @@
   // Получаем нужную дату
-  const newYear = new Date('June 8 2023 10:00:00');
+  const newYear = new Date('June 10 2023 10:00:00');
 
   // Находим value и текст
   const daysVal = document.querySelector('.time-count__days .time-count__val');
@@ -60,10 +60,10 @@
         progressMinutesDesk = document.querySelector('.chart-minutes'),
         progressSecondsDesk = document.querySelector('.chart-seconds');
 // Рассчитываем длину круга прогресса с помощью атрибута и выводим 
-        progressDaysDesk.setAttribute('stroke-dasharray', `${0 + daysV * 3.333}  100`);
-        progressHoursDesk.setAttribute('stroke-dasharray', `${0 + hoursV * 4.166}  100`);
-        progressMinutesDesk.setAttribute('stroke-dasharray', `${0 + minutesV * 1.667}  100`);
-        progressSecondsDesk.setAttribute('stroke-dasharray', `${0 + secondsV * 1.667}  100`);
+        progressDaysDesk.setAttribute('stroke-dasharray', `${0 + daysV * 6.6}  200`);
+        progressHoursDesk.setAttribute('stroke-dasharray', `${0 + hoursV * 8.3}  200`);
+        progressMinutesDesk.setAttribute('stroke-dasharray', `${0 + minutesV * 3.3}  200`);
+        progressSecondsDesk.setAttribute('stroke-dasharray', `${0 + secondsV * 3.3}  200`);
   }
   timeCount();
   setInterval(timeCount, 1000);
