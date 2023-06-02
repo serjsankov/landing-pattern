@@ -7,8 +7,84 @@ window.addEventListener("DOMContentLoaded", () => {
   initMaskTel();
   // initLoad();
   // initScroolMagic();
+    // initSwiper();
+    initClickColor();
   initFancy();
-  initCustomSelect();
+    initCustomSelect();
+
+    function initClickColor() { 
+        let colors = document.querySelectorAll(".color-select span");
+        let imagesCar = document.querySelectorAll(".card__img");
+
+        colors.forEach((color, colorIndex) => {
+            color.addEventListener("click", (e) => {
+                colors.forEach((el, elIndex) => {
+                    if (color.dataset.model === el.dataset.model) {
+                        el.classList.remove("color-active");
+                        imagesCar.forEach((img, imgIndex) => {
+                            if (color.dataset.model === img.dataset.model) {
+                                img.classList.remove("js-active");
+                            }
+
+                            if (colorIndex === imgIndex) {
+                                color.classList.add("color-active");
+                                img.classList.add("js-active")
+                            }
+                        })
+                    }
+                })
+            })
+        })
+    };
+    
+    function initSwiper() {
+        let models = document.querySelectorAll(".modelSwiper");
+
+        models.forEach(model => {
+            var modelSlider = new Swiper(".modelSwiper", {
+                effect: "creative",
+                creativeEffect: {
+                    prev: {
+                        translate: ["-140%", -100, -800],
+                    },
+                    next: {
+                        translate: ["140%", -100, -800],
+                    },
+                },
+                grabCursor: true,
+                slidesPerView: 1,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        })
+
+        const count = document.querySelectorAll(
+            ".modelSwiper .swiper-pagination span"
+        ).length;
+
+            for (let i = 1; i <= count; i++) {
+                let span = document.querySelector(`span[data-color="${i}"]`);
+
+                span.onclick = () => {
+                    span.closest(".modelSwiper").slideTo(i - 1);
+                    document
+                        .querySelector(".color-active")
+                        .classList.remove("color-active");
+                    span.classList.toggle("color-active");
+                };
+            }
+
+            modelSlider.on("slideChange", function () {
+                const activeColor = document.querySelector(".color-active");
+                const index = modelSlider.activeIndex + 1;
+                activeColor.classList.remove("color-active");
+                document
+                    .querySelector(`span[data-color="${index}"]`)
+                    .classList.add("color-active");
+            });
+    }
 
   function initCustomSelect () {
     $('select').select2({

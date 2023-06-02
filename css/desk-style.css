@@ -146,11 +146,144 @@
   /*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*/
   /*_____________________________________________*/
 
+  /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+  /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+  /*================ $MODELS STYLE ===============*/
+
+  .models__upper {
+    padding: 150px 0 0 50px;
+  }
+
+  .models__list {
+    width: auto;
+
+    margin: 112px 0 0;
+
+    gap: 60px;
+  }
+
+  .models__card {
+    display: grid;
+    grid-template-areas: "info swiper images"
+      "action action action";
+
+    justify-content: space-between;
+  }
+
+  .models__card-info {
+    grid-area: info;
+  }
+
+  .models__card-img {
+    grid-area: swiper;
+
+    width: 604px;
+  }
+
+  .models__card-images {
+    grid-area: images;
+
+    margin-top: 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+    width: 274px;
+    height: 226px;
+  }
+
+  .models__card-action {
+    grid-area: action;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 30px;
+    margin-top: 10px;
+  }
+
+  .models__card-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .models__card-item::before {
+    margin-left: -30px;
+  }
+
+  .models__card-action-info {
+    flex-basis: 48%;
+  }
+
+  .models__card-credit {
+    margin: 0 0 8px;
+
+    font-size: 16px;
+    line-height: 15px;
+  }
+
+  .models__card-credit_big_size {
+    font-size: 24px;
+    line-height: 23px;
+  }
+
+  .models__card-price {
+    font-size: 16px;
+    line-height: 15px;
+  }
+
+  .models__card-price_big_size {
+    font-size: 32px;
+    line-height: 31px;
+  }
+
+  .models__card-btns {
+    display: flex;
+    gap: 20px;
+  }
+
+
+  /*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*/
+  /*_____________________________________________*/
+
+
+  /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+  /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+  /*================ $EQUIP STYLE ===============*/
+
+  .equip__upper {
+    padding: 150px 50px 80px 0;
+
+    text-align: right;
+  }
+
+  .equip__list {
+    width: auto;
+
+    margin: 60px 0 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+  }
+
+  /*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*/
+  /*_____________________________________________*/
 
 
   @media screen and (max-width: 1366px) {
     .container {
       max-width: 1160px;
+    }
+  }
+
+  @media screen and (max-width: 1310px) {
+    .section__title {
+      font-size: 99px;
+      line-height: 101px;
+    }
+
+    .models__card-img {
+      width: 504px;
     }
   }
 
@@ -197,5 +330,23 @@
 
     .main-banner__sub-title {
       margin-bottom: 560px;
+    }
+  }
+
+  @media screen and (max-width: 1050px) {
+    .models__card-img {
+      width: 404px;
+    }
+
+    .models__card-images {
+      width: 200px;
+      height: 175px;
+    }
+
+    .models__card-benefit {
+      gap: 10px;
+
+      font-size: 17px;
+      line-height: 19px;
     }
   }
