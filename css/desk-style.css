@@ -168,6 +168,22 @@
       "action action action";
 
     justify-content: space-between;
+
+    overflow: hidden;
+  }
+
+  .models__card-line1 {
+    left: auto;
+    right: 100px;
+
+    height: 100%;
+    width: 500px;
+
+    z-index: -1;
+  }
+
+  .models__card-line2 {
+    width: 194px;
   }
 
   .models__card-info {
@@ -617,6 +633,10 @@
 
     .contacts__list img {
       max-width: 20px;
+    }
+
+    .models__card-line1 {
+      width: 320px;
     }
   }
 
