@@ -19,6 +19,7 @@
       href="./css/desk-style.css"
       media="(min-width: 1025px)"
     />
+    <link rel="shortcut icon" href="{{ 'assets/img/favicon.ico' | theme }}">
     <title>EXEED</title>
 </head>
 <body>
@@ -26,14 +27,9 @@
     <div class="container">
       <div class="header-container">
         <div class="header-btn mob_hide">
-          <button class="header__button btn bg_gold_color">обратный звонок</button>
+          <button class="header__button btn bg_gold_color" data-fancybox data-src="#popupAll">обратный звонок</button>
         </div>
         <div class="header-logo">
-          <!-- <picture>
-            <source srcset="./img/logo_mob.svg"
-                    media="(max-width: 1024px)">
-                    <img class="header__img" src="./img/logo.svg" alt="logo">
-        </picture> -->
           <img class="header__img" src="./img/logo.svg" alt="logo">
         </div>
         <div class="header-info">
@@ -50,7 +46,7 @@
         <span class="main-banner__sub-title">финальная акция на авто в наличии</span>
       </div>
       <div class="main-banner__container">
-        <button class="main-banner__button btn bg_gold_color">получить предложение</button>
+        <button class="main-banner__button btn bg_gold_color" data-fancybox data-src="#popupAll">получить предложение</button>
         <div class="main-banner__time">
           <div class="main-banner__time-text">
             <span class="main-banner__time-price">снижаем цены</span>
@@ -356,6 +352,121 @@
       </div>
     </div>
   </section>
+  <section class="credit">
+      <div class="section__upper credit__upper">
+        <h2 class="section__title credit__title">кредит</h2>
+      </div>
+    <div class="credit__bg">
+      <img class="credit__img-arrow1" src="./img/credit_arrow.svg" alt="arrow">
+      <div class="container">
+        <div class="credit-container">
+          <div class="credit__img">
+            <img src="./img/credit_car.webp" alt="car">
+          </div>
+          <div class="credit__info">
+            <span class="credit__info-head">покупайте новый exeed</span>
+            <ul class="credit__list">
+              <li class="credit__list-item"><b>Низкие </b> ежемесячные платежи</li>
+              <li class="credit__list-item"><b>3 мес. </b> кредитных каникул</li>
+              <li class="credit__list-item">Скидка по госпрограмме <b> до 20%</b></li>
+            </ul>
+            <button class="credit__button btn bg_white_color">подать заявку</button>
+          </div>
+        </div>
+      </div>
+      <img class="credit__img-arrow2" src="./img/credit_arrow.svg" alt="arrow">
+    </div>
+  </section>
+  <section class="contacts">
+    <div class="section__upper contacts__upper">
+      <h2 class="section__title contacts__title align_right">контакты</h2>
+    </div>
+    <div class="contacts-container">
+      <div class="contacts__map">
+        <picture>
+          <source srcset="./img/map_mob.webp"
+                  media="(max-width: 767px)">
+          <img src="./img/map_desk.webp" alt="map">
+      </picture>
+      </div>
+      <div class="contacts__info">
+        <ul class="contacts__list">
+          <li class="contacts__list-item">
+            <img src="./img/time.svg" alt="time">
+            <span>Ежедневно с 08:00 до 21:00</span>
+          </li>
+          <li class="contacts__list-item">
+            <img src="./img/local.svg" alt="local">
+            <span>г. Москва, 27 км МКАД</span>
+          </li>
+          <li class="contacts__list-item">
+            <a href="tel:" class="contacts__link">
+              <img src="./img/tel.svg" alt="phone">
+              <span>+7 (999) 999 - 99 - 99</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-flex">
+            <div class="footer__info-link">
+                <a href="/policy" class="footer__link">«Политика конфиденциальности»</a>
+                <a href="/credit-terms" class="footer__link">«Условия акции»</a>
+                <a href="/user-agreement" class="footer__link">«Пользовательское соглашение»</a>
+            </div>
+            <div class="footer__info">
+                <div class="footer__info-flex">
+                    <p class="footer__info-text">«ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "КВАЗАР"»</p>
+                    <p class="footer__info-text">Инн: 7743882901 ОГРН 1137746244130 от 21 марта 2013 г.</p>
+                    <p class="footer__info-text">Юр. адрес: 115114, город Москва, Дербеневская наб, д. 7 стр. 2, этаж 3 офис 52</p>
+                </div>
+                <p class="footer__info-text">Обращаем Ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер
+                    и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса Российской Федерации.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="pop-up" id="popupAll">
+  <div class="pop-up__text">
+    <span class="pop-up__head">заявка на спецпредложение</span>
+    <span class="pop-up__sub-head">от дилера Omoda</span>
+  </div>
+  <form action="" class="pop-up__form">
+    <div class="pop-up__form-inputs">
+      <label for="">
+        <div class="pop-up__line1"></div>
+        <input type="text" class="pop-up__input" name="name" placeholder="Имя" required>
+        <div class="pop-up__line2"></div>
+      </label>
+      <label for="">
+        <div class="pop-up__line1"></div>
+        <input type="tel" class="pop-up__input" name="phone" placeholder="+7 (___)___-__-__" required>
+        <div class="pop-up__line2"></div>
+      </label>
+    </div>
+    <button class="pop-up__button btn bg_white_color">подать заявку</button>
+    <div class="form-checkbox">
+      <label for="checkbox__input-text">
+        <span class="checkbox">
+          <input class="form__input-check" type="checkbox" id="check-credit-pop" checked required>
+          <span class="custom-checkbox"></span>
+        </span>
+        <span class="checkbox-text">
+          Вы даете согласие на обработку <a href="/policy" class="checkbox-link">персональных данных</a>
+        </span>
+      </label>
+    </div>
+  </form>
+</div>
+<div class="pop-up" id="popup-success">
+  <div class="pop-up__text">
+    <span class="pop-up__head">спасибо за заявку!</span>
+    <span class="pop-up__sub-head">Менеджер свяжется с Вами в течении 5 минут.</span>
+  </div>
+</div>
     <script src="./libs/jquery.min.js"></script>
     <script src="./libs/masked-input.min.js"></script>
     <script src="./libs/fancybox.min.js"></script>
