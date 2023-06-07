@@ -127,6 +127,11 @@ button {
 }
 
 
+
+.header__img {
+  max-width: 124px;
+}
+
 .header-info {
   display: flex;
   flex-direction: column;
