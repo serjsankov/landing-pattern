@@ -8,7 +8,22 @@ window.addEventListener("DOMContentLoaded", () => {
   // initLoad();
   // initScroolMagic();
   initFancy();
-  initCustomSelect();
+    initCustomSelect();
+    
+    initScroll();
+
+    function initScroll () {
+          window.addEventListener("scroll", (e) => {
+                if (pageYOffset > 70) {
+                    $(".header").addClass("js-scroll");
+                } else {
+                    $(".header").removeClass("js-scroll");
+                }
+          });
+        if (pageYOffset > 70) { 
+            $(".header").addClass("js-scroll");
+        }
+    };
 
   function initCustomSelect () {
     $('select').select2({

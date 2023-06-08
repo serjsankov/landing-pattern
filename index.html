@@ -185,8 +185,8 @@
             </div>
             <div class="modesl-card__image">
               <div class="models-card__image-credit">
-                <span>Ставка</span> 
-                  <span class="models-card__image-stavka">4,9%</span>
+                <span>Ставка</span>
+                <span class="models-card__image-stavka">4,9%</span>
               </div>
               <img src="./img/txl.svg" alt="name" class="model-card__img-position">
               <img src="./img/models-test.png" alt="car" class="models-card__img">
@@ -221,8 +221,10 @@
               </div>
             </div>
             <div class="models-card__btns">
-              <button class="models-card__button btn bg_gold_color js--popup-btn" data-carmodel="" data-carbrand="" data-carprice="" data-fancybox data-src="#popupCall">Забронировать автомобиль</button>
-              <button class="models-card__button btn bg_gold_color js--popup-btn" data-carmodel="" data-carbrand="" data-carprice="" data-fancybox data-src="#popupCredit">купить в кредит</button>
+              <button class="models-card__button btn bg_gold_color js--popup-btn" data-carmodel="" data-carbrand=""
+                data-carprice="" data-fancybox data-src="#popupCall">Забронировать автомобиль</button>
+              <button class="models-card__button btn bg_gold_color js--popup-btn" data-carmodel="" data-carbrand=""
+                data-carprice="" data-fancybox data-src="#popupCredit">купить в кредит</button>
             </div>
           </div>
         </div>
@@ -273,8 +275,8 @@
             </div>
             <div class="modesl-card__image">
               <div class="models-card__image-credit">
-                <span>Ставка</span> 
-                  <span class="models-card__image-stavka">4,9%</span>
+                <span>Ставка</span>
+                <span class="models-card__image-stavka">4,9%</span>
               </div>
               <img src="./img/txl.svg" alt="name" class="model-card__img-position">
               <img src="./img/models-test.png" alt="car" class="models-card__img">
@@ -319,11 +321,377 @@
   </section>
   <section class="credit">
     <div class="container">
-      <div class="section__upper">
+      <div class="section__upper credit__upper">
         <h2 class="section__title credit__title">кредит</h2>
       </div>
     </div>
+    <div class="credit__container">
+      <div class="credit__lines">
+        <span class="credit__line"></span>
+        <span class="credit__line"></span>
+        <span class="credit__line"></span>
+        <span class="credit__line"></span>
+      </div>
+      <div class="container">
+        <h3 class="credit__title-banner">выгодный автокредит по минимальной ставке</h3>
+        <ul class="credit__list">
+          <li class="credit__list-item">
+            <span>
+              <span class="credit__line"></span>
+            </span>
+            <span>
+              Досрочное погашение
+              <span class="credit__line-text_color_gold"> без штрафов</span>
+            </span>
+          </li>
+          <li class="credit__list-item">
+            <span>
+              <span class="credit__line"></span>
+            </span>
+            <span>
+              3 платежа по кредиту
+              <span class="credit__line-text_color_gold"> в подарок</span>
+            </span>
+          </li>
+          <li class="credit__list-item">
+            <span>
+              <span class="credit__line"></span>
+            </span>
+            <span>
+              <span class="credit__line-text_color_gold">Без </span>
+              первоначального платежа
+            </span>
+          </li>
+          <li class="credit__list-item">
+            <span>
+              <span class="credit__line"></span>
+            </span>
+            <span>
+              Льготная ставка
+              <span class="credit__line-text_color_gold"> от 4,9%</span>
+            </span>
+          </li>
+        </ul>
+        <form action="" class="banner__form">
+          <div class="banner__form-flex">
+            <input type="text" class="banner__form-input" placeholder="Имя" name="name">
+            <input type="tel" class="banner__form-input" placeholder="+7 (___)___-__-__" name="phone">
+            <button class="banner__form-button btn bg_gold_color js--send-btn">отправить заявку</button>
+          </div>
+          <div class="form-checkbox">
+            <label for="checkbox__input-text">
+              <span class="checkbox">
+                <input class="form__input-check" type="checkbox" id="check-credit-pop" checked required>
+                <span class="custom-checkbox"></span>
+              </span>
+              <span class="checkbox-text">
+                Вы даете согласие на обработку <a href="/policy" class="checkbox-link">персональных данных</a>
+              </span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
   </section>
+  <section class="equip">
+    <div class="container">
+      <div class="section__upper equip__upper">
+        <h2 class="section__title equip__title">комплектации</h2>
+      </div>
+      <div class="equip__filter">
+        <div class="equip__filter-select">
+          <select class="js--model" name="param1" id="">
+            <option value="">Модель</option>
+            <option value="txl">txl</option>
+            <option value="txl">txl</option>
+            <option value="txl">txl</option>
+          </select>
+        </div>
+        <div class="equip__filter-select">
+          <select class="js--equipement" name="param1" id="">
+            <option value="">Комплектация</option>
+            <option value="txl">txl</option>
+            <option value="txl">txl</option>
+            <option value="txl">txl</option>
+          </select>
+        </div>
+        <div class="equip__filter-select">
+          <select name="" id="">
+            <option value="">Тип привода</option>
+            <option value="txl">txl</option>
+            <option value="txl">txl</option>
+            <option value="txl">txl</option>
+          </select>
+        </div>
+      </div>
+      <div class="equip__list js--cards">
+        <!--============== start equip card  =================-->
+        <div class="equip-card js--card">
+          <div class="equip-card__image">
+            <img src="./img/equip-test.png" alt="car" class="equip-card__img">
+          </div>
+          <div class="equip-card__info">
+            <span class="equip-card__head">txl</span>
+            <span class="equip-card__name">2.0 MT LUXURY</span>
+          </div>
+          <div class="equip-card__prices">
+            <div class="equip-card__prices-flex">
+              <span class="equip-card__prices-old">1 444 444 ₽</span>
+              <span class="equip-card__prices-new">от 1 444 444 ₽</span>
+            </div>
+            <span class="equip-card__prices-month">15 555 ₽/мес.</span>
+          </div>
+          <div class="equip-card__btns">
+            <button class="equip-card__button btn bg_gold_color js--popup-btn" data-fancybox data-src="#popupCall"
+              data-carbrand="Exeed" data-carmodel="{{equipement.model.title}}" data-carequipement=""
+              data-carprice="">забронировать</button>
+            <button class="equip-card__button btn bg_gray_color js--popup-btn" data-fancybox data-src="#popupCredit"
+              data-carbrand="Exeed" data-carmodel="{{equipement.model.title}}" data-carequipement=""
+              data-carprice="">рассчитать кредит</button>
+          </div>
+        </div>
+        <!--==================================================-->
+        <div class="equip-card">
+          <div class="equip-card__image">
+            <img src="./img/equip-test.png" alt="car" class="equip-card__img">
+          </div>
+          <div class="equip-card__info">
+            <span class="equip-card__head">txl</span>
+            <span class="equip-card__name">2.0 MT LUXURY</span>
+          </div>
+          <div class="equip-card__prices">
+            <div class="equip-card__prices-flex">
+              <span class="equip-card__prices-old">1 444 444 ₽</span>
+              <span class="equip-card__prices-new">от 1 444 444 ₽</span>
+            </div>
+            <span class="equip-card__prices-month">15 555 ₽/мес.</span>
+          </div>
+          <div class="equip-card__btns">
+            <button class="equip-card__button btn bg_gold_color js--popup-btn" data-fancybox data-src="#popupCall"
+              data-carbrand="Exeed" data-carmodel="{{equipement.model.title}}" data-carequipement=""
+              data-carprice="">забронировать</button>
+            <button class="equip-card__button btn bg_gray_color js--popup-btn" data-fancybox data-src="#popupCredit"
+              data-carbrand="Exeed" data-carmodel="{{equipement.model.title}}" data-carequipement=""
+              data-carprice="">рассчитать кредит</button>
+          </div>
+        </div>
+        <div class="equip-card">
+          <div class="equip-card__image">
+            <img src="./img/equip-test.png" alt="car" class="equip-card__img">
+          </div>
+          <div class="equip-card__info">
+            <span class="equip-card__head">txl</span>
+            <span class="equip-card__name">2.0 MT LUXURY</span>
+          </div>
+          <div class="equip-card__prices">
+            <div class="equip-card__prices-flex">
+              <span class="equip-card__prices-old">1 444 444 ₽</span>
+              <span class="equip-card__prices-new">от 1 444 444 ₽</span>
+            </div>
+            <span class="equip-card__prices-month">15 555 ₽/мес.</span>
+          </div>
+          <div class="equip-card__btns">
+            <button class="equip-card__button btn bg_gold_color js--popup-btn" data-fancybox data-src="#popupCall"
+              data-carbrand="Exeed" data-carmodel="{{equipement.model.title}}" data-carequipement=""
+              data-carprice="">забронировать</button>
+            <button class="equip-card__button btn bg_gray_color js--popup-btn" data-fancybox data-src="#popupCredit"
+              data-carbrand="Exeed" data-carmodel="{{equipement.model.title}}" data-carequipement=""
+              data-carprice="">рассчитать кредит</button>
+          </div>
+        </div>
+        <div class="equip-card">
+          <div class="equip-card__image">
+            <img src="./img/equip-test.png" alt="car" class="equip-card__img">
+          </div>
+          <div class="equip-card__info">
+            <span class="equip-card__head">txl</span>
+            <span class="equip-card__name">2.0 MT LUXURY</span>
+          </div>
+          <div class="equip-card__prices">
+            <div class="equip-card__prices-flex">
+              <span class="equip-card__prices-old">1 444 444 ₽</span>
+              <span class="equip-card__prices-new">от 1 444 444 ₽</span>
+            </div>
+            <span class="equip-card__prices-month">15 555 ₽/мес.</span>
+          </div>
+          <div class="equip-card__btns">
+            <button class="equip-card__button btn bg_gold_color js--popup-btn" data-fancybox data-src="#popupCall"
+              data-carbrand="Exeed" data-carmodel="{{equipement.model.title}}" data-carequipement=""
+              data-carprice="">забронировать</button>
+            <button class="equip-card__button btn bg_gray_color js--popup-btn" data-fancybox data-src="#popupCredit"
+              data-carbrand="Exeed" data-carmodel="{{equipement.model.title}}" data-carequipement=""
+              data-carprice="">рассчитать кредит</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="trade">
+    <div class="container">
+      <div class="section__upper trade__upper">
+        <h2 class="section__title trade__title">trade-in</h2>
+      </div>
+    </div>
+    <div class="trade__container">
+      <div class="container">
+        <div class="trade__content">
+          <div class="trade__info">
+            <h3 class="trade__title-banner">Выгодный Trade-In на все
+              модели Exeed</h3>
+            <span class="trade__info-text">Обменяйте свой старый авто на новый Exeed и получите <b>скидку до 300
+                000₽</b></span>
+          </div>
+          <form action="" class="banner__form">
+            <div class="banner__form-flex">
+              <input type="text" class="banner__form-input" placeholder="Имя" name="name">
+              <input type="tel" class="banner__form-input" placeholder="+7 (___)___-__-__" name="phone">
+              <button class="banner__form-button btn bg_gold_color js--send-btn">отправить заявку</button>
+            </div>
+            <div class="form-checkbox">
+              <label for="checkbox__input-text">
+                <span class="checkbox">
+                  <input class="form__input-check" type="checkbox" id="check-credit-pop" checked required>
+                  <span class="custom-checkbox"></span>
+                </span>
+                <span class="checkbox-text">
+                  Вы даете согласие на обработку <a href="/policy" class="checkbox-link">персональных данных</a>
+                </span>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contacts">
+    <div class="container">
+      <div class="section__upper contacts__upper">
+        <h2 class="section__title contacts__title">контакты</h2>
+      </div>
+    </div>
+    <div class="contacts__container">
+      <picture>
+        <source srcset="./img/map_mob.webp" media="(max-width: 1024px)">
+        <img class="contacts__map" src="./img/map_desk.webp" alt="map">
+      </picture>
+      <div class="contacts__info">
+        <ul class="contacts__list">
+          <li class="contacts__list-item">
+            <picture>
+              <source srcset="./img/con-1.svg" media="(max-width: 1024px)">
+              <img class="contacts__map-icon" src="./img/con-1_desk.svg" alt="icon">
+            </picture>
+            <span class="contacts__text">Ежедневно с 08:00 до 21:00</span>
+          </li>
+          <li class="contacts__list-item">
+            <picture>
+              <source srcset="./img/con-2.svg" media="(max-width: 1024px)">
+              <img class="contacts__map-icon" src="./img/con-2_desk.svg" alt="icon">
+            </picture>
+            <span class="contacts__text">Москва, 33км МКАД, 6с6</span>
+          </li>
+          <li class="contacts__list-item">
+            <a href="tel:" class="contacts__link">
+              <picture>
+                <source srcset="./img/con-3.svg" media="(max-width: 1024px)">
+                <img class="contacts__map-icon" src="./img/con-3_desk.svg" alt="icon">
+              </picture>
+              <span class="contacts__text">+7 (999) 999 - 99 - 99</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-flex">
+        <div class="footer__info-link">
+          <a href="/policy" class="footer__link">«Политика конфиденциальности»</a>
+          <a href="/credit-terms" class="footer__link">«Условия акции»</a>
+          <a href="/user-agreement" class="footer__link">«Пользовательское соглашение»</a>
+        </div>
+        <div class="footer__info">
+          <div class="footer__info-flex">
+            <p class="footer__info-text">«ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "МК СМАРТИНВЕСТ"»</p>
+            <p class="footer__info-text">ИНН: 9725002820 ОГРН 1197746118206 КПП 772501001</p>
+            <p class="footer__info-text">Юр. адрес: 115114, город Москва, Дербеневская наб, д. 7 стр. 2, этаж 3 офис 52
+            </p>
+          </div>
+          <p class="footer__info-text">Обращаем Ваше внимание на то, что данный интернет-сайт носит исключительно
+            информационный характер
+            и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 Гражданского
+            кодекса Российской Федерации.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="pop-up" id="popupCall">
+    <div class="pop-up__info">
+      <span class="pop-up__head">Отправьте заявку</span>
+      <span class="pop-up__info-text">Мы перезвоним вам в течение 1 минуты
+        и сделаем <b> самое выгодное предложение!</b></span>
+    </div>
+    <form action="" class="pop-up__form">
+      <div class="pop-up__form-flex">
+        <input type="text" class="pop-up__form-input" placeholder="Имя" required name="name">
+        <input type="tel" class="pop-up__form-input" placeholder="+7 (___)___-__-__" required name="phone">
+        <button class="btn pop-up__button bg_gold_color">оставить заявку</button>
+      </div>
+      <div class="form-checkbox">
+        <label for="checkbox__input-text">
+          <span class="checkbox">
+            <input class="form__input-check" type="checkbox" id="check-credit-pop" checked required>
+            <span class="custom-checkbox"></span>
+          </span>
+          <span class="checkbox-text">
+            Вы даете согласие на обработку <a href="/policy" class="checkbox-link">персональных данных</a>
+          </span>
+        </label>
+      </div>
+    </form>
+  </div>
+  <div class="pop-up" id="popupCredit">
+    <div class="pop-up__info">
+      <span class="pop-up__head">Успейте купить в кредит
+        по перс ональной ставке!</span>
+      <ul class="pop-up__list">
+        <li class="pop-up__list-item">Досрочное погашение <b> без штрафов</b></li>
+        <li class="pop-up__list-item">Ставка <b> от 4,9%</b></li>
+        <li class="pop-up__list-item">Скидка <b> до 70 000₽</b></li>
+      </ul>
+    </div>
+    <form action="" class="pop-up__form">
+      <div class="pop-up__form-flex">
+        <input type="text" class="pop-up__form-input" placeholder="Имя" required name="name">
+        <input type="tel" class="pop-up__form-input" placeholder="+7 (___)___-__-__" required name="phone">
+        <button class="btn pop-up__button bg_gold_color">оставить заявку</button>
+      </div>
+      <div class="form-checkbox">
+        <label for="checkbox__input-text">
+          <span class="checkbox">
+            <input class="form__input-check" type="checkbox" id="check-credit-pop" checked required>
+            <span class="custom-checkbox"></span>
+          </span>
+          <span class="checkbox-text">
+            Вы даете согласие на обработку <a href="/policy" class="checkbox-link">персональных данных</a>
+          </span>
+        </label>
+      </div>
+    </form>
+  </div>
+  <div class="pop-up" id="popupSus">
+    <div class="pop-up__info">
+      <span class="pop-up__head">Спасибо за заявку</span>
+      <span class="pop-up__info-text">Менеджер свяжется с Вами в течении 5 минут</span>
+    </div>
+  </div>
+  <div class="pop-up" id="popupSus2">
+    <div class="pop-up__info">
+      <span class="pop-up__head">вы уже отправляли заявку</span>
+      <span class="pop-up__info-text">Менеджер свяжется с Вами в течении 5 минут</span>
+    </div>
+  </div>
   <script src="./libs/jquery.min.js"></script>
   <script src="./libs/masked-input.min.js"></script>
   <script src="./libs/fancybox.min.js"></script>
