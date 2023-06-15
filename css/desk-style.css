@@ -1,0 +1,271 @@
+  /*======================================*/
+  /*=====================================*/
+  /*========= $SECTION STYLE =========*/
+
+  .container {
+    padding:  0;
+
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  a {
+    transition: all .3s;
+  }
+
+  a:hover {
+    color: var(--color-yellow);
+  }
+
+  .header-logo:hover {
+    color: var(--color-white);
+  }
+
+  .section__upper {
+    padding: 150px 0 80px;
+  }
+
+  .section__title {
+    font-size: 60px;
+    line-height: 69px;
+  }
+
+/*======================================*/
+
+
+  /*======================================*/
+  /*=====================================*/
+  /*========= $HEADER STYLE =========*/
+
+
+  .header__container {
+    padding: 31px 0;
+  }
+
+  .header-logo__text {
+    font-size: 45px;
+    line-height: 52px;
+  }
+
+  .header__container-left {
+    gap: 20px;
+  }
+
+  .header-info {
+    gap: 10px;
+  }
+
+
+  .header-menu {
+    height: auto;
+
+    position: static;
+
+    background: none;
+
+    padding: 0;
+  }
+
+  .header-menu__container {
+    flex-direction: row;
+    align-items: center;
+
+    padding-bottom: 0;
+  }
+
+  .header-nav {
+    flex-direction: row;
+    margin-top: 0;
+    flex-basis: 50%;
+    gap: initial;
+    justify-content: space-between;
+  }
+
+  .header-menu__top {
+    display: none;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .header-menu__info {
+    display: none;
+  }
+
+  .header-nav__link {
+    font-size: 16px;
+    line-height: 18px;
+
+    color: var(--color-white);
+
+    text-transform: uppercase;
+  }
+
+  .header__container-right {
+    flex-basis: 67%;
+  }
+
+  .header-menu__container-bottom {
+    flex-basis: 34%;
+  }
+
+/*======================================*/
+
+
+  /*======================================*/
+  /*=====================================*/
+  /*========= $MAIN-BANNER STYLE =========*/
+
+
+  .main-banner {
+    aspect-ratio: 1920/1080;
+
+    background: url(../img/main-banner_desk.webp)no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    padding-top: 179px;
+}
+
+.main-banner__info {
+    justify-content: flex-start;
+    gap: 60px;
+}
+
+.main-banner__title {
+    font-size: 45px;
+    line-height: 52px;
+}
+
+.main-banner__list {
+    margin-top: 60px;
+
+    gap: 30px;
+}
+
+.main-banner__list-item {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.main-banner__button {
+    width: 447px;
+}
+
+  /*======================================*/
+
+
+    /*======================================*/
+  /*=====================================*/
+  /*========= $MODELS STYLE =========*/
+
+  .models__container {
+    display: flex;
+    gap: 70px;
+  }
+
+  .models-sticky {
+    width: auto;
+
+    margin: 0;
+  }
+
+  .models-filter {
+    border: none;
+
+    padding: 0;
+    width: 288px;
+
+    position: sticky;
+    top: 130px;
+
+    gap: 30px;
+  }
+
+  .models-filter__head {
+    margin-bottom: 30px;
+  }
+
+  .models-filter__class-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .models-filter__class-item {
+    gap: 15px;
+
+    cursor: pointer;
+  }
+
+  .class-ball__border {
+    width: 18px;
+    height: 18px;
+  }
+
+  .class-ball {
+    width: 8px;
+    height: 8px;
+  }
+
+  .models-filter__class-text {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .models__list {
+    margin-top: 0;
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+
+    row-gap: 60px;
+    column-gap: 30px;
+  }
+
+  .models__card {
+    width: max-content;
+  }
+
+  .models__card-item {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .models__card-ball {
+    width: 119px;
+    height: 119px;
+
+    margin-left: -63px;
+  }
+
+  /*======================================*/
+
+
+
+@media screen and (max-width: 1440px) {
+    .container {
+        max-width: 1160px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    .header__container-right {
+        flex-basis: 60%;
+    }
+
+    .header-nav {
+        flex-basis: 56%;
+    }
+
+    .main-banner {
+        padding-top: 122px;
+    }
+
+    .main-banner__button {
+        width: 392px;
+    }
+}

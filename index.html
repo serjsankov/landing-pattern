@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/swiper.min.css" />
     <link rel="stylesheet" href="./css/fancybox.min.css" />
     <link rel="stylesheet" href="./css/sumoselect2.css" />
+    <link rel="stylesheet" href="./css/nouislider.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
@@ -19,13 +20,381 @@
       href="./css/desk-style.css"
       media="(min-width: 1025px)"
     />
-    <title>Landing page</title>
+    <title>TAXI</title>
 </head>
 <body>
+  <header class="header">
+    <div class="container">
+      <div class="header__container">
+        <div class="header__container-left">
+          <a href="#" class="header-logo">
+            <span class="header-logo__text">такси</span>
+          </a>
+          <div class="header-info">
+            <a href="tel:8 999 999 99 99" class="header-info__text">8 999 999 99 99</a>
+            <span class="header-info__text">Москва, 33км МКАД, 6с6</span>
+          </div>
+        </div>
+        <div class="header__container-right">
+          <div class="burger js-open-menu">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </div>
+          <div class="header-menu">
+            <div class="header-menu__top">
+              <div class="header-logo">
+                <span class="header-logo__text">такси</span>
+              </div>
+              <div class="burger js-closed-menu">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+              </div>
+            </div>
+            <div class="header-menu__container">
+              <nav class="header-nav">
+                <a href="#model" class="header-nav__link">модели</a>
+                <a href="#advatages" class="header-nav__link">преимущества</a>
+                <a href="#contact" class="header-nav__link">контакты</a>
+              </nav>
+              <div class="header-menu__container-bottom">
+                <div class="header-menu__info">
+                  <a href="tel:8 999 999 99 99" class="header-menu__info-text">8 999 999 99 99</a>
+                  <span class="header-menu__info-text">Москва, 33км МКАД, 6с6</span>
+                </div>
+                <button class="header-menu__button btn color_yellow" data-fancybox data-src="#modalCall">
+                  <img src="./img/svg/menu-phone.svg" alt="icon"> обратный звонок</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="main-banner">
+    <div class="container">
+      <div class="main-banner__info">
+        <div class="">
+          <h1 class="main-banner__title">Авто для такси под ключ</h1>
+          <ul class="main-banner__list">
+            <li class="main-banner__list-item">Платеж от <b> XX ₽/день</b></li>
+            <li class="main-banner__list-item">Ставка по кредиту <b> 4,9%</b></li>
+            <li class="main-banner__list-item"><b>Без первоначального </b>взноса</li>
+            <li class="main-banner__list-item">Скидка в trade-in <b> 300 000₽</b></li>
+          </ul>
+        </div>
+        <button class="main-banner__button btn color_yellow" data-fancybox data-src="#modalCall">
+          получить предложение
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="models" id="model">
+    <div class="container">
+      <div class="section__upper models__upper">
+        <h2 class="section__title models__title">модельный ряд</h2>
+      </div>
+      <div class="models__container">
+        <div class="models-sticky">
+          <form class="models-filter">
+            <div class="models-filter__class">
+              <span class="models-filter__head">класс авто</span>
+              <div class="models-filter__class-list">
+                <div class="models-filter__class-item">
+                  <span>
+                    <span class="class-ball__border">
+                      <span class="class-ball"></span>
+                    </span>
+                  </span>
+                  <span class="models-filter__class-text">эконом</span>
+                </div>
+                <div class="models-filter__class-item">
+                  <span>
+                    <span class="class-ball__border">
+                      <span class="class-ball"></span>
+                    </span>
+                  </span>
+                  <span class="models-filter__class-text">комфорт</span>
+                </div>
+                <div class="models-filter__class-item">
+                  <span>
+                    <span class="class-ball__border">
+                      <span class="class-ball"></span>
+                    </span>
+                  </span>
+                  <span class="models-filter__class-text">комфорт +</span>
+                </div>
+              </div>
+            </div>
+            <div class="models-filter__mark">
+              <span class="models-filter__head">марка</span>
+              <div class="models-filter__select">
+                <select name="" id="" placeholder="выберите марку авто">
+                  <option value="">выберите марку авто</option>
+                  <option value="bmw">bmw</option>
+                  <option value="audi">audi</option>
+                  <option value="mers">mers</option>
+                </select>
+              </div>
+            </div>
+            <div class="models-filter__model">
+              <span class="models-filter__head">модель</span>
+              <div class="models-filter__select">
+                <select name="" id="" placeholder="выберите марку авто">
+                  <option value="">выберите модель авто</option>
+                  <option value="x5">x5</option>
+                  <option value="q5">q5</option>
+                  <option value="gle">gle</option>
+                </select>
+              </div>
+            </div>
+            <div class="models-filter__price">
+              <span class="models-filter__head">цена</span>
+              <div class="models-filter__range">
+                <div class="" id="range" data-current-min="208000" data-current-max="3679000" data-min="208000" data-max="3679000"></div>
+              </div>
+              <div class="model-filter__range-prices">
+                <div class="models-filter__range-price">
+                  <span>от <span class="js-nouislider-min-price"></span></span>
+                </div>
+                <div class="models-filter__range-price">
+                  <span>до <span class="js-nouislider-max-price"></span></span>
+                </div>
+              </div>
+            </div>
+            <button class="models-filter__button btn color_yellow">обновить</button>
+          </form>
+        </div>
+        <div class="models__list">
+          <!--====================models card==================-->
+          <div class="models__card">
+              <div class="models__image">
+                <img src="./img/model-test.png" alt="car" class="models__img">
+              </div>
+              <div class="models__card-info">
+                <span class="models__card-head">gelly coolray</span>
+              </div>
+              <div class="models__card-actions">
+                <div class="">
+                  <span class="models__card-ball">
+                      <span class="models__card-credit">14 555 ₽/день</span>
+                  </span>
+                </div>
+                <ul class="models__card-list">
+                    <li class="models__card-item">Скидка за trade-in <b> 300 000₽</b></li>
+                    <li class="models__card-item"><b>5 лет</b> гарантии</li>
+                    <li class="models__card-item"><b>Беспроцентная </b> рассрочка</li>
+                    <li class="models__card-item"><b>Бесплатная установка </b> ГБО</li>
+                    <li class="models__card-item">Оклейка и брендирование <b> такси</b></li>
+                    <li class="models__card-item"><b>Помощь</b> в оформлении документов</li>
+                </ul>
+              </div>
+              <div class="models__card-prices">
+                <span>цена</span>
+                <span class="modesl__card-price">от 2 444 556 ₽</span>
+              </div>
+              <div class="models__card-btns">
+                <button class="models__card-button btn color_yellow" data-fancybox data-src="#modalCall">Забронировать автомобиль</button>
+                <button class="models__card-button btn color_black" data-fancybox data-src="#modalCall">Купить в кредит</button>
+              </div>
+          </div>
+          <!--=================================================-->
+          <div class="models__card">
+            <div class="models__image">
+              <img src="./img/model-test.png" alt="car" class="models__img">
+            </div>
+            <div class="models__card-info">
+              <span class="models__card-head">gelly coolray</span>
+            </div>
+            <div class="models__card-actions">
+              <div class="">
+                <span class="models__card-ball">
+                    <span class="models__card-credit">14 555 ₽/день</span>
+                </span>
+              </div>
+              <ul class="models__card-list">
+                  <li class="models__card-item">Скидка за trade-in <b> 300 000₽</b></li>
+                  <li class="models__card-item"><b>5 лет</b> гарантии</li>
+                  <li class="models__card-item"><b>Беспроцентная </b> рассрочка</li>
+                  <li class="models__card-item"><b>Бесплатная установка </b> ГБО</li>
+                  <li class="models__card-item">Оклейка и брендирование <b> такси</b></li>
+                  <li class="models__card-item"><b>Помощь</b> в оформлении документов</li>
+              </ul>
+            </div>
+            <div class="models__card-prices">
+              <span>цена</span>
+              <span class="modesl__card-price">от 2 444 556 ₽</span>
+            </div>
+            <div class="models__card-btns">
+              <button class="models__card-button btn color_yellow" data-fancybox data-src="#modalCall">Забронировать автомобиль</button>
+              <button class="models__card-button btn color_black" data-fancybox data-src="#modalCall">Купить в кредит</button>
+            </div>
+          </div>
+          <div class="models__card">
+          <div class="models__image">
+            <img src="./img/model-test.png" alt="car" class="models__img">
+          </div>
+          <div class="models__card-info">
+            <span class="models__card-head">gelly coolray</span>
+          </div>
+          <div class="models__card-actions">
+            <div class="">
+              <span class="models__card-ball">
+                  <span class="models__card-credit">14 555 ₽/день</span>
+              </span>
+            </div>
+            <ul class="models__card-list">
+                <li class="models__card-item">Скидка за trade-in <b> 300 000₽</b></li>
+                <li class="models__card-item"><b>5 лет</b> гарантии</li>
+                <li class="models__card-item"><b>Беспроцентная </b> рассрочка</li>
+                <li class="models__card-item"><b>Бесплатная установка </b> ГБО</li>
+                <li class="models__card-item">Оклейка и брендирование <b> такси</b></li>
+                <li class="models__card-item"><b>Помощь</b> в оформлении документов</li>
+            </ul>
+          </div>
+          <div class="models__card-prices">
+            <span>цена</span>
+            <span class="modesl__card-price">от 2 444 556 ₽</span>
+          </div>
+          <div class="models__card-btns">
+            <button class="models__card-button btn color_yellow" data-fancybox data-src="#modalCall">Забронировать автомобиль</button>
+            <button class="models__card-button btn color_black" data-fancybox data-src="#modalCall">Купить в кредит</button>
+          </div>
+          </div>
+          <div class="models__card">
+              <div class="models__image">
+                <img src="./img/model-test.png" alt="car" class="models__img">
+              </div>
+              <div class="models__card-info">
+                <span class="models__card-head">gelly coolray</span>
+              </div>
+              <div class="models__card-actions">
+                <div class="">
+                  <span class="models__card-ball">
+                      <span class="models__card-credit">14 555 ₽/день</span>
+                  </span>
+                </div>
+                <ul class="models__card-list">
+                    <li class="models__card-item">Скидка за trade-in <b> 300 000₽</b></li>
+                    <li class="models__card-item"><b>5 лет</b> гарантии</li>
+                    <li class="models__card-item"><b>Беспроцентная </b> рассрочка</li>
+                    <li class="models__card-item"><b>Бесплатная установка </b> ГБО</li>
+                    <li class="models__card-item">Оклейка и брендирование <b> такси</b></li>
+                    <li class="models__card-item"><b>Помощь</b> в оформлении документов</li>
+                </ul>
+              </div>
+              <div class="models__card-prices">
+                <span>цена</span>
+                <span class="modesl__card-price">от 2 444 556 ₽</span>
+              </div>
+              <div class="models__card-btns">
+                <button class="models__card-button btn color_yellow" data-fancybox data-src="#modalCall">Забронировать автомобиль</button>
+                <button class="models__card-button btn color_black" data-fancybox data-src="#modalCall">Купить в кредит</button>
+              </div>
+          </div>
+          <div class="models__card">
+            <div class="models__image">
+              <img src="./img/model-test.png" alt="car" class="models__img">
+            </div>
+            <div class="models__card-info">
+              <span class="models__card-head">gelly coolray</span>
+            </div>
+            <div class="models__card-actions">
+              <div class="">
+                <span class="models__card-ball">
+                    <span class="models__card-credit">14 555 ₽/день</span>
+                </span>
+              </div>
+              <ul class="models__card-list">
+                  <li class="models__card-item">Скидка за trade-in <b> 300 000₽</b></li>
+                  <li class="models__card-item"><b>5 лет</b> гарантии</li>
+                  <li class="models__card-item"><b>Беспроцентная </b> рассрочка</li>
+                  <li class="models__card-item"><b>Бесплатная установка </b> ГБО</li>
+                  <li class="models__card-item">Оклейка и брендирование <b> такси</b></li>
+                  <li class="models__card-item"><b>Помощь</b> в оформлении документов</li>
+              </ul>
+            </div>
+            <div class="models__card-prices">
+              <span>цена</span>
+              <span class="modesl__card-price">от 2 444 556 ₽</span>
+            </div>
+            <div class="models__card-btns">
+              <button class="models__card-button btn color_yellow" data-fancybox data-src="#modalCall">Забронировать автомобиль</button>
+              <button class="models__card-button btn color_black" data-fancybox data-src="#modalCall">Купить в кредит</button>
+            </div>
+          </div>
+          <div class="models__card">
+            <div class="models__image">
+              <img src="./img/model-test.png" alt="car" class="models__img">
+            </div>
+            <div class="models__card-info">
+              <span class="models__card-head">gelly coolray</span>
+            </div>
+            <div class="models__card-actions">
+              <div class="">
+                <span class="models__card-ball">
+                    <span class="models__card-credit">14 555 ₽/день</span>
+                </span>
+              </div>
+              <ul class="models__card-list">
+                  <li class="models__card-item">Скидка за trade-in <b> 300 000₽</b></li>
+                  <li class="models__card-item"><b>5 лет</b> гарантии</li>
+                  <li class="models__card-item"><b>Беспроцентная </b> рассрочка</li>
+                  <li class="models__card-item"><b>Бесплатная установка </b> ГБО</li>
+                  <li class="models__card-item">Оклейка и брендирование <b> такси</b></li>
+                  <li class="models__card-item"><b>Помощь</b> в оформлении документов</li>
+              </ul>
+            </div>
+            <div class="models__card-prices">
+              <span>цена</span>
+              <span class="modesl__card-price">от 2 444 556 ₽</span>
+            </div>
+            <div class="models__card-btns">
+              <button class="models__card-button btn color_yellow" data-fancybox data-src="#modalCall">Забронировать автомобиль</button>
+              <button class="models__card-button btn color_black" data-fancybox data-src="#modalCall">Купить в кредит</button>
+            </div>
+          </div>
+          <div class="models__card">
+            <div class="models__image">
+              <img src="./img/model-test.png" alt="car" class="models__img">
+            </div>
+            <div class="models__card-info">
+              <span class="models__card-head">gelly coolray</span>
+            </div>
+            <div class="models__card-actions">
+              <div class="">
+                <span class="models__card-ball">
+                    <span class="models__card-credit">14 555 ₽/день</span>
+                </span>
+              </div>
+              <ul class="models__card-list">
+                  <li class="models__card-item">Скидка за trade-in <b> 300 000₽</b></li>
+                  <li class="models__card-item"><b>5 лет</b> гарантии</li>
+                  <li class="models__card-item"><b>Беспроцентная </b> рассрочка</li>
+                  <li class="models__card-item"><b>Бесплатная установка </b> ГБО</li>
+                  <li class="models__card-item">Оклейка и брендирование <b> такси</b></li>
+                  <li class="models__card-item"><b>Помощь</b> в оформлении документов</li>
+              </ul>
+            </div>
+            <div class="models__card-prices">
+              <span>цена</span>
+              <span class="modesl__card-price">от 2 444 556 ₽</span>
+            </div>
+            <div class="models__card-btns">
+              <button class="models__card-button btn color_yellow" data-fancybox data-src="#modalCall">Забронировать автомобиль</button>
+              <button class="models__card-button btn color_black" data-fancybox data-src="#modalCall">Купить в кредит</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
     <script src="./libs/jquery.min.js"></script>
     <script src="./libs/masked-input.min.js"></script>
     <script src="./libs/fancybox.min.js"></script>
     <script src="./libs/select2.js"></script>
+    <script src="./libs/nouislider.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
