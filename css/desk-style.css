@@ -3,7 +3,7 @@
   /*========= $SECTION STYLE =========*/
 
   .container {
-    padding:  0;
+    padding: 0;
 
     max-width: 1400px;
     margin: 0 auto;
@@ -30,7 +30,7 @@
     line-height: 69px;
   }
 
-/*======================================*/
+  /*======================================*/
 
 
   /*======================================*/
@@ -110,7 +110,7 @@
     flex-basis: 34%;
   }
 
-/*======================================*/
+  /*======================================*/
 
 
   /*======================================*/
@@ -126,37 +126,37 @@
     background-position: center;
 
     padding-top: 179px;
-}
+  }
 
-.main-banner__info {
+  .main-banner__info {
     justify-content: flex-start;
     gap: 60px;
-}
+  }
 
-.main-banner__title {
+  .main-banner__title {
     font-size: 45px;
     line-height: 52px;
-}
+  }
 
-.main-banner__list {
+  .main-banner__list {
     margin-top: 60px;
 
     gap: 30px;
-}
+  }
 
-.main-banner__list-item {
+  .main-banner__list-item {
     font-size: 18px;
     line-height: 21px;
-}
+  }
 
-.main-banner__button {
+  .main-banner__button {
     width: 447px;
-}
+  }
 
   /*======================================*/
 
 
-    /*======================================*/
+  /*======================================*/
   /*=====================================*/
   /*========= $MODELS STYLE =========*/
 
@@ -216,14 +216,16 @@
 
   .models__list {
     margin-top: 0;
-    grid-template-columns: repeat(3, minmax(auto, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
 
     row-gap: 60px;
     column-gap: 30px;
+
+    width: 100%;
   }
 
   .models__card {
-    width: max-content;
+    width: auto;
   }
 
   .models__card-item {
@@ -238,34 +240,227 @@
     margin-left: -63px;
   }
 
+  .models__button {
+    margin-top: 30px;
+  }
+
   /*======================================*/
 
 
+  /*======================================*/
+  /*=====================================*/
+  /*========= $ADVANTAGES STYLE =========*/
 
-@media screen and (max-width: 1440px) {
-    .container {
-        max-width: 1160px;
+  .advantages__title {
+    font-size: 60px;
+    line-height: 69px;
+  }
+
+  .advantages__flex {
+    margin-top: 133px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    position: relative;
+  }
+
+  .advantages__img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+  }
+
+  .advantages__right,
+  .advantages__left {
+    flex-basis: 50%;
+  }
+
+  .advantages__right {
+    margin-top: 0;
+  }
+
+  .advantages__img {
+    max-width: 709px;
+    bottom: -167px;
+  }
+
+  .advantages-ball__yellow {
+    width: 735px;
+    height: 735px;
+
+    top: 67px;
+    left: -67px;
+  }
+
+  .advantages__head {
+    margin-bottom: 26px;
+
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .advantages__list-item {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .advantages__list-item.desk_hide {
+    display: none;
+  }
+
+  .advantages__list-item.mob_hide {
+    display: block;
+  }
+
+  .advantages__form {
+    width: 100%;
+
+    margin-top: 114px;
+  }
+
+  .advantages-ball__black {
+    width: 516px;
+    height: 516px;
+
+    right: -80px;
+    top: -153px;
+  }
+
+  .advantages__form-flex {
+    flex-direction: row;
+    width: 100%;
+    gap: 40px;
+    justify-content: space-between;
+  }
+
+  .advantages__form-input,
+  .advantages__form-scheck {
+    flex-basis: 33%;
+  }
+
+  .advantages__form-input {
+    height: 55px;
+  }
+
+  .advantages__form-button {
+    height: 55px;
+  }
+
+  /*======================================*/
+
+
+  /*======================================*/
+  /*=====================================*/
+  /*========= $FOOTER STYLE =========*/
+
+  .footer {
+    padding: 52px 0 42px;
+  }
+
+
+  .footer-flex {
+    display: flex;
+    gap: 137px;
+  }
+
+  .footer__link {
+    width: max-content;
+  }
+
+  .footer__info {
+    margin-top: 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+  }
+
+  .footer__info-flex {
+    gap: 5px;
+  }
+
+  .footer__link,
+  .footer__info-text {
+    font-size: 10px;
+    line-height: 10px;
+
+    color: #C8C8C8;
+  }
+
+  /*======================================*/
+
+
+  /*======================================*/
+  /*=====================================*/
+  /*========= $CONTACTS STYLE =========*/
+
+  .contacts__container {
+    display: flex;
+  }
+
+  .contacts__image {
+    aspect-ratio: inherit;
+    flex-basis: 60%;
+    height: 570px;
+  }
+
+  .contacts__ball {
+    width: 661px;
+    height: 661px;
+    margin-top: -45px;
+    margin-left: -160px;
+  }
+
+  .contacts__list {
+    margin-top: -505px;
+    gap: 82px;
+    padding-left: 64px;
+  }
+
+  /*======================================*/
+
+
+  @media screen and (max-width: 1600px) {
+    .advantages__img {
+      max-width: 609px;
+      bottom: -100px;
     }
-}
+  }
 
-@media screen and (max-width: 1280px) {
+  @media screen and (max-width: 1440px) {
     .container {
-        max-width: 1000px;
+      max-width: 1160px;
+    }
+
+    .advantages__img {
+      max-width: 509px;
+    }
+  }
+
+  @media screen and (max-width: 1280px) {
+    .container {
+      max-width: 1000px;
     }
 
     .header__container-right {
-        flex-basis: 60%;
+      flex-basis: 60%;
     }
 
     .header-nav {
-        flex-basis: 56%;
+      flex-basis: 56%;
     }
 
     .main-banner {
-        padding-top: 122px;
+      padding-top: 122px;
     }
 
     .main-banner__button {
-        width: 392px;
+      width: 392px;
     }
-}
+
+    .advantages__img {
+      max-width: 409px;
+    }
+  }
