@@ -59,7 +59,7 @@
                   <a href="tel:8 999 999 99 99" class="header-menu__info-text">8 999 999 99 99</a>
                   <span class="header-menu__info-text">Москва, 33км МКАД, 6с6</span>
                 </div>
-                <button class="header-menu__button btn color_yellow" data-fancybox data-src="#modalCall">
+                <button class="header-menu__button btn color_yellow" data-fancybox data-src="#popupSus">
                   <img src="./img/svg/menu-phone.svg" alt="icon"> обратный звонок</button>
               </div>
             </div>
@@ -80,7 +80,7 @@
             <li class="main-banner__list-item">Скидка в trade-in <b> 300 000₽</b></li>
           </ul>
         </div>
-        <button class="main-banner__button btn color_yellow" data-fancybox data-src="#modalCall">
+        <button class="main-banner__button btn color_yellow" data-fancybox data-src="#popupAll">
           получить предложение
         </button>
       </div>
@@ -542,6 +542,18 @@
         </label>
       </div>
     </form>
+  </div>
+  <div class="pop-up" id="popupSus">
+    <div class="pop-up__info">
+      <span class="pop-up__head"><span class="head_color_black">спасибо</span> за заявку!</span>
+      <span class="pop-up__sub-head">Наши менеджеры свяжутся с вами в течение 5 минут!</span>
+    </div>
+  </div>
+  <div class="pop-up" id="popupAll">
+    <div class="pop-up__info">
+      <span class="pop-up__head"><span class="head_color_white">Вы уже</span> оставляли заявку</span>
+      <span class="pop-up__sub-head">Подождите и наши менеджеры скоро свяжутся с вами!</span>
+    </div>
   </div>
   <script src="./libs/jquery.min.js"></script>
   <script src="./libs/masked-input.min.js"></script>

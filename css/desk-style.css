@@ -422,6 +422,134 @@
   /*======================================*/
 
 
+  /*======================================*/
+/*=====================================*/
+/*========= $POPUP STYLE =========*/
+
+  .pop-up {
+    width: 800px;
+
+    padding: 30px;
+  }
+
+  .pop-up__head {
+    font-size: 45px;
+    line-height: 52px;
+
+    margin-bottom: 10px;
+  }
+
+  .pop-up__sub-head {
+    font-size: 24px;
+    line-height: 28px;
+
+    margin-bottom: 10px;
+
+    color: var(--color-black);
+
+    width: 392px;
+  }
+
+  .pop-up__info-text {
+    width: max-content;
+
+    font-size: 14px;
+    line-height: 16px;
+
+    color: var(--color-black);
+  }
+
+  .pop-up__form {
+    margin-top: 25px;
+
+    width: 328px;
+  }
+
+  .pop-up__ball {
+    width: 547px;
+    height: 547px;
+
+    left: auto;
+    right: -206px;
+    top: -43px;
+  }
+
+  .pop-up__img {
+    max-width: 558px;
+    top: auto;
+    bottom: 0;
+  }
+
+  .pop-up__form-input {
+    height: 40px;
+  }
+
+  .pop-up__form-inputs {
+    gap: 20px;
+  }
+
+  .pop-up__form-button {
+    height: 40px;
+
+    margin-top: 20px;
+  }
+
+  #popupSus,
+#popupAll {
+  height: 410px;
+
+  padding: 30px;
+}
+
+#popupSus {
+  background: url(../img/popup-sus_desk.webp)no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#popupAll {
+  background: url(../img/popup-al_desk.webp)no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#popupSus .pop-up__head {
+  font-size: 35px;
+line-height: 40px;
+}
+
+#popupSus .pop-up__sub-head {
+  font-size: 18px;
+  line-height: 21px;
+
+  width: max-content;
+}
+
+#popupAll .pop-up__head {
+  font-size: 35px;
+  line-height: 40px;
+
+  width: 522px;
+}
+
+#popupAll .pop-up__sub-head {
+  width: max-content;
+
+  color: var(--color-white);
+
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.fancybox__content>.f-button.is-close-btn {
+  top: 0;
+}
+
+
+
+  /*======================================*/
+
+
   @media screen and (max-width: 1600px) {
     .advantages__img {
       max-width: 609px;
