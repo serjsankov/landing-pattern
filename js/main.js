@@ -8,7 +8,27 @@ window.addEventListener("DOMContentLoaded", () => {
   // initLoad();
   // initScroolMagic();
   initFancy();
-  initCustomSelect();
+    initCustomSelect();
+    initSwipers();
+
+    function initSwipers() { 
+        var swiperPrev = new Swiper(".swiper-prev", {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+          });
+          var swiperImg = new Swiper(".swiper-img", {
+            spaceBetween: 10,
+            // navigation: {
+            //   nextEl: ".swiper-button-next",
+            //   prevEl: ".swiper-button-prev",
+            // },
+            thumbs: {
+              swiper: swiperPrev,
+            },
+          });
+    };
 
   function initCustomSelect () {
     $('select').select2({
