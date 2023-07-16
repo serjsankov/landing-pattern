@@ -14,16 +14,18 @@ window.addEventListener("DOMContentLoaded", () => {
     function initSwipers() { 
         var swiperPrev = new Swiper(".swiper-prev", {
             spaceBetween: 10,
-            slidesPerView: 4,
+            slidesPerView: 3,
             freeMode: true,
             watchSlidesProgress: true,
+            breakpoints: {
+                1025: {
+                    direction: "vertical",
+                    slidesPerView: 5,
+                }
+            }
           });
           var swiperImg = new Swiper(".swiper-img", {
             spaceBetween: 10,
-            // navigation: {
-            //   nextEl: ".swiper-button-next",
-            //   prevEl: ".swiper-button-prev",
-            // },
             thumbs: {
               swiper: swiperPrev,
             },
