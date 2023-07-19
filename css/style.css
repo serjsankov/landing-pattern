@@ -1,0 +1,248 @@
+:root {
+    --family-gotham: 'Gotham Pro';
+    --color-main: #192A31;
+    --color-black: #000;
+    --color-white: #FFFFFF;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: local('Gotham Pro Bold'), local('Gotham-Pro-Bold'),
+        url('../fonts/GothamPro-Bold.woff2') format('woff2'),
+        url('../fonts/GothamPro-Bold.woff') format('woff'),
+        url('../fonts/GothamPro-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: local('Gotham Pro Regular'), local('Gotham-Pro-Regular'),
+        url('../fonts/GothamPro.woff2') format('woff2'),
+        url('../fonts/GothamPro.woff') format('woff'),
+        url('../fonts/GothamPro.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: var(--family-gotham);
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.bg_white {
+    background: var(--color-white);
+}
+
+.bg_main {
+    background: var(--color-main);
+}
+
+.bg_blur {
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5.5px);
+}
+
+/**************************************/
+/*========= $HEADER style =========*/
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px 0;
+}
+
+.header__img {
+    max-width: 59px;
+}
+
+.header__info {
+    display: none;
+}
+
+.header__number {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.header__number img {
+    max-width: 19px;
+}
+
+.burger {
+    width: 24px;
+    height: 24px;
+
+    position: relative;
+}
+
+.burger__line {
+    width: 24px;
+    height: 3px;
+
+    display: block;
+
+    border-radius: 4px;
+
+    position: absolute;
+    left: 0;
+
+    transition: all .4s;
+
+    background: var(--color-white);
+}
+
+.burger__line:first-child {
+    top: 0px;
+}
+
+.burger__line:nth-child(2) {
+    top: 7px;
+}
+
+.burger__line:last-child {
+    top: 14px;
+}
+
+.header.active .burger__line:first-child {
+    top: 7px;
+
+    transform: rotate(-45deg);
+}
+
+.header.active .burger__line:nth-child(2) {
+    opacity: 0;
+}
+
+.header.active .burger__line:last-child {
+    top: 7px;
+
+    transform: rotate(45deg);
+}
+
+.header__menu {
+    background: var(--color-main);
+
+    position: fixed;
+    right: -100%;
+    top: 58px;
+
+    width: 100%;
+
+    padding: 39px 40px 25px;
+
+    transition: all .4s;
+
+    z-index: 1;
+}
+
+.header.active .header__menu {
+    right: 0;
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.header__nav-link {
+    font-size: 25px;
+    line-height: 27px;
+    font-weight: 700;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.header__menu-info {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    padding: 18px;
+    margin-top: 22px;
+
+    border-radius: 10px;
+}
+
+.header__menu-text {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--color-main);
+}
+
+.header__button {
+    height: 50px;
+
+    font-size: 25px;
+    line-height: 27px;
+    font-weight: 700;
+    color: var(--color-main);
+
+    border-radius: 7px;
+
+    margin-top: 22px;
+}
+
+.header__btn {
+    display: none;
+}
+
+/*___________________________________*/
+
+
+/**************************************/
+/*========= $MAIN-BANNER style =========*/
+
+
+.main-banner {
+    aspect-ratio: 360/724;
+
+    background: url(../img/main-banner_mob.webp)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*___________________________________*/
+
+
+
+@media screen and (min-width: 500px) {
+    .header__menu-bottom {
+        width: 280px;
+    }
+}

@@ -1,31 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset-style.css" />
-    <link rel="stylesheet" href="./css/swiper.min.css" />
-    <link rel="stylesheet" href="./css/fancybox.min.css" />
-    <link rel="stylesheet" href="./css/sumoselect2.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="./css/tablet-style.css"
-      media="(min-width: 768px)"
-    />
-    <link
-      rel="stylesheet"
-      href="./css/desk-style.css"
-      media="(min-width: 1025px)"
-    />
-    <title>Landing page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset-style.css" />
+  <link rel="stylesheet" href="./css/swiper.min.css" />
+  <link rel="stylesheet" href="./css/fancybox.min.css" />
+  <link rel="stylesheet" href="./css/sumoselect2.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/tablet-style.css" media="(min-width: 768px)" />
+  <link rel="stylesheet" href="./css/desk-style.css" media="(min-width: 1025px)" />
+  <title>Landing Gac</title>
 </head>
+<header class="header">
+  <div class="container">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <img src="./img/logo.svg" alt="logo" class="header__img">
+      </a>
+      <a href="tel:+7 (495) 111 11-11" class="header__number">
+        <img src="./img/phone.svg" alt="icon">
+        <span>+7 (495) 111 11-11</span>
+      </a>
+      <div class="header__menu">
+        <nav class="header__nav">
+          <a href="#model" class="header__nav-link">Модели в наличии</a>
+          <a href="#equipement" class="header__nav-link">Комплектации</a>
+          <a href="#credits" class="header__nav-link">Автокредит</a>
+          <a href="#trade" class="header__nav-link">Trade-in</a>
+          <a href="#contact" class="header__nav-link">Контакты</a>
+        </nav>
+        <div class="header__menu-bottom">
+          <div class="header__menu-info bg_white">
+            <span class="header__menu-text">
+              <img src="./img/header-clock.svg" alt="icon">
+              <span>Ежедневно с 8:00 до 21:00</span></span>
+            <a href="tel:+7 (495) 111 11-11" class="header__menu-text">
+              <img src="./img/header-phone.svg" alt="icon">
+              <span>+7 (495) 111 11-11</span></a>
+            <span class="header__menu-text">
+              <img src="./img/header-local.svg" alt="icon">
+              <span>33 км МКАД, 6с6</span></span>
+          </div>
+          <button class="header__button btn bg_white" data-fancybox data-src="#modalAll">Обратный звонок</button>
+        </div>
+      </div>
+      <div class="burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </div>
+      <div class="header__info">
+        <div class="header__info-item">
+          <img src="./img/local.svg" alt="icon" class="header__info-img">
+          <span class="header__info-text">33 км МКАД, 6c6</span>
+        </div>
+        <a href="tel:+7 (495) 111 11-11" class="header__info-item">
+          <img src="./img/phone.svg" alt="icon" class="header__info-img">
+          <span class="header__info-text">+7 (495) 111 11-11</span>
+        </a>
+      </div>
+      <div class="header__btn">
+        <button class="btn bg_white">обратный звонок</button>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="main-banner"></section>
+
 <body>
-    <script src="./libs/jquery.min.js"></script>
-    <script src="./libs/masked-input.min.js"></script>
-    <script src="./libs/fancybox.min.js"></script>
-    <script src="./libs/select2.js"></script>
-    <script src="./js/main.js"></script>
+  <script src="./libs/jquery.min.js"></script>
+  <script src="./libs/masked-input.min.js"></script>
+  <script src="./libs/fancybox.min.js"></script>
+  <script src="./libs/select2.js"></script>
+  <script src="./js/main.js"></script>
 </body>
+
 </html>
