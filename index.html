@@ -44,13 +44,16 @@
               <img src="./img/header-local.svg" alt="icon">
               <span>33 км МКАД, 6с6</span></span>
           </div>
-          <button class="header__button btn bg_white" data-fancybox data-src="#modalAll">Обратный звонок</button>
+          <button class="header__button btn bg_white" data-fancybox data-src="#modalSuc2">Обратный звонок</button>
         </div>
       </div>
       <div class="burger">
         <span class="burger__line"></span>
         <span class="burger__line"></span>
         <span class="burger__line"></span>
+      </div>
+      <div class="header__btn">
+        <button class="btn bg_white header__button" data-fancybox data-src="#modalSpecial">Обратный звонок</button>
       </div>
       <div class="header__info">
         <div class="header__info-item">
@@ -62,13 +65,534 @@
           <span class="header__info-text">+7 (495) 111 11-11</span>
         </a>
       </div>
-      <div class="header__btn">
-        <button class="btn bg_white">обратный звонок</button>
+    </div>
+  </div>
+  <div class="header__line"></div>
+</header>
+<section class="main-banner">
+  <div class="container">
+    <h1 class="main-banner__title">Эксклюзивные условия
+      на все модели Gac</h1>
+    <div class="main-banner__flex">
+      <span class="main-banner__discount">Скидки до 40%</span>
+      <div class="main-banner__info">
+        <div class="main-banner__timer">
+          <div class="timer">
+            <div class="time-count__item time-count__days">
+              <div class="time-count__val">00</div>
+              <span class="time-count__text">дней</span>
+            </div>
+            <div class="time-count__item time-count__hours">
+              <div class="time-count__val">00</div>
+              <span class="time-count__text">часов</span>
+            </div>
+            <div class="time-count__item time-count__minutes">
+              <div class="time-count__val">00</div>
+              <span class="time-count__text">минут</span>
+            </div>
+            <div class="time-count__item time-count__seconds">
+              <div class="time-count__val">00</div>
+              <span class="time-count__text">секунд</span>
+            </div>
+          </div>
+        </div>
+        <form action="" class="main-banner__form">
+          <input type="text" required name="name" placeholder="Имя" class="main-banner__form-input">
+          <input type="tel" required name="phone" placeholder="Телефон" class="main-banner__form-input">
+          <div class="">
+            <button class="main-banner__form-button btn bg_white">Получить предложение</button>
+            <div class="form-checkbox">
+              <label for="check-special">
+                <span class="checkbox">
+                  <input class="form__input-check" type="checkbox" id="check-special" checked required>
+                  <span class="custom-checkbox"></span>
+                </span>
+                <span class="checkbox-text">
+                  Вы даете согласие на обработку <a href="#" class="checkbox-link">персональных данных</a>
+                </span>
+              </label>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
-</header>
-<section class="main-banner"></section>
+  <div class="main-banner__img mob_hide">
+    <div class="container">
+      <img src="./img/main-banner_car.webp" alt="gac">
+    </div>
+  </div>
+  <img class="main-banner__img desk_hide" src="./img/main-banner_car_mob.webp" alt="gac">
+  <div class="main-banner__actions">
+    <div class="main-banner__actions-cont">
+      <div class="container">
+        <ul class="main-banner__actions-list">
+          <li class="main-banner__actions-item">КАСКО</li>
+          <li class="main-banner__actions-item">шумоизоляция в подарок</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="models">
+  <div class="section__upper models__upper">
+    <div class="container-custom">
+      <h2 class="section__title">модели в наличии</h2>
+    </div>
+  </div>
+  <div class="models__list">
+    <div class="models__card">
+      <div class="container">
+        <div class="models__card-flex">
+          <div class="models__card-car">
+            <span class="models__card-head">GAC GS8</span>
+            <div class="models__card-price">
+              <span>от 1 999 999₽</span>
+            </div>
+            <div class="models__card-credit">
+              <div class="models__card-ball">
+                <span>Ставка от </span>
+                <b>4.9%</b>
+              </div>
+            </div>
+            <img src="./img/test-model.png" alt="car" class="models__card-img">
+          </div>
+          <div class="models__card-info">
+            <ul class="models__card-actions">
+              <li class="models__card-item">
+                <img src="./img/ok-models.svg" alt="icon">
+                <span>
+                  Без первого взноса
+                </span>
+              </li>
+              <li class="models__card-item">
+                <img src="./img/ok-models.svg" alt="icon">
+                <span>
+                  выгода по Trade-In до
+                  <b>300 000₽</b>
+                </span>
+              </li>
+            </ul>
+            <a href="#equip" class="models__card-link">Подобрать комплектацию</a>
+            <div class="models__card-btns">
+              <button class="models__card-button btn bg_main">В кредит от 99 999 ₽/мес.</button>
+              <button class="models__card-button border_main color_main btn bg_white" data-fancybox
+                data-src="#modalSpecial">Получить предложение</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <picture>
+        <source media="(max-width:1024px)" srcset="./img/models-card_mob.webp">
+        <img class="models__card-bg" src="./img/models-card.webp" alt="bg">
+      </picture>
+    </div>
+  </div>
+</section>
+<section class="equipment">
+  <div class="section__upper equipment__upper">
+    <div class="container-custom">
+      <h2 class="section__title">Комплектации</h2>
+    </div>
+  </div>
+  <div class="equipment__container">
+    <div class="container">
+      <div class="filter">
+        <div class="filter__select">
+          <select class="js--model" name="param1">
+            <option value="">Модель</option>
+            <option value="volvo">Volvo</option>
+            <option value="volvo">Volvo</option>
+            <option value="volvo">Volvo</option>
+            <!-- {% for model in models %}
+                <option value="{{model.id}}">{{model.title | replace({'New': ""}) }}</option>
+             {% endfor %} -->
+          </select>
+        </div>
+        <div class="filter__select">
+          <div class="equip__filter-select">
+            <select class="js--equipment" name="param1">
+              <option value="">Комплектации</option>
+              <option value="s60">s60</option>
+              <option value="s60">s60</option>
+              <option value="s60">s60</option>
+              <!-- {% for equipment in equipments %}
+                        <option value="{{ equipment.id }}" data-model="{{ equipment.model.id }}">{{ equipment.title }}</option>
+                        {% endfor %} -->
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="equipment__container">
+    <div class="equipment__cards js--cards">
+      <div class="equipment__card js--card">
+        <div class="container">
+          <div class="equipment__flex">
+            <div class="equipment__car">
+              <span class="equipment__head">GT Premium</span>
+              <div class="equipment__car-img">
+                <img src="./img/test-model.png" alt="car">
+              </div>
+            </div>
+            <div class="equipment__info">
+              <div class="equipment__spec">
+                <span class="equipment__spec-head">Характеристики</span>
+                <ul class="equipment__spec-list">
+                  <li class="equipment__spec-item equip-border_bottom equip-border_right">АКПП 6</li>
+                  <li class="equipment__spec-item equip-border_bottom">Полный (4WD)</li>
+                  <li class="equipment__spec-item equip-border_right">Бензин АИ-92</li>
+                  <li class="equipment__spec-item ">190 л.с.</li>
+                </ul>
+              </div>
+              <div class="equipment__card-btns">
+                <button class="btn equipment__card-button bg_main">Получить предложение</button>
+                <button class="btn equipment__card-button bg_white">Заявка на кредит</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <picture>
+          <source media="(max-width:1024px)" srcset="./img/equip_mob.webp">
+          <img class="equipment__card-bg" src="./img/equip_desk.webp" alt="bg">
+        </picture>
+      </div>
+      <div class="equipment__card js--card">
+        <div class="container">
+          <div class="equipment__flex">
+            <div class="equipment__car">
+              <span class="equipment__head">GT Premium</span>
+              <div class="equipment__car-img">
+                <img src="./img/test-model.png" alt="car">
+              </div>
+            </div>
+            <div class="equipment__info">
+              <div class="equipment__spec">
+                <span class="equipment__spec-head">Характеристики</span>
+                <ul class="equipment__spec-list">
+                  <li class="equipment__spec-item equip-border_bottom equip-border_right">АКПП 6</li>
+                  <li class="equipment__spec-item equip-border_bottom">Полный (4WD)</li>
+                  <li class="equipment__spec-item equip-border_right">Бензин АИ-92</li>
+                  <li class="equipment__spec-item ">190 л.с.</li>
+                </ul>
+              </div>
+              <div class="equipment__card-btns">
+                <button class="btn equipment__card-button bg_main">Получить предложение</button>
+                <button class="btn equipment__card-button bg_white">Заявка на кредит</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <picture>
+          <source media="(max-width:1024px)" srcset="./img/equip_mob.webp">
+          <img class="equipment__card-bg" src="./img/equip_desk.webp" alt="bg">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="banner credit">
+  <div class="section__upper equipment__upper">
+    <div class="container-custom">
+      <h2 class="section__title">автокредит</h2>
+    </div>
+  </div>
+  <div class="banner__bg">
+    <img class="banner__bg-image" src="./img/credit.webp" alt="bg">
+    <div class="container">
+      <div class="banner__info">
+        <span class="banner__head">Gac в кредит по условиям
+          2022 года</span>
+        <ul class="banner__list">
+          <li class="banner__list-item">
+            <img src="./img/ok-models.svg" alt="icon">
+            <span>Одобрение <b>98%</b></span>
+          </li>
+          <li class="banner__list-item">
+            <img src="./img/ok-models.svg" alt="icon">
+            <span><b>2 </b> документа для оформления</span>
+          </li>
+          <li class="banner__list-item">
+            <img src="./img/ok-models.svg" alt="icon">
+            <span>Ставка от <b> d4,9%</b></span>
+          </li>
+          <li class="banner__list-item">
+            <img src="./img/ok-models.svg" alt="icon">
+            <span><b>КАСКО </b> или шумоизоляция <b>в подарок</b></span>
+          </li>
+        </ul>
+        <form action="" class="banner__form">
+          <div class="form__inputs">
+            <input class="banner__form-input" type="text" placeholder="Имя" name="name" required>
+            <input class="banner__form-input" type="tel" placeholder="Телефон" name="phone" required>
+          </div>
+          <button class="btn bg_main banner__form-button">Отправить заявку</button>
+          <div class="form-checkbox">
+            <label for="check-special">
+              <span class="checkbox">
+                <input class="form__input-check" type="checkbox" id="check-special" checked required>
+                <span class="custom-checkbox"></span>
+              </span>
+              <span class="checkbox-text">
+                Вы даете согласие на обработку <a href="#" class="checkbox-link">персональных данных</a>
+              </span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+    <img class="banner__bg-back" src="./img/banner-bg.webp" alt="bg">
+  </div>
+</section>
+<section class="banner trade">
+  <div class="section__upper equipment__upper">
+    <div class="container-custom">
+      <h2 class="section__title">trade-in</h2>
+    </div>
+  </div>
+  <div class="banner__bg">
+    <img class="banner__bg-image" src="./img/trade.webp" alt="bg">
+    <div class="container">
+      <div class="banner__info">
+        <span class="banner__head">Обменяйте свой авто на GAC и
+          получите скидку до 300 000₽</span>
+        <ul class="banner__list">
+          <li class="banner__list-item">
+            <img src="./img/ok-models.svg" alt="icon">
+            <span>Одобрение <b>98%</b></span>
+          </li>
+          <li class="banner__list-item">
+            <img src="./img/ok-models.svg" alt="icon">
+            <span><b>2 </b> документа для оформления</span>
+          </li>
+          <li class="banner__list-item">
+            <img src="./img/ok-models.svg" alt="icon">
+            <span>Ставка от <b> d4,9%</b></span>
+          </li>
+          <li class="banner__list-item">
+            <img src="./img/ok-models.svg" alt="icon">
+            <span><b>КАСКО </b> или шумоизоляция <b>в подарок</b></span>
+          </li>
+        </ul>
+        <form action="" class="banner__form">
+          <div class="form__inputs">
+            <input class="banner__form-input" type="text" placeholder="Имя" name="name" required>
+            <input class="banner__form-input" type="tel" placeholder="Телефон" name="phone" required>
+          </div>
+          <button class="btn bg_main banner__form-button">Отправить заявку</button>
+          <div class="form-checkbox">
+            <label for="check-special">
+              <span class="checkbox">
+                <input class="form__input-check" type="checkbox" id="check-special" checked required>
+                <span class="custom-checkbox"></span>
+              </span>
+              <span class="checkbox-text">
+                Вы даете согласие на обработку <a href="#" class="checkbox-link">персональных данных</a>
+              </span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+    <img class="banner__bg-back" src="./img/banner-bg.webp" alt="bg">
+  </div>
+</section>
+<section class="contacts">
+  <div class="section__upper equipment__upper">
+    <div class="container-custom">
+      <h2 class="section__title">Контакты</h2>
+    </div>
+  </div>
+  <div class="contacts__map">
+    <div class="contacts__container">
+      <picture>
+        <source media="(max-width:768px)" srcset="./img/map_mob.webp">
+        <img class="contacts__map-img" src="./img/map_desk.webp" alt="bg">
+      </picture>
+    </div>
+  </div>
+  <div class="container">
+    <div class="contacts__info">
+      <ul class="contacts__list">
+        <li class="contacts__list-item">
+          <img src="./img/time.svg" alt="icon">
+          <span>Ежедневно с 8:00 до 21:00</span>
+        </li>
+        <li class="contacts__list-item">
+          <a href="tel:+7 (495) 111 11-11" class="contacts__list-item">
+            <img src="./img/map-phone.svg" alt="icon">
+            <span>+7 (495) 111 11-11</span>
+          </a>
+        </li>
+        <li class="contacts__list-item">
+          <img src="./img/map-local.svg" alt="icon">
+          <span>33 км МКАД, 6с6</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="footer">
+  <div class="container">
+    <p class="footer__info-address">
+      ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ФОРМАТ"<br>
+      ИНН 7725371767 КПП 775101001<br>
+      ОГРН 1177746445381<br>
+      Юридический адрес: 108831, город Москва, г. Щербинка, Бутовский туп, д. 3 стр. 1,
+      помещ. 3 офис 1
+    </p>
+    <div class="footer__line"></div>
+    <p class="footer__info">Обращаем ваше внимание на то, что данный интернет-сайт носит исключительно информационный
+      характер и ни при каких условиях не является публичной офертой, определяемой положением ч. 2 ст. 437 Гражданского
+      кодекса Российской Федерации.</p>
+    <div class="footer__line"></div>
+    <p class="footer__info-text">
+      Обращаем ваше внимание на то, что данный Интернет-сайт носит исключительно информационный характер и ни при каких
+      условиях не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса Российской
+      Федерации. Для получения подробной информации о стоимости автомобилей обращайтесь к менеджерам по продажам. Любая
+      информация, содержащаяся на настоящем сайте, носит исключительно справочный характер и ни при каких
+      обстоятельствах не может быть расценена как предложение заключить договор (публичная оферта). Дилер не дает
+      гарантий по поводу своевременности, точности и полноты информации на веб-сайте, а также по поводу
+      беспрепятственного доступа к нему в любое время. Технические характеристики и оборудование автомобилей, условия
+      приобретения автомобилей, цены, спецпредложения и комплектации автомобилей, указанные на сайте, приведены для
+      примера и могут быть изменены в любое время без предварительного уведомления. Для получения подробной информации
+      об актуальных ценах на продукцию и наличии автомобилей обращайтесь в дилерский центр. Приобретение любой продукции
+      бренда осуществляется в соответствии с условиями индивидуального договора купли-продажи. Представленное
+      изображение автомобиля может отличаться от реализуемого. Не является публичной офертой. ПТС - Паспорт
+      транспортного средства. На данном сайте используются зарегистрированные товарные знаки, перечисленные в разделе
+      Правовая информация. Указана цена на автомобиль в начальной комплектации на автомобили 2022 модельного года. Для
+      заказов с подтвержденной производственной к.н. 50/2021. Количество автомобилей ограничено. Размер платежа в день
+      означает величину затрат заемщика, эквивалентную ежемесячному платежу при условии 30 (тридцати) календарных дней в
+      месяце, взявшего кредит по программе кредитования ВТБ, Сетелем, Русфинанс Банк, Банк Союз, Экспобанк, Совкомбанк,
+      Альфа Банк, Тинькофф, Плюсбанк, Банк Оранжевый, Росбанк, Ситибанк, (далее – «Банк») на покупку нового автомобиля с
+      расчетной розничной ценой в начально комплектации, на срок 60 мес., с первоначальным взносом 57,92% от стоимости
+      автомобиля, остаточным платежом (далее ОП) 20% от стоимости автомобиля и процентной ставкой 14,5%. Данная
+      информация не является офертой Банка, расчет является приблизительным. Полная стоимость кредита и конкретные
+      параметры кредита будут рассчитаны на основании Анкеты клиента, направляемой в Банк для одобрения кредитной
+      заявки. Основные условия кредитования ВТБ, Сетелем, Русфинанс Банк, Банк Союз, Экспобанк, Совкомбанк, Альфа Банк,
+      Тинькофф, Плюсбанк, Банк Оранжевый, Росбанк, Ситибанк, (далее Банк) на покупку нового автомобиля по продукту
+      «Кредит с остаточным платежом на приобретение нового автомобиля» валюта кредита – рубли РФ; сумма кредита от 120
+      тыс. до 5.8 млн. ₽ Процентная ставка (в % годовых) при сроке от 12 до 60 мес. – 14,5% при первоначальном взносе
+      (далее ПВ) от 15% (включительно). При ПВ менее 20% необходимо предоставление полного пакета документов.
+      Минимальный размер остаточного платежа (далее ОП) в % от стоимости автомобиля – 20%; максимальный размер ОП при
+      сроке при сроке кредита 12 мес. – 60%, при сроках от 13 до 24 мес. – 50%, при сроках от 25 до 36 мес.
+      – 45%, при сроках от 37 до 48 мес. – 30%, при сроках от 49 до 60 мес. – 20%.
+    </p>
+    <div class="footer__line"></div>
+    <p class="footer__info">
+      Обеспечение по кредиту – залог приобретаемого автомобиля. Условия кредита действительны до 01.06.2022 и могут быть
+      изменены Банком.
+      Лицензия ЦБ РФ № 3500, г. Москва.
+    </p>
+    <div class="footer__line"></div>
+    <div class="footer__list">
+      <a href="" class="footer__link">Условия кредитования</a>
+      <a href="" class="footer__link">Пользовательское соглашение</a>
+      <a href="" class="footer__link">Политика конфиденциальности</a>
+    </div>
+  </div>
+</section>
+<div class="pop-up" id="modalCredit">
+  <div class="pop-up__info">
+    <span class="pop-up__head">заявка на кредит</span>
+    <span class="pop-up__sub-head">Gac в кредит по условиям 2022 года</span>
+    <ul class="pop-up__list">
+      <li class="pop-up__list-item">
+        <img src="./img/ok-modal.svg" alt="ok">
+        <span>Одобрение <b> 98%</b></span>
+      </li>
+      <li class="pop-up__list-item">
+        <img src="./img/ok-modal.svg" alt="ok">
+        <span><b>2 </b> документа для оформления (паспорт и в.у.)</span>
+      </li>
+      <li class="pop-up__list-item">
+        <img src="./img/ok-modal.svg" alt="ok">
+        <span>Ставка от <b> 4,9%</b></span>
+      </li>
+      <li class="pop-up__list-item">
+        <img src="./img/ok-modal.svg" alt="ok">
+        <span>КАСКО или шумоизоляция <b> в подарок</b></span>
+      </li>
+    </ul>
+    <form action="" class="pop-up__form">
+      <div class="pop-up__form-inputs">
+        <input type="text" class="pop-up__form-input" placeholder="Имя" name="name" required>
+        <input type="tel" class="pop-up__form-input" placeholder="Телефон" name="phone" required>
+      </div>
+      <button class="pop-up__form-button btn bg_main">Отправить заявку</button>
+      <div class="form-checkbox">
+        <label for="check-special">
+          <span class="checkbox">
+            <input class="form__input-check" type="checkbox" id="check-special" checked required>
+            <span class="custom-checkbox"></span>
+          </span>
+          <span class="checkbox-text">
+            Вы даете согласие на обработку <a href="#" class="checkbox-link">персональных данных</a>
+          </span>
+        </label>
+      </div>
+    </form>
+    <img src="./img/modal-car.webp" alt="car" class="pop-up__info-img">
+  </div>
+</div>
+<div class="pop-up" id="modalSpecial">
+  <div class="pop-up__info">
+    <span class="pop-up__head">получить предложение</span>
+    <span class="pop-up__sub-head">Оставьте заявку и получите скидку
+      до <b>40%</b> на все модели Gac</span>
+    <ul class="pop-up__list">
+      <li class="pop-up__list-item">
+        <img src="./img/ok-modal.svg" alt="ok">
+        <span>Льготная ставка от <b> 4,9%</b></span>
+      </li>
+      <li class="pop-up__list-item">
+        <img src="./img/ok-modal.svg" alt="ok">
+        <span>Скидка до <b> 300 000₽ </b> по Trade-in</span>
+      </li>
+      <li class="pop-up__list-item">
+        <img src="./img/ok-modal.svg" alt="ok">
+        <span>КАСКО или шумоизоляция <b> в подарок</b></span>
+      </li>
+    </ul>
+    <form action="" class="pop-up__form">
+      <div class="pop-up__form-inputs">
+        <input type="text" class="pop-up__form-input" placeholder="Имя" name="name" required>
+        <input type="tel" class="pop-up__form-input" placeholder="Телефон" name="phone" required>
+      </div>
+      <button class="pop-up__form-button btn bg_main">Отправить заявку</button>
+      <div class="form-checkbox">
+        <label for="check-special">
+          <span class="checkbox">
+            <input class="form__input-check" type="checkbox" id="check-special" checked required>
+            <span class="custom-checkbox"></span>
+          </span>
+          <span class="checkbox-text">
+            Вы даете согласие на обработку <a href="#" class="checkbox-link">персональных данных</a>
+          </span>
+        </label>
+      </div>
+    </form>
+    <img src="./img/modal-car.webp" alt="car" class="pop-up__info-img">
+  </div>
+</div>
+<div class="pop-up" id="modalSuc">
+  <div class="pop-up__info">
+    <span class="pop-up__head">благодарим
+      за заявку</span>
+    <span class="pop-up__sub-head">Менеджер свяжется с Вами
+      в течение 2-3 минут!</span>
+  </div>
+</div>
+<div class="pop-up" id="modalSuc2">
+  <div class="pop-up__info">
+    <span class="pop-up__head">ранее вы уже
+      оставляли заявку!</span>
+    <span class="pop-up__sub-head">Ожидайте звонок от
+      менеджера в течение
+      2-3 минут!</span>
+  </div>
+</div>
 
 <body>
   <script src="./libs/jquery.min.js"></script>

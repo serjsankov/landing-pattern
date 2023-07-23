@@ -1,0 +1,56 @@
+.container,
+.container-custom {
+    padding: 0 32px;
+}
+
+/**************************************/
+/*========= $MAIN-BANNER style =========*/
+
+.main-banner {
+    aspect-ratio: 360/404;
+}
+
+/*___________________________________*/
+
+
+/**************************************/
+/*========= $EQUIPMENT style =========*/
+
+.filter {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.filter__select {
+    flex-basis: 45%;
+}
+
+/*___________________________________*/
+
+
+/**************************************/
+/*========= $EQUIPMENT style =========*/
+
+
+.equipment__head::before {
+    width: calc(100% + 32px);
+}
+
+/*___________________________________*/
+
+
+/**************************************/
+/*========= $BANNERS style =========*/
+
+.banner__info {
+    width: 45%;
+}
+
+/*___________________________________*/
+
+
+@media screen and (max-width: 900px) {
+    .main-banner {
+        aspect-ratio: 360/381;
+    }
+}
