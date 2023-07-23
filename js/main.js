@@ -1,5 +1,6 @@
 window.addEventListener("DOMContentLoaded", () => {
     const header = document.querySelector(".header");
+    const headerModelMenu = document.querySelector(".js-header-sub-menu");
 
 
   initClicks();
@@ -79,6 +80,10 @@ window.addEventListener("DOMContentLoaded", () => {
           if (event.target.closest(".header-menu__nav-link")) { 
               header.classList.remove("active");
               document.body.style.overflow = "scroll";
+          }
+          if (event.target.closest(".js-header-sub-menu")) {
+              event.preventDefault()
+              headerModelMenu.classList.toggle("active");
           }
 
       })

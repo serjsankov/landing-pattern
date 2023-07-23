@@ -25,15 +25,41 @@
         <span>+7 (495) 111 11-11</span>
       </a>
       <div class="header__menu">
-        <nav class="header__nav">
-          <a href="#model" class="header__nav-link">Модели в наличии</a>
-          <a href="#equipement" class="header__nav-link">Комплектации</a>
-          <a href="#credits" class="header__nav-link">Автокредит</a>
-          <a href="#trade" class="header__nav-link">Trade-in</a>
-          <a href="#contact" class="header__nav-link">Контакты</a>
-        </nav>
+        <ul class="header__nav">
+          <li>
+            <a href="#" class="header__nav-link desk_hide js-header-sub-menu">
+              <span>Модели в наличии <img src="./img/arrow_mob.svg" alt="arrow"></span>
+              <ul class="header__nav-models">
+                <li class="header__nav-item">
+                  <a href="">GAC GS8</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="">GAC GS8</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="">GAC GS8</a>
+                </li>
+              </ul>
+            </a>
+          </li>
+          <li class="header__nav-link mob_hide">
+            <a href="#model" class="header__nav-link mob_hide">Модели в наличии</a>
+          </li>
+          <li>
+            <a href="#equipement" class="header__nav-link">Комплектации</a>
+          </li>
+          <li>
+            <a href="#credits" class="header__nav-link">Автокредит</a>
+          </li>
+          <li>
+            <a href="#trade" class="header__nav-link">Trade-in</a>
+          </li>
+          <li>
+            <a href="#contact" class="header__nav-link">Контакты</a>
+          </li>
+        </ul>
         <div class="header__menu-bottom">
-          <div class="header__menu-info bg_white">
+          <div class="header__menu-info">
             <span class="header__menu-text">
               <img src="./img/header-clock.svg" alt="icon">
               <span>Ежедневно с 8:00 до 21:00</span></span>
@@ -433,7 +459,7 @@
     </div>
   </div>
 </section>
-<section class="footer">
+<footer class="footer">
   <div class="container">
     <p class="footer__info-address">
       ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ФОРМАТ"<br>
@@ -492,7 +518,7 @@
       <a href="" class="footer__link">Политика конфиденциальности</a>
     </div>
   </div>
-</section>
+</footer>
 <div class="pop-up" id="modalCredit">
   <div class="pop-up__info">
     <span class="pop-up__head">заявка на кредит</span>

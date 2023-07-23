@@ -87,6 +87,20 @@
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
+
+    display: block;
+}
+
+.header__nav-link.mob_hide {
+    display: block;
+}
+
+.header__nav-link.desk_hide {
+    display: none;
+}
+
+.header__nav-models {
+    display: none;
 }
 
 .header__button {

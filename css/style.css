@@ -231,6 +231,33 @@ body {
     text-decoration: none;
 }
 
+.header__nav-link.mob_hide {
+    display: none;
+}
+
+.header__nav-models {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.header__nav-link.active+.header__nav-models {
+    display: flex;
+}
+
+.header__nav-link.active img {
+    transform: scale(-1);
+}
+
+.header__nav-item a {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
 .header__menu-info {
     display: flex;
     flex-direction: column;
@@ -240,6 +267,8 @@ body {
     margin-top: 22px;
 
     border-radius: 10px;
+
+    border: 1px solid var(--color-white);
 }
 
 .header__menu-text {
@@ -251,7 +280,7 @@ body {
     line-height: 17px;
     font-weight: 400;
     text-decoration: none;
-    color: var(--color-main);
+    color: var(--color-white);
 }
 
 .header__button {
