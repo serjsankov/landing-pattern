@@ -9,7 +9,18 @@ window.addEventListener("DOMContentLoaded", () => {
   // initLoad();
   // initScroolMagic();
   initFancy();
-  initCustomSelect();
+    initCustomSelect();
+    headerModelScrool();
+
+    function headerModelScrool() { 
+        let headerModel = document.querySelectorAll(".header__nav-item");
+
+        $(".header__nav-item").click(function() {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $($(".models__card").attr("id")).offset().top
+            }, 2000);
+        });
+    };
 
   function initCustomSelect () {
     $('select').select2({
