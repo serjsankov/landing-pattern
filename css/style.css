@@ -765,6 +765,206 @@ body {
     padding: 70px 0 40px;
 }
 
+.equipment__heads {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+
+    border-bottom: 2px solid var(--color-blue);
+}
+
+.equipment__heads-text {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.50);
+
+    display: block;
+
+    padding-bottom: 18px;
+
+    position: relative;
+}
+
+.equipment__heads-text.active {
+    color: var(--color-white);
+}
+
+.equipment__heads-text.active::before {
+    content: "";
+
+    display: block;
+
+    width: 100%;
+    height: 2px;
+
+    background: var(--color-white);
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.equipment__heads-text.flex_basis_small {
+    flex-basis: 30%;
+}
+
+.equipment__heads-text.flex_basis_big {
+    flex-basis: 70%;
+}
+
+.equipment__card {
+    padding: 25px 0;
+}
+
+.equipment__kpp {
+    display: flex;
+    align-items: center;
+
+    height: 50px;
+
+    padding-left: 20px;
+
+    border-radius: 3px;
+    background: rgba(135, 180, 222, 0.20);
+}
+
+.equipment__kpp-text {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: var(--color-white);
+}
+
+.equipment__swiper-container.mob_hide {
+    display: none;
+}
+
+.equipment__swiper-container .swiper-slide img {
+    height: auto;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.30);
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.dot.dot_active {
+    background: var(--color-blue);
+}
+
+.swiper-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 30px;
+}
+
+.equipment__swiper-container {
+    height: 134px;
+}
+
+.equipment__card-info {
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 500;
+    color: var(--color-white);
+    text-transform: uppercase;
+
+    padding: 20px 0 25px;
+}
+
+.equipment__card-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/*___________________________________*/
+
+
+/**************************************/
+/*========= $CREDIT style =========*/
+
+.credit {
+    position: relative;
+
+    margin-top: 40px;
+}
+
+.credit::before {
+    content: "";
+
+    display: block;
+
+    width: calc(100% - 16px);
+    height: 178px;
+
+    background: url(../img/credit.webp)no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: absolute;
+    left: -16px;
+    top: 22px;
+    z-index: -1;
+}
+
+.credit__title {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+
+.credit__sub-title {
+    display: block;
+
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--color-white);
+
+    margin-top: 126px;
+}
+
+.credit__list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    margin: 35px 0 25px;
+}
+
+.credit__list-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+
+.credit__form-button {
+    margin-top: 20px;
+}
+
 /*___________________________________*/
 
 
@@ -796,6 +996,22 @@ body {
     .models__card {
         width: 425px;
     }
+
+    .credit::before {
+        width: 359px;
+    }
+
+    .credit__form {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .equipment__card {
+        width: 400px;
+
+        margin: 0 auto;
+    }
 }
 
 @media screen and (min-width: 600px) {
@@ -806,6 +1022,25 @@ body {
     .main-banner__title {
         font-size: 36px;
         line-height: 45px;
+    }
+
+    .credit__form {
+        margin-left: auto;
+    }
+
+    .credit__heads {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .credit__sub-title {
+        margin-top: 0;
+    }
+
+    .credit__list {
+        width: 400px;
+
+        margin: 35px 0 25px auto;
     }
 }
 

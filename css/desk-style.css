@@ -298,8 +298,168 @@
 /**************************************/
 /*========= $EQUIPMENT style =========*/
 
+.equipment {
+    padding-bottom: 140px;
+}
+
 .equipment__upper {
     padding: 130px 0 153px;
+}
+
+.equipment__heads {
+    width: 422px;
+}
+
+.equipment__heads-text {
+    cursor: pointer;
+
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.equipment__card {
+    width: 100%;
+
+    padding: 30px 0 0;
+}
+
+.equipment__flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.equipment__swiper-container.desk_hide {
+    display: none;
+}
+
+.equipment__swiper-container.mob_hide {
+    display: block;
+
+    width: 620px;
+    height: 280px;
+
+    margin-top: -61px;
+}
+
+.swiper-btns {
+    display: none;
+}
+
+.equipment__kpp {
+    width: 422px;
+
+    padding-left: 15px;
+}
+
+.equipment__kpp-text {
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.equipment__card-btns {
+    flex-direction: row;
+    gap: 15px;
+}
+
+.equipment__info {
+    flex-basis: 41%;
+}
+
+.equipment__card-info {
+    font-size: 16px;
+    line-height: 18px;
+
+    padding: 50px 0 40px;
+}
+
+.swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.30);
+}
+
+.swiper-pagination-bullet.active {
+    background: var(--color-blue);
+}
+
+.swiper-button-next:after {
+    content: "";
+
+    background: url(../img/arrow-nex.svg)no-repeat;
+
+    width: 40px;
+    height: 46px;
+    font-size: 29px;
+    background-size: contain;
+}
+
+.swiper-button-prev:after {
+    content: "";
+
+    background: url(../img/arrow-prev.svg)no-repeat;
+
+    width: 40px;
+    height: 46px;
+    font-size: 29px;
+    background-size: contain;
+}
+
+.swiper-equip .swiper-button-prev,
+.swiper-equip .swiper-button-next {
+    width: 20px;
+    height: 20px;
+    bottom: 10px;
+    top: auto;
+}
+
+.swiper-equip {
+    height: 100%;
+}
+
+/*___________________________________*/
+
+
+/**************************************/
+/*========= $CREDIT style =========*/
+
+.credit {
+    margin-top: 0;
+}
+
+.credit::before {
+    width: 1080px;
+    height: 538px;
+}
+
+.credit__title {
+    font-size: 48px;
+    line-height: 50px;
+}
+
+.credit__sub-title {
+    font-size: 32px;
+    line-height: 34px;
+}
+
+.credit__heads {
+    gap: 28px;
+    justify-content: flex-end;
+}
+
+.credit__list {
+    width: max-content;
+    margin: 0 0 40px auto;
+
+    gap: 25px;
+}
+
+.credit__list-item {
+    gap: 16px;
+
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.credit__form {
+    width: 472px;
 }
 
 /*___________________________________*/
@@ -404,6 +564,19 @@
 
     .models__card-info {
         flex-basis: 42%;
+    }
+
+    .equipment__info {
+        flex-basis: 45%;
+    }
+
+    .equipment__swiper-container.mob_hide {
+        width: 485px;
+    }
+
+    .swiper-equip .swiper-button-prev,
+    .swiper-equip .swiper-button-next {
+        bottom: 20px;
     }
 }
 

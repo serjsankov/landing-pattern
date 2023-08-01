@@ -30,6 +30,33 @@ window.addEventListener("DOMContentLoaded", () => {
               swiper: swiperPrev,
             },
           });
+        
+          var swiperEquip = new Swiper(".swiper-equip", {
+            pagination: {
+              el: ".swiper-pagination",
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+          });
+        
+          var swiperEquipMob = new Swiper(".swiper-equip_mob", {
+            pagination: {
+                el: '[data-slider-dots]',
+                type: "bullets",
+                clickable: true,
+                bulletClass: "dot",
+                bulletActiveClass: "dot_active",
+                renderBullet: function (index, className) {
+                    return '<div class="' + className + '"></div>';
+                },
+            },
+              navigation: {
+                nextEl: ".swiper-button-next-mob",
+                prevEl: ".swiper-button-prev-mob",
+              },
+          });
     };
 
   function initCustomSelect () {
