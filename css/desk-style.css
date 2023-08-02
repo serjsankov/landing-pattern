@@ -302,6 +302,13 @@
     padding-bottom: 140px;
 }
 
+.equipment__img-mark {
+    width: 1492px;
+    height: 189px;
+
+    right: -160px;
+}
+
 .equipment__upper {
     padding: 130px 0 153px;
 }
@@ -465,6 +472,265 @@
 /*___________________________________*/
 
 
+/**************************************/
+/*========= $TRADE style =========*/
+
+.trade {
+    padding-bottom: 138px;
+
+}
+
+.trade__container {
+    max-width: 1069px;
+    margin: 190px auto 0;
+    
+    padding: 50px 0;
+}
+
+.trade__container::after {
+    display: none;
+}
+
+.trade__title {
+    font-size: 48px;
+    line-height: 50px;
+
+    margin-bottom: 30px;
+}
+
+.trade__info {
+    font-size: 24px;
+    line-height: 26px;
+    text-transform: uppercase;
+
+    max-width: 643px;
+    margin: 0 auto;
+}
+
+.trade__form {
+    width: 643px;
+
+    margin: 40px auto 0;
+    padding: 0 50px;
+}
+
+.trade__form-grid {
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+    row-gap: 15px;
+    column-gap: 11px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered,
+.trade__form-input,
+.trade__form-input::placeholder {
+    font-size: 15px;
+    line-height: 17px;
+}
+
+.trade-img__auto-right {
+    max-width: 555px;
+}
+
+.trade-img__auto-left {
+    bottom: 0;
+    left: 0;
+
+    max-width: 623px;
+
+    display: block;
+}
+
+.trade-img__home {
+    display: none;
+}
+
+.trade-img__bg {
+    display: block;
+
+    width: 100%;
+    height: 628px;
+
+    left: 0;
+    bottom: 32px;
+    z-index: -1;
+}
+
+/*___________________________________*/
+
+
+/**************************************/
+/*========= $CONTACTS style =========*/
+
+.contacts__upper {
+    padding: 118px 0 60px;
+}
+
+.contacts__map {
+    width: 100%;
+}
+
+.contacts__block-color {
+    width: 124px;
+    height: 444px;
+
+    bottom: 0;
+}
+
+.contacts__list.desk_hide {
+    display: none;
+}
+
+.contacts__list.mob_hide {
+    display: flex;
+}
+
+.contacts__info {
+    display: block;
+
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+}
+
+.contacts__list {
+    margin: 0;
+    padding: 50px;
+    background: #6887A6;
+    width: 677px;
+    height: 444px;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.contacts__list-item {
+    font-size: 20px;
+    line-height: 22px;
+
+    flex-direction: row;
+}
+
+.contacts__img-mark {
+    width: 1492px;
+    height: 189px;
+    margin-left: -210px;
+    margin-top: 30px;
+}
+
+
+/*___________________________________*/
+
+
+
+/**************************************/
+/*========= $FOOTER style =========*/
+
+
+.footer {
+    padding: 130px 0 100px;
+}
+
+.footer__container {
+    gap: 50px;
+}
+
+.footer__info-top {
+    gap: 0;
+}
+
+.footer__info-text {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.footer__info-medium .footer__info-text {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.footer__info-bottom {
+    display: flex;
+    gap: 30px;
+}
+
+.footer__info-link {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+/*___________________________________*/
+
+
+/**************************************/
+/*========= $POP-UP style =========*/
+
+.pop-up {
+    width: 970px;
+
+    padding: 40px;
+}
+
+.pop-up::before {
+    width: 418px;
+    height: 100%;
+}
+
+#modalCredit::before {
+    background-image: url(../img/modal-credit_desk.webp);
+}
+
+#modalSpecial::before {
+    background-image: url(../img/modal-special_desk.webp);
+}
+
+#modalSuc::before,
+#modalSuc2::before {
+    width: 100%;
+}
+
+.pop-up#modalSuc,
+.pop-up#modalSuc2 {
+    width: 625px;
+    height: 500px;
+}
+
+.pop-up__container {
+    width: 477px;
+    margin-left: auto;
+}
+
+.pop-up#modalSuc .pop-up__container,
+.pop-up#modalSuc2 .pop-up__container {
+    width: auto;
+}
+
+
+.pop-up__text {
+    gap: 5px;
+}
+
+.pop-up__head {
+    font-size: 36px;
+    line-height: 38px;
+}
+
+.pop-up__sub-head {
+    font-size: 31.526px;
+    line-height: 33px;
+}
+
+.pop-up__list {
+    margin-top: 20px;
+}
+
+
+.form-inputs {
+    gap: 20px;
+}
+
+/*___________________________________*/
+
+
 
 @media screen and (max-width: 1650px) {
     .models__card-swipers {
@@ -479,6 +745,14 @@
         left: -13px;
 
         height: 389px;
+    }
+
+    .trade-img__auto-left {
+        max-width: 460px;
+    }
+
+    .trade-img__auto-right {
+        max-width: 446px;
     }
 }
 
@@ -520,6 +794,12 @@
     .models__card-equip {
         font-size: 14px;
         line-height: 16px;
+    }
+
+
+    .contacts__img-mark {
+        width: 820px;
+        height: 85px;    
     }
 
 }
@@ -577,6 +857,51 @@
     .swiper-equip .swiper-button-prev,
     .swiper-equip .swiper-button-next {
         bottom: 20px;
+    }
+
+    .trade-img__auto-left {
+        max-width: 400px;
+    }
+
+    .trade-img__auto-right {
+        max-width: 355px;
+    }
+
+    .trade-img__bg {
+        height: 420px;
+
+        bottom: 20px;
+    }
+
+    .trade {
+        padding-bottom: 90px;
+    }
+
+    .trade__container {
+        max-width: 830px;
+    }
+
+    .contacts__list {
+        width: 525px;
+        height: 310px;
+        padding: 20px;
+    }
+
+    .contacts__list-item {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .contacts__block-color {
+        width: 80px;
+        height: 270px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .credit::before {
+        width: 580px;
+        height: 285px;
     }
 }
 

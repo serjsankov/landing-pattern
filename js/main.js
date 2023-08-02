@@ -2,12 +2,12 @@ window.addEventListener("DOMContentLoaded", () => {
     const header = document.querySelector(".header");
 
 
-  initClicks();
+    initClicks();
 
-  initMaskTel();
+    initMaskTel();
   // initLoad();
   // initScroolMagic();
-  initFancy();
+    initFancy();
     initCustomSelect();
     initSwipers();
 
@@ -116,6 +116,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
   function initClicks() {
+    let imgCarPrev = document.querySelectorAll(".swiper-prev .swiper-slide img"),
+        colors = document.querySelectorAll(".js-color-car"),
+        imgCarSwiper = document.querySelectorAll(".swiper-img .swiper-slide img");
       document.addEventListener("click", (event) => {
           if (event.target.closest(".burger")) {
               header.classList.toggle("active");
@@ -128,6 +131,19 @@ window.addEventListener("DOMContentLoaded", () => {
           if (event.target.closest(".header-menu__nav-link")) { 
               header.classList.remove("active");
               document.body.style.overflow = "scroll";
+          }
+          if (event.target.closest(".js-color-car")) {
+            console.log(event.target.dataset.link);
+            colors.forEach(color=> {
+                color.classList.remove("active");
+            });
+            event.target.classList.add("active");
+            imgCarPrev.forEach((img, imgIndex)=> {
+                img.src = `./img/k${imgIndex + 1}-${event.target.dataset.link}.png`;
+            });
+            imgCarSwiper.forEach((img, imgIndex)=> {
+                img.src = `./img/k${imgIndex + 1}-${event.target.dataset.link}.png`;
+            })
           }
 
       })
