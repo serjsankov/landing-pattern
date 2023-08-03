@@ -685,6 +685,8 @@ body {
     height: 21px;
 
     position: relative;
+
+    cursor: pointer;
 }
 
 .models__card-color.active::before {
@@ -849,6 +851,12 @@ body {
 
 .equipment__card {
     padding: 25px 0;
+
+    display: none;
+}
+
+.equipment__card.active {
+    display: block;
 }
 
 .equipment__kpp {

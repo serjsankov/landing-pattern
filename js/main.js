@@ -118,7 +118,10 @@ window.addEventListener("DOMContentLoaded", () => {
   function initClicks() {
     let imgCarPrev = document.querySelectorAll(".swiper-prev .swiper-slide img"),
         colors = document.querySelectorAll(".js-color-car"),
-        imgCarSwiper = document.querySelectorAll(".swiper-img .swiper-slide img");
+        imgCarSwiper = document.querySelectorAll(".swiper-img .swiper-slide img"),
+        colorText = document.querySelector(".js-color-text"),
+        equipCard = document.querySelectorAll(".js-equip-card"),
+        equipBtn = document.querySelectorAll(".js-equip");
       document.addEventListener("click", (event) => {
           if (event.target.closest(".burger")) {
               header.classList.toggle("active");
@@ -143,6 +146,19 @@ window.addEventListener("DOMContentLoaded", () => {
             });
             imgCarSwiper.forEach((img, imgIndex)=> {
                 img.src = `./img/k${imgIndex + 1}-${event.target.dataset.link}.png`;
+            });
+            colorText.innerHTML = `${event.target.dataset.color}`
+          }
+          if(event.target.closest(".js-equip")) {
+            equipBtn.forEach(el=> {
+              el.classList.remove("active");
+            });
+            event.target.classList.add("active");
+            equipCard.forEach(card=> {
+              card.classList.remove("active");
+              if(card.dataset.equip === event.target.dataset.equip) {
+                card.classList.add("active");
+              }
             })
           }
 

@@ -5,6 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png">
+  <link rel="manifest" href="./fav/site.webmanifest">
+  <link rel="mask-icon" href="./fav/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="./css/reset-style.css" />
   <link rel="stylesheet" href="./css/swiper.min.css" />
   <link rel="stylesheet" href="./css/fancybox.min.css" />
@@ -145,22 +152,22 @@
             <div class="swiper swiper-img">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="./img/k1.png" />
+                  <img src="./img/k1-white.webp" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="./img/k2.png" />
+                  <img src="./img/k2-white.webp" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="./img/k3.png" />
+                  <img src="./img/k3-white.webp" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="./img/k4.png" />
+                  <img src="./img/k4-white.webp" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="./img/k5.png" />
+                  <img src="./img/k5-white.webp" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="./img/k6.png" />
+                  <img src="./img/k6-white.webp" />
                 </div>
               </div>
             </div>
@@ -170,51 +177,26 @@
             <div thumbsSlider="" class="swiper swiper-prev">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="./img/k1.png" />
+                  <img src="./img/k1-white.webp" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="./img/k2.png" />
+                  <img src="./img/k2-white.webp" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="./img/k3.png" />
+                  <img src="./img/k3-white.webp" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="./img/k4.png" />
+                  <img src="./img/k4-white.webp" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="./img/k5.png" />
+                  <img src="./img/k5-white.webp" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="./img/k6.png" />
+                  <img src="./img/k6-white.webp" />
                 </div>
               </div>
             </div>
           </div>
-          <!-- <div class="models__card-prev" data-color="red">
-            <div class="models__card-prev-bg"></div>
-            <div thumbsSlider="" class="swiper swiper-prev">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./img/k1.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./img/k2.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./img/k3.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./img/k4.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./img/k5.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./img/k6.png" />
-                </div>
-              </div>
-            </div>
-          </div> -->
           <div class="models__card-colors-info">
             <div class="modesls__card-colors">
               <span class="models__card-color js-color-car" style="background-color: #901C1C;" data-color="красный" data-link="red"></span>
@@ -280,14 +262,14 @@
       <h2 class="section__title equipment__title">комплектации</h2>
     </div>
     <div class="equipment__heads">
-      <span class="equipment__heads-text active flex_basis_small">LUXURY</span>
-      <span class="equipment__heads-text flex_basis_big">LUXURY +</span>
+      <span class="equipment__heads-text active flex_basis_small js-equip" data-equip="1">LUXURY</span>
+      <span class="equipment__heads-text flex_basis_big js-equip" data-equip="2">LUXURY +</span>
     </div>
-    <div class="equipment__card">
+    <div class="equipment__card js-equip-card active" data-equip="1">
       <div class="equipment__flex">
         <div class="equipment__info">
           <div class="equipment__kpp">
-            <span class="equipment__kpp-text">CVT</span>
+            <span class="equipment__kpp-text active js-equip-kpp">CVT</span>
           </div>
           <div class="equipment__swiper-container desk_hide">
             <div class="swiper swiper-equip_mob">
@@ -309,6 +291,67 @@
             <span>Бензин АИ-92 /</span>
             <span>Полный (4WD) /</span>
             <span>190 л.с.</span>
+          </div>
+          <div class="equipment__card-btns">
+            <button class="btn bg_blue">заявка на кредит</button>
+            <button class="btn bg_blue">получить предложение</button>
+          </div>
+          <div class="swiper-btns">
+            <div class="swiper-button-prev-mob">
+              <img src="./img/arrow-prev.svg" alt="arrow">
+            </div>
+            <div class="dots" data-slider-dots></div>
+            <div class="swiper-button-next-mob">
+              <img src="./img/arrow-nex.svg" alt="arrow">
+            </div>
+          </div>
+        </div>
+        <div class="equipment__swiper-container mob_hide">
+          <div class="swiper swiper-equip">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/equip-test.png" alt="car">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/equip-test.png" alt="car">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/equip-test.png" alt="car">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="equipment__card js-equip-card" data-equip="2">
+      <div class="equipment__flex">
+        <div class="equipment__info">
+          <div class="equipment__kpp">
+            <span class="equipment__kpp-text">AT</span>
+          </div>
+          <div class="equipment__swiper-container desk_hide">
+            <div class="swiper swiper-equip_mob">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./img/equip-test.png" alt="car">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/equip-test.png" alt="car">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/equip-test.png" alt="car">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="equipment__card-info">
+            <span>АКПП 7 /</span>
+            <span>Бензин АИ-95 /</span>
+            <span>Полный (4WD) /</span>
+            <span>210 л.с.</span>
           </div>
           <div class="equipment__card-btns">
             <button class="btn bg_blue">заявка на кредит</button>
@@ -644,6 +687,7 @@
   <script src="./libs/fancybox.min.js"></script>
   <script src="./libs/select2.js"></script>
   <script src="./libs/swiper-bundle.min.js"></script>
+  <script src="./js/timer.js"></script>
   <script src="./js/main.js"></script>
 </body>
 
