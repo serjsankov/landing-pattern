@@ -1,31 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset-style.css" />
-    <link rel="stylesheet" href="./css/swiper.min.css" />
-    <link rel="stylesheet" href="./css/fancybox.min.css" />
-    <link rel="stylesheet" href="./css/sumoselect2.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="./css/tablet-style.css"
-      media="(min-width: 768px)"
-    />
-    <link
-      rel="stylesheet"
-      href="./css/desk-style.css"
-      media="(min-width: 1025px)"
-    />
-    <title>Landing page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset-style.css" />
+  <link rel="stylesheet" href="./css/swiper.min.css" />
+  <link rel="stylesheet" href="./css/fancybox.min.css" />
+  <link rel="stylesheet" href="./css/sumoselect2.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/tablet-style.css" media="(min-width: 768px)" />
+  <link rel="stylesheet" href="./css/desk-style.css" media="(min-width: 1025px)" />
+  <title>Kia</title>
 </head>
+
 <body>
-    <script src="./libs/jquery.min.js"></script>
-    <script src="./libs/masked-input.min.js"></script>
-    <script src="./libs/fancybox.min.js"></script>
-    <script src="./libs/select2.js"></script>
-    <script src="./js/main.js"></script>
+  <header class="header">
+    <div class="container">
+      <div class="header__container">
+        <div class="header__logo">
+          <img src="./img/logo.svg" alt="logo">
+        </div>
+        <a href="tel:+7 (495) 111 11-11" class="header__number-mob">
+          <img src="./img/phone_mob.svg" alt="icon">
+          <span>+7 (495) 111 11-11</span>
+        </a>
+        <div class="burger">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </div>
+        <div class="header__menu">
+          <ul class="header__manu-list">
+            <li class="headet__menu-list-item active">
+              <a href="#models">Модели в наличии</a>
+            </li>
+            <li class="headet__menu-list-item">
+              <a href="equipment">Комплектации</a>
+            </li>
+            <li class="headet__menu-list-item">
+              <a href="#autocredit">Автокредит</a>
+            </li>
+            <li class="headet__menu-list-item">
+              <a href="#contact">Контакты</a>
+            </li>
+          </ul>
+          <div class="header__menu-info">
+            <span class="header__menu-text">
+              <img src="./img/time.svg" alt="time">
+              Ежедневно с 8:00 до 21:00
+            </span>
+            <a href="tel:+7 (495) 111 11-11" class="header__menu-text">
+              <img src="./img/phone_mob.svg" alt="phone">
+              +7 (495) 111 11-11
+            </a>
+            <span class="header__menu-text">
+              <picture>
+                <source media="(max-width:1024px)" srcset="./img/local_mob.svg">
+                <img src="./img/local.svg" alt="local">
+              </picture>
+              27км МКАД, д. Ближние <br>
+              прудищи, вл.1 стр.1
+            </span>
+            <div class="header__menu-btn">
+              <button class="btn header__button no_bg" data-fancybox data-src="modalSpecial">Обратный звонок</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <script src="./libs/jquery.min.js"></script>
+  <script src="./libs/masked-input.min.js"></script>
+  <script src="./libs/fancybox.min.js"></script>
+  <script src="./libs/select2.js"></script>
+  <script src="./js/main.js"></script>
 </body>
+
 </html>

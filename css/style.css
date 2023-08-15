@@ -1,0 +1,225 @@
+:root {
+    --color-main: #040E17;
+    --color-blue: #2799FF;
+    --color-black: #000;
+    --color-white: #FFFFFF;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: local('Gotham Pro Bold'), local('Gotham-Pro-Bold'),
+        url('../fonts/GothamPro-Bold.woff2') format('woff2'),
+        url('../fonts/GothamPro-Bold.woff') format('woff'),
+        url('../fonts/GothamPro-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: local('Gotham Pro Medium'), local('Gotham-Pro-Medium'),
+        url('../fonts/GothamPro-Medium.woff2') format('woff2'),
+        url('../fonts/GothamPro-Medium.woff') format('woff'),
+        url('../fonts/GothamPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: local('Gotham Pro Regular'), local('Gotham-Pro-Regular'),
+        url('../fonts/GothamPro.woff2') format('woff2'),
+        url('../fonts/GothamPro.woff') format('woff'),
+        url('../fonts/GothamPro.ttf') format('truetype');
+    font-weight: 400;
+}
+
+body {
+    font-family: 'Gotham Pro';
+
+    background: var(--color-main);
+}
+
+.btn {
+    width: 100%;
+    height: 51px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: all .4s;
+}
+
+.btn.bg_blue {
+    border-radius: 12px;
+    background: #2799FF;
+    box-shadow: 0px 1px 38px 0px #47A8FF;
+
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 700;
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+.btn.bg_blue.no_lowercase {
+    text-transform: lowercase;
+}
+
+.btn.bg_main {
+    background: var(--color-main);
+    color: var(--color-white);
+}
+
+.btn.no_bg {
+    background: none;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+
+/**************************************/
+/*========= $HEADER style =========*/
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 0 20px;
+}
+
+.header__number-mob {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 400;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.burger {
+    width: 24px;
+    height: 14px;
+
+    position: relative;
+}
+
+.burger__line {
+    position: absolute;
+
+    width: 24px;
+    height: 3px;
+
+    background: var(--color-white);
+
+    border-radius: 3px;
+
+    left: 0;
+}
+
+.burger__line:first-child {
+    top: -1px;
+}
+
+.burger__line:nth-child(2) {
+    top: 5px;
+}
+
+.burger__line:last-child {
+    bottom: 0;
+}
+
+.header__menu {
+    position: fixed;
+    top: 81px;
+    left: -100%;
+
+    width: 100%;
+
+    transition: all .4s;
+}
+
+.header__manu-list {
+    padding: 39px 36px 22px;
+
+    background: var(--color-white);
+
+    display: grid;
+    gap: 36px;
+}
+
+.headet__menu-list-item a {
+    color: #161E26;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 400;
+    text-decoration: none;
+
+    position: relative;
+}
+
+.headet__menu-list-item.active a {
+    font-weight: 500;
+}
+
+.headet__menu-list-item.active a::before {
+    content: "";
+
+    display: block;
+
+    width: 4px;
+    height: 28px;
+
+    background: #161E26;
+
+    position: absolute;
+    top: -6px;
+    left: -16px;
+}
+
+.header__menu-info {
+    background: url(../img/menu_bg.webp)no-repeat;
+    background-size: cover;
+
+    display: grid;
+    gap: 18px;
+
+    padding: 22px 16px;
+}
+
+.header__menu-text {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.header__button {
+    border-radius: 5px;
+    border: 2px solid var(--color-white);
+
+    font-size: 19px;
+    line-height: 21px;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.header.active .header__menu {
+    left: 0;
+}
+
+/*________________________________________*/
