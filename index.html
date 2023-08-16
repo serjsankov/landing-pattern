@@ -47,22 +47,24 @@
             </li>
           </ul>
           <div class="header__menu-info">
-            <span class="header__menu-text">
-              <img src="./img/time.svg" alt="time">
-              Ежедневно с 8:00 до 21:00
-            </span>
-            <a href="tel:+7 (495) 111 11-11" class="header__menu-text">
-              <img src="./img/phone_mob.svg" alt="phone">
-              +7 (495) 111 11-11
-            </a>
-            <span class="header__menu-text">
-              <picture>
-                <source media="(max-width:1024px)" srcset="./img/local_mob.svg">
-                <img src="./img/local.svg" alt="local">
-              </picture>
-              27км МКАД, д. Ближние <br>
-              прудищи, вл.1 стр.1
-            </span>
+            <div class="header__menu-info_links">
+              <span class="header__menu-text desk_hide">
+                <img src="./img/time.svg" alt="time">
+                Ежедневно с 8:00 до 21:00
+              </span>
+              <a href="tel:+7 (495) 111 11-11" class="header__menu-text">
+                <img src="./img/phone_mob.svg" alt="phone">
+                +7 (495) 111 11-11
+              </a>
+              <span class="header__menu-text">
+                <picture>
+                  <source media="(max-width:1024px)" srcset="./img/local_mob.svg">
+                  <img src="./img/local.svg" alt="local">
+                </picture>
+                27км МКАД, д. Ближние <br>
+                прудищи, вл.1 стр.1
+              </span>
+            </div>
             <div class="header__menu-btn">
               <button class="btn header__button no_bg" data-fancybox data-src="modalSpecial">Обратный звонок</button>
             </div>
@@ -71,6 +73,42 @@
       </div>
     </div>
   </header>
+  <section class="main-banner">
+    <div class="container">
+      <div class="main-banner__container">
+        <div class="">
+          <div class="main-banner__text">
+            <h2 class="main-banner__sub-title">Вы ждали этого!</h2>
+            <h1 class="main-banner__title">Суперцены на Kia. Выгода до 40%</h1>
+          </div>
+          <div class="main-banner__timer">
+            <div class="timer">
+              <div class="time-count__item time-count__days">
+                <div class="time-count__val">00</div>
+                <span class="time-count__text">дней</span>
+              </div>
+              <span class="timer-count__cubes">:</span>
+              <div class="time-count__item time-count__hours">
+                <div class="time-count__val">00</div>
+                <span class="time-count__text">часов</span>
+              </div>
+              <span class="timer-count__cubes">:</span>
+              <div class="time-count__item time-count__minutes">
+                <div class="time-count__val">00</div>
+                <span class="time-count__text">минут</span>
+              </div>
+              <span class="timer-count__cubes">:</span>
+              <div class="time-count__item time-count__seconds">
+                <div class="time-count__val">00</div>
+                <span class="time-count__text">секунд</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="main-banner__button btn bg_blue">Получить предложение</button>
+      </div>
+    </div>
+  </section>
   <script src="./libs/jquery.min.js"></script>
   <script src="./libs/masked-input.min.js"></script>
   <script src="./libs/fancybox.min.js"></script>

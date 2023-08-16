@@ -86,12 +86,24 @@ body {
 /**************************************/
 /*========= $HEADER style =========*/
 
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+}
+
 .header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     padding: 18px 0 20px;
+}
+
+.header__logo img {
+    max-width: 67px;
 }
 
 .header__number-mob {
@@ -195,6 +207,10 @@ body {
 
     padding: 22px 16px;
 }
+.header__menu-info_links {
+    display: grid;
+    gap: 18px;
+}
 
 .header__menu-text {
     display: flex;
@@ -220,6 +236,108 @@ body {
 
 .header.active .header__menu {
     left: 0;
+}
+
+/*________________________________________*/
+
+
+/**************************************/
+/*========= $MAIN-BANNER style =========*/
+
+.main-banner {
+    padding: 60px 0 24px;
+
+    background: url(../img/main-banner_mob.webp)no-repeat;
+    background-size: cover;
+
+    aspect-ratio: 360/595;
+}
+
+.main-banner .container {
+    height: 100%;
+}
+
+.main-banner__title {
+    font-size: 27px;
+    line-height: 29px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.56);
+    color: var(--color-white);
+
+    margin-bottom: 23px;
+}
+
+.main-banner__sub-title {
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.56);
+    color: var(--color-white);
+    font-size: 31px;
+    line-height: 33px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.main-banner__button {
+    margin-top: auto;
+}
+
+.main-banner__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100%;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+
+    width: 100%;
+}
+
+.time-count__item {
+    width: 55px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.time-count__val {
+    font-size: 44px;
+    line-height: 46px;
+    font-weight: 700;
+    color: var(--color-white);
+    text-shadow: 0px 0px 16px #2799FF;
+}
+
+.timer-points {
+    font-size: 36px;
+    line-height: 38px;
+}
+
+.timer-count__cubes {
+    color: var(--color-white);
+    font-size: 50px;
+    line-height: 52px;
+    text-shadow: 0px -1px 9px #2799FF;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+.time-count__text {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--color-white);
+    text-shadow: 0px -1px 9px #2799FF;
 }
 
 /*________________________________________*/

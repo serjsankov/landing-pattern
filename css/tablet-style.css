@@ -1,0 +1,31 @@
+.container {
+    padding: 0 32px;
+}
+
+/**************************************/
+/*========= $MAIN-BANNER style =========*/
+
+
+    .main-banner {
+        padding: 60px 0 24px;
+    
+        background: url(../img/main-banner_desk.webp)no-repeat;
+        background-size: cover;
+    
+        aspect-ratio: 1920/1022;
+    }
+
+    .timer {
+        justify-content: flex-start;
+    }
+
+    .main-banner .container {
+        height: auto;
+    }
+
+    .main-banner__button {
+        width: 300px;
+        margin-top: 47px;
+    }
+
+    /*________________________________________*/

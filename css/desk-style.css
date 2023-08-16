@@ -1,0 +1,93 @@
+.container {
+   max-width: 1380px;
+
+   margin: 0 auto;
+}
+
+
+/**************************************/
+/*========= $HEADER style =========*/
+
+.header__logo img {
+    max-width: 141px;
+}
+
+.burger {
+    display: none;
+}
+
+.header__number-mob {
+    display: none;
+}
+
+.header__menu {
+    position: static;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header__manu-list {
+    background: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+
+    padding: 0;
+}
+
+.headet__menu-list-item a {
+    font-size: 15px;
+    line-height: 17px;
+    color: var(--color-white);
+}
+
+.header__menu-info {
+    display: flex;
+    background: none;
+    padding: 0;
+}
+
+.header__menu-text.desk_hide {
+    display: none;
+}
+
+.header__container {
+    padding: 66px 0 41px;
+}
+
+/*________________________________________*/
+
+
+/**************************************/
+/*========= $MAIN-BANNER style =========*/
+
+.main-banner {
+    padding: 153px 0 ;
+    
+    aspect-ratio: 1920/1022;
+}
+
+.main-banner__title {
+    font-size: 55px;
+    line-height: 57px;
+}
+
+.main-banner__sub-title {
+    font-size: 75px;
+    line-height: 77px;
+
+    margin-bottom: 9px;
+}
+
+.header__menu-text {
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 400;
+}
+
+
+/*________________________________________*/
