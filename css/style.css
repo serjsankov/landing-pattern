@@ -341,3 +341,63 @@ body {
 }
 
 /*________________________________________*/
+
+
+
+/**************************************/
+/*========= $ACTIONS style =========*/
+
+.actions {
+    padding-top: 18px;
+
+    border-top: 2px solid var(--color-white);
+}
+
+.actions__list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+    row-gap: 7px;
+}
+
+.actions__list-item {
+    display: flex;
+    gap: 15px;
+}
+
+.actions__list-item  img {
+    max-width: 36px;
+}
+
+.actions__list-text {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    color: var(--color-white);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: flex-start;
+}
+
+.actions__list-text.text_width span {
+    display: block;
+    width: 54%;
+}
+
+.actions__list-text.text_width b {
+    width: 54%;
+}
+
+
+.actions__list-item b {
+    display: block;
+    font-size: 17px;
+    line-height: 19px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/*________________________________________*/
+

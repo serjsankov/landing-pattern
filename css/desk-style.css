@@ -2,6 +2,17 @@
    max-width: 1380px;
 
    margin: 0 auto;
+
+   padding: 0;
+}
+
+.btn {
+    height: 67px;
+}
+
+.btn.bg_blue {
+    font-size: 27px;
+    line-height: 29px;
 }
 
 
@@ -26,6 +37,8 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    flex-basis: 83%;
 }
 
 .header__manu-list {
@@ -37,6 +50,8 @@
     gap: 0;
 
     padding: 0;
+
+    flex-basis: 50%;
 }
 
 .headet__menu-list-item a {
@@ -47,6 +62,8 @@
 
 .header__menu-info {
     display: flex;
+    justify-content: space-between;
+    flex-basis: 45%;
     background: none;
     padding: 0;
 }
@@ -56,7 +73,41 @@
 }
 
 .header__container {
-    padding: 66px 0 41px;
+    align-items: flex-start;
+
+    padding: 55px 0 41px;
+}
+
+.header__menu-info_links {
+    flex-basis: 43%;
+    gap: 10px;
+}
+
+.header__menu-btn {
+    flex-basis: 48%;
+}
+
+.headet__menu-list-item {
+    display: flex;
+}
+
+.headet__menu-list-item.active a::before {
+    width: 100%;
+    height: 2px;
+
+    background: var(--color-white);
+
+    top: auto;
+    bottom: -8px;
+    left: 0;
+}
+
+
+.header__button {
+    height: 39px;
+
+    font-size: 16px;
+    line-height: 18px;
 }
 
 /*________________________________________*/
@@ -66,7 +117,7 @@
 /*========= $MAIN-BANNER style =========*/
 
 .main-banner {
-    padding: 153px 0 ;
+    padding: 206px 0 0;
     
     aspect-ratio: 1920/1022;
 }
@@ -74,11 +125,19 @@
 .main-banner__title {
     font-size: 55px;
     line-height: 57px;
+
+    font-size: 1.28rem;
+    line-height: 1.4rem;
+
+    margin-bottom: 65px;
 }
 
 .main-banner__sub-title {
     font-size: 75px;
     line-height: 77px;
+
+    font-size: 1.746rem;
+    line-height: 1.9rem;
 
     margin-bottom: 9px;
 }
@@ -89,5 +148,159 @@
     font-weight: 400;
 }
 
+.header__menu-text.last_order_desk {
+    order: 3;
+}
+
+
+.time-count__val {
+    font-size: 70px;
+    line-height: 72px;
+    font-size: 1.64rem;
+    line-height: 1.8rem;
+}
+
+.time-count__item {
+    width: 105px;
+
+    gap: 24px;
+}
+
+.time-count__text {
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.timer-count__cubes {
+    display: flex;
+    align-items: center;
+}
+
+button.main-banner__button.btn {
+    width: 475px;
+
+    font-size: 30px;
+    line-height: 32px;
+}
+
 
 /*________________________________________*/
+
+
+/**************************************/
+/*========= $ACTIONS style =========*/
+
+.actions {
+    margin-top: -135px;
+    padding: 33px 0 25px;
+}
+
+.actions__list-text {
+    font-size: 25px;
+    line-height: 27px;
+}
+
+.actions__list-item b {
+    font-size: 40px;
+    line-height: 42px;
+}
+
+.actions__list-item img {
+    max-width: none;
+}
+
+/*________________________________________*/
+
+
+@media screen and (max-width: 1440px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    button.main-banner__button.btn {
+        width: 350px;
+
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .actions {
+        margin-top: -45px;
+    }
+
+    .actions__list-text {
+        font-size: 19px;
+        line-height: 21px;
+    }
+
+    .actions__list-item b {
+        font-size: 30px;
+        line-height: 32px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    .header__container {
+        padding: 30px 0 20px;
+    }
+
+    .header__logo img {
+        max-width: 115px;
+    }
+
+    .header__menu {
+        flex-basis: 85%;
+    }
+
+    .headet__menu-list-item a {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .header__menu-info {
+        flex-basis: 48%;
+    }
+
+    .header__menu-info_links {
+        flex-basis: 50%;
+    }
+
+    .header__menu-btn {
+        flex-basis: 45%;
+    }
+
+    .main-banner {
+        padding: 110px 0 0;
+    }
+
+    .main-banner__title {
+        margin-bottom: 23px;
+    }
+
+    .time-count__item {
+        gap: 15px;
+    }
+
+    .time-count__text {
+        font-size: 17px;
+        line-height: 19px;
+    }
+
+    .actions__list-item img {
+        max-width: 36px;
+    }
+
+    .actions__list-item b {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .actions__list-text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}

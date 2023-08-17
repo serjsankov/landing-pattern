@@ -29,3 +29,27 @@
     }
 
     /*________________________________________*/
+
+
+    
+/**************************************/
+/*========= $ACTIONS style =========*/
+
+.actions__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions__list-item {
+    width: 50%;
+}
+
+.actions__list-text.text_width span {
+    width: 100%;
+}
+
+.actions__list-text.text_width b {
+    width: 100%;
+}
+
+/*________________________________________*/
