@@ -15,6 +15,25 @@
     line-height: 29px;
 }
 
+.btn.bg_main {
+    font-size: 25px;
+    line-height: 27px;
+
+    height: 64px;
+}
+
+.btn.border {
+    font-size: 25px;
+    line-height: 27px;
+
+    height: 64px;
+}
+
+.section__title {
+    font-size: 60px;
+    line-height: 62px;
+}
+
 
 /**************************************/
 /*========= $HEADER style =========*/
@@ -212,6 +231,228 @@ button.main-banner__button.btn {
 /*________________________________________*/
 
 
+/**************************************/
+/*========= $MODELS style =========*/
+
+.models__upper {
+    padding: 63px 0 18px;
+}
+
+.models__list {
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+    row-gap: 33px;
+    column-gap: 21px;
+}
+
+.models__card {
+    width: 100%;
+
+    padding: 15px 0 33px;
+}
+
+.models__card-head {
+    font-size: 50px;
+    line-height: 52px;
+}
+
+.models__card-model {
+    font-size: 24px;
+    line-height: 26px;
+}
+
+.models__card-prices {
+    margin-top: 17px;
+}
+
+
+.models__card-price {
+    font-size: 25px;
+    line-height: 27px;
+}
+
+.models__card-month {
+    font-size: 15px;
+}
+
+
+.models__card-ball {
+    width: 141px;
+    height: 141px;
+
+    font-size: 15px;
+    line-height: 16px;
+
+    right: 21px;
+    top: -81px;
+}
+
+.models__card-ball b {
+    font-size: 45px;
+    line-height: 47px;
+}
+
+.models__card-actions {
+    font-size: 25px;
+    line-height: 27px;
+
+    bottom: 23px;
+}
+
+.models__card-img img {
+    max-width: 423px;
+
+    margin: 0 auto;
+}
+
+.models__card-btns {
+    padding: 0 30px;
+}
+
+.models__list-btn.bg_blue {
+    width: 284px;
+    height: 73px;
+
+    margin: 53px auto 0;
+
+    font-size: 27px;
+    line-height: 29px;
+}
+
+
+/*________________________________________*/
+
+
+/**************************************/
+/*========= $EQUIP style =========*/
+
+.equip__filter {
+    gap: 0;
+    justify-content: space-evenly;
+}
+
+.equip__filter-select {
+    flex-basis: 25%;
+}
+
+.equip__card {
+    width: 100%;
+
+    background: url(../img/equip-bg_desk.webp)no-repeat;
+    background-size: cover;
+
+    padding: 27px 0 10px;
+}
+
+.equip__card-name.desk_hide {
+    display: none;
+}
+
+.equip__card-name.mob_hide {
+    display: block;
+}
+
+.equip__card-name {
+    font-size: 50px;
+    line-height: 52px;
+
+    margin-bottom: 30px;
+}
+
+.equip__card-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.equip__card-prices.desk_hide {
+    display: none;
+}
+
+.equip__card-prices.mob_hide {
+    display: grid;
+}
+
+.equip__card-price {
+    font-size: 40px;
+    line-height: 42px;
+}
+
+.equip__card-month {
+    font-size: 25px;
+    line-height: 27px;
+}
+
+.equip__card-btns {
+    margin-top: 38px;
+}
+
+.equip__card-block {
+    flex-basis: 26%;
+}
+
+.equip__card-button.btn.bg_blue {
+    font-size: 22px;
+    line-height: 24px;
+
+    height: 58px;
+}
+
+.equip__card-button.btn.bg_white {
+    font-size: 22px;
+    line-height: 24px;
+
+    height: 58px;
+}
+
+.equip__card-item {
+    gap: 13px;
+
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.equip__card-images {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.model-main__colors-container {
+    flex-direction: column;
+    position: static;
+
+    width: max-content;
+}
+
+.color-select {
+    display: flex;
+    gap: 23px;
+}
+
+.color-select span {
+    width: 58px;
+    height: 13px;
+
+    cursor: pointer;
+}
+
+.color-select span.color-active {
+    width: 58px;
+
+    height: 17px;
+}
+
+.model__color {
+    font-size: 15px;
+    line-height: 17px;
+
+    width: 100%;
+
+    text-align: right;
+}
+
+
+/*________________________________________*/
+
+
 @media screen and (max-width: 1440px) {
     .container {
         max-width: 1200px;
@@ -236,6 +477,25 @@ button.main-banner__button.btn {
     .actions__list-item b {
         font-size: 30px;
         line-height: 32px;
+    }
+
+    .equip__card-price {
+        font-size: 33px;
+        line-height: 35px;
+    }
+
+    .equip__card-block {
+        flex-basis: 30%;
+    }
+
+    .equip__card-item {
+        gap: 10px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .equip__card-images {
+        flex-basis: 30%;
     }
 }
 
@@ -302,5 +562,15 @@ button.main-banner__button.btn {
     .actions__list-text {
         font-size: 14px;
         line-height: 16px;
+    }
+
+    .models__list {
+        grid-template-columns: repeat(2, minmax(auto, 1fr));
+    }
+
+    .equip__card-button.btn.bg_blue,
+    .equip__card-button.btn.bg_white {
+        font-size: 18px;
+        line-height: 20px;
     }
 }

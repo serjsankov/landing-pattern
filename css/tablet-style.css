@@ -53,3 +53,19 @@
 }
 
 /*________________________________________*/
+
+
+/**************************************/
+/*========= $EQUIP style =========*/
+
+.equip__filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.equip__filter-select {
+    flex-basis: 50%;
+}
+
+/*________________________________________*/

@@ -9,6 +9,109 @@ window.addEventListener("DOMContentLoaded", () => {
   // initScroolMagic();
   initFancy();
   initCustomSelect();
+//   initSwiper();
+initClickColor(); 
+
+function initClickColor () {
+    let colors = document.querySelectorAll(".color-select span"),
+        imagesCar = document.querySelectorAll(".card__img"),
+        colorName = document.querySelector(".model__color span");
+
+    colors.forEach((color, colorIndex) => {
+        color.addEventListener("click", (e) => {
+            colors.forEach((el, elIndex) => {
+                if (color.dataset.equip === el.dataset.equip) {
+                    el.classList.remove("color-active");
+                    imagesCar.forEach((img, imgIndex) => {
+                        if (color.dataset.equip === img.dataset.equip) {
+                            img.classList.remove("js-active");
+                        }
+
+                        if (colorIndex === imgIndex) {
+                            color.classList.add("color-active");
+                            img.classList.add("js-active");
+                        }
+                    })
+                }
+            })
+        })
+    })
+};
+
+  function initSwiper () {
+    // var modelSlider = new Swiper(".modelSwiper", {
+    //     effect: "creative",
+    //     creativeEffect: {
+    //         prev: {
+    //             translate: ["-140%", -100, -800],
+    //         },
+    //         next: {
+    //             translate: ["140%", -100, -800],
+    //         },
+    //     },
+    //     grabCursor: true,
+    //     slidesPerView: 1,
+    //     pagination: {
+    //         el: ".swiper-pagination",
+    //         clickable: true,
+    //     },
+    // });
+
+    const count = document.querySelectorAll(
+        ".modelSwiper .swiper-pagination span"
+    ).length;
+    const colorName = document.querySelector(".model__color span");
+
+    if (colorName) {
+        colorName.innerText =
+            document.querySelector(".color-active").dataset.colorname;
+
+        // for (let i = 0; i < count; i++) {
+        //     let span = document.querySelector(`span[data-color="${i}"]`);
+        //     span.onclick = () => {
+        //         modelSlider.slideTo(i);
+        //         document
+        //             .querySelector(".color-active")
+        //             .classList.remove("color-active");
+        //         span.classList.toggle("color-active");
+        //         colorName.innerText = span.dataset.colorname;
+        //     };
+        // }
+
+        $(".modelSwiper").each(function(swiperIndex, swiper) {
+            swiper = new Swiper(".modelSwiper", {
+                effect: "creative",
+                creativeEffect: {
+                    prev: {
+                        translate: ["-140%", -100, -800],
+                    },
+                    next: {
+                        translate: ["140%", -100, -800],
+                    },
+                },
+                grabCursor: true,
+                slidesPerView: 1,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+
+            // swiper.on("slideChange", function () {
+            //     console.log($(this).parent('.models-card'));
+            //     const activeColor = document.querySelector(".color-active");
+            //     const index = modelSlider.activeIndex;
+            //     activeColor.classList.remove("color-active");
+            //     document
+            //         .querySelector(`span[data-color="${index}"]`)
+            //         .classList.add("color-active");
+            //     colorName.innerText =
+            //         document.querySelector(".color-active").dataset.colorname;
+            // });
+           
+        })
+    }
+  };
 
   function initCustomSelect () {
     $('select').select2({
