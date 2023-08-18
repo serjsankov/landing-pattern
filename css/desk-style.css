@@ -1,9 +1,9 @@
 .container {
-   max-width: 1380px;
+    max-width: 1380px;
 
-   margin: 0 auto;
+    margin: 0 auto;
 
-   padding: 0;
+    padding: 0;
 }
 
 .btn {
@@ -137,7 +137,7 @@
 
 .main-banner {
     padding: 206px 0 0;
-    
+
     aspect-ratio: 1920/1022;
 }
 
@@ -453,6 +453,347 @@ button.main-banner__button.btn {
 /*________________________________________*/
 
 
+/**************************************/
+/*========= $CREDIT style =========*/
+
+.credit__img {
+    display: none;
+}
+
+.credit__bg._image {
+    background: url(../img/credit_desk.webp)no-repeat;
+    background-size: cover;
+
+    padding: 123px 0 0;
+}
+
+.credit__bg._blue {
+    background: none;
+    padding: 0;
+    backdrop-filter: none;
+}
+
+.credit__bg._white {
+    background: none;
+    padding: 0;
+    backdrop-filter: none;
+}
+
+.credit__info {
+    border-radius: 20px;
+    background: rgba(39, 153, 255, 0.77);
+    backdrop-filter: blur(9.5px);
+
+    padding: 27px 36px 24px 47px;
+
+    width: max-content;
+
+    margin-left: auto;
+}
+
+.credit__svg-position {
+    width: calc(100% + 42px);
+}
+
+.credit__info-head {
+    font-size: 48px;
+    line-height: 50px;
+}
+
+.credit__info-text {
+    font-size: 48px;
+    line-height: 50px;
+
+    margin-bottom: 18px;
+}
+
+.credit__list {
+    width: 100%;
+
+    padding-top: 14px;
+
+    gap: 8px;
+
+    padding-left: 31px;
+}
+
+.credit__list-item {
+    gap: 7px;
+
+    font-size: 24px;
+    line-height: 26px;
+}
+
+.credit__form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding: 51px 46px 15px;
+
+    width: 100%;
+
+    background: var(--color-white);
+
+    border-radius: 20px 20px 0px 0px;
+
+    margin-top: 41px;
+}
+
+.credit__form-inputs {
+    display: flex;
+
+    flex-basis: 58%;
+    gap: 54px;
+}
+
+.credit__form-check {
+    margin-top: 0;
+
+    flex-basis: 35%;
+}
+
+.credit__input {
+    height: 41px;
+
+    font-size: 25px;
+    line-height: 27px;
+
+    padding-bottom: 13px;
+    padding-top: 3px;
+}
+
+.credit__button {
+    height: 50px;
+
+    font-size: 25px;
+    line-height: 27px;
+}
+
+.credit__input::placeholder {
+    font-size: 25px;
+    line-height: 27px;
+}
+
+/*________________________________________*/
+
+
+/**************************************/
+/*========= $CONTACTS style =========*/
+
+.contacts__upper {
+    padding: 56px 0 32px;
+}
+
+.contacts__img {
+    display: none;
+}
+
+.contacts__bg {
+    background: url(../img/map_desk.webp)no-repeat;
+    background-size: cover;
+
+    aspect-ratio: 1920/647;
+
+    padding: 0;
+}
+
+.contacts__info {
+    padding: 27px 14px 19px 34px;
+
+    border-radius: 25px 25px 0px 0px;
+
+    background: var(--color-white);
+
+    width: max-content;
+
+    margin-top: auto;
+}
+
+.contacts__bg .container {
+    display: flex;
+
+    height: 100%;
+}
+
+/*________________________________________*/
+
+
+/**************************************/
+/*========= $FOOTER style =========*/
+
+.footer {
+    padding: 43px 0 50px;
+}
+
+.footer__text {
+    font-size: 15px;
+    line-height: 17px;
+
+    text-align: left;
+}
+
+.footer__info.border_top_bold {
+    border-top: none;
+}
+
+.footer__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*________________________________________*/
+
+
+/**************************************/
+/*========= $POP-UP style =========*/
+
+.pop-up {
+    width: 970px;
+    border-radius: 36px;
+
+    padding: 0;
+}
+
+#modalAll {
+    padding: 0;
+
+    background: url(../img/modal-all_desk.webp)no-repeat;
+}
+
+#modalCredit {
+    padding: 0;
+
+    background: url(../img/modal-credit_desk.webp)no-repeat;
+    background-size: cover;
+}
+
+.pop-up__head {
+    font-size: 35px;
+    line-height: 37px;
+
+    margin-bottom: 16px;
+}
+
+.pop-up__info {
+    width: 433px;
+
+    padding: 32px 31px 23px;
+
+    backdrop-filter: blur(15px);
+    background: linear-gradient(180deg, rgba(0, 67, 117, 0.82) 0%, rgba(4, 14, 23, 0.82) 57.29%);
+
+    border-radius: 36px 0 0 36px;
+}
+
+.pop-up__list {
+    gap: 13px;
+
+    padding-left: 12px;
+}
+
+.pop-up__list-item {
+    font-size: 17px;
+    line-height: 19px;
+
+    gap: 10px;
+}
+
+.pop-up__list-item svg {
+    width: 22px;
+    height: 22px;
+}
+
+.f-button.is-close-btn {
+    width: 31px;
+    height: 31px;
+
+    border-radius: 50%;
+}
+
+.f-button svg {
+    width: 18px;
+    height: 31px;
+}
+
+.fancybox__content>.f-button.is-close-btn {
+    right: 31px;
+    top: 15px;
+}
+
+.pop-up__form-input {
+    height: 37px;
+
+    font-size: 15px;
+    line-height: 17px;
+}
+
+.pop-up__form-input::placeholder {
+    font-size: 15px;
+    line-height: 17px;
+}
+
+.pop-up__form-inputs {
+    gap: 12px;
+}
+
+.pop-up__form-btn {
+    height: 43px;
+
+    margin-top: 17px;
+
+    font-size: 20px;
+    line-height: 22px;
+}
+
+#modalAll .pop-up__head {
+    font-size: 25px;
+    line-height: 27px;
+}
+
+#modalAll .pop-up__info {
+    width: 513px;
+
+    padding: 45px 12px 37px 28px;
+}
+
+#modalAll .pop-up__form {
+    width: 368px;
+
+    margin: 25px auto 0;
+}
+
+#modalSus {
+    background: url(../img/modal-sus_desk.webp)no-repeat;
+    background-size: cover;
+
+    height: 335px;
+}
+
+#modalSus2 {
+    background: url(../img/modal-sus2_desk.webp)no-repeat;
+    background-size: cover;
+
+    height: 335px;
+}
+
+#modalSus .pop-up__head,
+#modalSus2 .pop-up__head {
+    font-size: 50px;
+    line-height: 52px;
+
+    margin-bottom: 9px;
+}
+
+.pop-up__text {
+    font-size: 40px;
+    line-height: 42px;
+}
+
+/*________________________________________*/
+
+
 @media screen and (max-width: 1440px) {
     .container {
         max-width: 1200px;
@@ -572,5 +913,10 @@ button.main-banner__button.btn {
     .equip__card-button.btn.bg_white {
         font-size: 18px;
         line-height: 20px;
+    }
+
+    .credit__form-inputs {
+        flex-basis: 60%;
+        gap: 20px;
     }
 }
