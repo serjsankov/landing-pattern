@@ -2,87 +2,149 @@ window.addEventListener("DOMContentLoaded", () => {
     const header = document.querySelector(".header");
 
 
-  initClicks();
+    initClicks();
 
-  initMaskTel();
-  // initLoad();
-  // initScroolMagic();
-  initFancy();
-  initCustomSelect();
+    initMaskTel();
+    // initLoad();
+    // initScroolMagic();
+    initFancy();
+    initCustomSelect();
+    initSwiperModelsName();
 
-  function initCustomSelect () {
-    $('select').select2({
-      width: '100%',
-  });
-  };
+    function initSwiperModelsName() {
+        var swiperModelsName = new Swiper(".swiper-models-name", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        var modelSlider = new Swiper(".modelSwiper", {
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                    translate: ["-140%", -100, -800],
+                },
+                next: {
+                    translate: ["140%", -100, -800],
+                },
+            },
+            grabCursor: true,
+            slidesPerView: 1,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+        const count = document.querySelectorAll(
+            ".modelSwiper .swiper-pagination span"
+        ).length;
+        // const colorName = document.querySelector(".model__color span");
+        let colorName = document.querySelector('.js_color_name');
+
+        if (colorName) {
+            colorName.innerText = document.querySelector(".color-active").dataset.colorname;
+
+            for (let i = 1; i <= count; i++) {
+                let span = document.querySelector(`span[data-color="${i}"]`);
+
+                span.onclick = () => {
+                    modelSlider.slideTo(i - 1);
+                    document.querySelector(".color-active").classList.remove("color-active");
+                    span.classList.toggle("color-active");
+                    colorName.innerText = span.dataset.colorname;
+                };
+            }
+
+            modelSlider.on("slideChange", function () {
+                const activeColor = document.querySelector(".color-active");
+                const index = modelSlider.activeIndex + 1;
+                activeColor.classList.remove("color-active");
+                document
+                    .querySelector(`span[data-color="${index}"]`)
+                    .classList.add("color-active");
+                colorName.innerText =
+                    document.querySelector(".color-active").dataset.colorname;
+            });
+        }
+    };
+
+    function initCustomSelect() {
+        $('select').select2({
+            width: '100%',
+        });
+    };
 
 
- function initFancy() {
-    Fancybox.bind("[data-fancybox]", {
-        // Your custom options
-      });
-  }
+    function initFancy() {
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+    }
 
 
-  function initLoad() {
-      $(window).on("scroll", function () {
-          lazyLoad.img(200);
-          lazyLoad.bg(30);
-      });
-  }
+    function initLoad() {
+        $(window).on("scroll", function () {
+            lazyLoad.img(200);
+            lazyLoad.bg(30);
+        });
+    }
 
-  function initScroolMagic() {
-      // init controller
-      const controller = new ScrollMagic.Controller();
+    function initScroolMagic() {
+        // init controller
+        const controller = new ScrollMagic.Controller();
 
-      // Создаём сцену 
-      new ScrollMagic.Scene({ triggerElement: "#list" })
-          .setClassToggle("#list", "active") // add class toggle
-          .addTo(controller);
-      new ScrollMagic.Scene({ triggerElement: "#equip" })
-          .setClassToggle("#equip", "active") // add class toggle
-          .addTo(controller);
-  }
+        // Создаём сцену 
+        new ScrollMagic.Scene({ triggerElement: "#list" })
+            .setClassToggle("#list", "active") // add class toggle
+            .addTo(controller);
+        new ScrollMagic.Scene({ triggerElement: "#equip" })
+            .setClassToggle("#equip", "active") // add class toggle
+            .addTo(controller);
+    }
 
-  function initMaskTel() {
-      // Маска для телефона
-      $.fn.setCursorPosition = function (pos) {
-          if ($(this).get(0).setSelectionRange) {
-              $(this).get(0).setSelectionRange(pos, pos);
-          } else if ($(this).get(0).createTextRange) {
-              var range = $(this).get(0).createTextRange();
-              range.collapse(true);
-              range.moveEnd('character', pos);
-              range.moveStart('character', pos);
-              range.select();
-          }
-      };
-      $.mask.definitions['~'] = '[49]';
-      $("input[type='tel']").click(function () {
-          $(this).setCursorPosition(2);
-      }).mask("+7 (~99) 999-99-99", {
-          placeholder: "_"
-      });
-  }
+    function initMaskTel() {
+        // Маска для телефона
+        $.fn.setCursorPosition = function (pos) {
+            if ($(this).get(0).setSelectionRange) {
+                $(this).get(0).setSelectionRange(pos, pos);
+            } else if ($(this).get(0).createTextRange) {
+                var range = $(this).get(0).createTextRange();
+                range.collapse(true);
+                range.moveEnd('character', pos);
+                range.moveStart('character', pos);
+                range.select();
+            }
+        };
+        $.mask.definitions['~'] = '[49]';
+        $("input[type='tel']").click(function () {
+            $(this).setCursorPosition(2);
+        }).mask("+7 (~99) 999-99-99", {
+            placeholder: "_"
+        });
+    }
 
 
-  function initClicks() {
-      document.addEventListener("click", (event) => {
-          if (event.target.closest(".burger")) {
-              header.classList.toggle("active");
-              if (header.classList.contains("active")) { 
-                  document.body.style.overflow = "hidden";
-              } else {
+    function initClicks() {
+        document.addEventListener("click", (event) => {
+            if (event.target.closest(".burger")) {
+                header.classList.toggle("active");
+                if (header.classList.contains("active")) {
+                    document.body.style.overflow = "hidden";
+                } else {
+                    document.body.style.overflow = "scroll";
+                }
+            }
+            if (event.target.closest(".header-menu__nav-link")) {
+                header.classList.remove("active");
                 document.body.style.overflow = "scroll";
-              }
-          }
-          if (event.target.closest(".header-menu__nav-link")) { 
-              header.classList.remove("active");
-              document.body.style.overflow = "scroll";
-          }
+            }
 
-      })
-  }
+        })
+    }
 })
 
 
