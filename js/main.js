@@ -10,6 +10,79 @@ window.addEventListener("DOMContentLoaded", () => {
     initFancy();
     initCustomSelect();
     initSwiperModelsName();
+    
+    getDataMark();
+    changeSelectMark();
+
+    initClickColor();
+
+    function initClickColor() { 
+        let colors = document.querySelectorAll(".js_color");
+        let imagesCar = document.querySelectorAll(".js_card__img");
+        let colorText = document.querySelectorAll('.js_color_name');
+
+        colors.forEach((color, colorIndex) => {
+            color.addEventListener("click", (e) => {
+                colors.forEach((el, elIndex) => {
+                    if (color.dataset.model === el.dataset.model) {
+                        el.classList.remove("color-active");
+                        imagesCar.forEach((img, imgIndex) => {
+                            if (color.dataset.model === img.dataset.model) {
+                                img.classList.remove("js-active");
+                            }
+
+                            if (colorIndex === imgIndex) {
+                                color.classList.add("color-active");
+                                img.classList.add("js-active");
+
+                                colorText.forEach(el=> {
+                                    if(el.dataset.model == color.dataset.model) {
+                                        el.textContent = color.dataset.colorname;
+                                    }
+                                });
+                            }
+                        })
+                    }
+                })
+            })
+        })
+    };
+
+    async function getDataMark() {
+        const response = await fetch('https://cc.collector-crm.ru/api/v1/brands')
+        const data = await response.json();
+      
+        addOptionSelect(data);
+      }
+
+      function changeSelectMark() {
+        $("select[name=tradeincarbrand]").change(function () {
+            console.log($(this).val());
+            var mark_id = $(this).val();
+   
+            getDataModels(mark_id);
+        });
+   };
+
+   async function getDataModels(mark_id) {
+    const URL = `https://cc.collector-crm.ru/api/v1/models/${mark_id}`;
+    const response = await fetch(URL);
+    const data = await response.json();
+
+    addOptionSelectModel(data);
+};
+
+function addOptionSelect(data) {
+    data.forEach(el=> {
+    $("select[name=tradeincarbrand]").append(`<option value="${el.id}">${el.name}</option>`)
+})
+};
+
+function addOptionSelectModel(data) {
+data.forEach(el=> {
+    $("select[name=tradeincarmodel]").append(`<option value="${el.id}">${el.name}</option>`)
+});
+};
 
     function initSwiperModelsName() {
         var swiperModelsName = new Swiper(".swiper-models-name", {
@@ -19,57 +92,12 @@ window.addEventListener("DOMContentLoaded", () => {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
-        });
-
-        var modelSlider = new Swiper(".modelSwiper", {
-            effect: "creative",
-            creativeEffect: {
-                prev: {
-                    translate: ["-140%", -100, -800],
-                },
-                next: {
-                    translate: ["140%", -100, -800],
-                },
-            },
-            grabCursor: true,
-            slidesPerView: 1,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
+            breakpoints: {
+                1353: {
+                    slidesPerView: 4,
+                }
             },
         });
-
-        const count = document.querySelectorAll(
-            ".modelSwiper .swiper-pagination span"
-        ).length;
-        // const colorName = document.querySelector(".model__color span");
-        let colorName = document.querySelector('.js_color_name');
-
-        if (colorName) {
-            colorName.innerText = document.querySelector(".color-active").dataset.colorname;
-
-            for (let i = 1; i <= count; i++) {
-                let span = document.querySelector(`span[data-color="${i}"]`);
-
-                span.onclick = () => {
-                    modelSlider.slideTo(i - 1);
-                    document.querySelector(".color-active").classList.remove("color-active");
-                    span.classList.toggle("color-active");
-                    colorName.innerText = span.dataset.colorname;
-                };
-            }
-
-            modelSlider.on("slideChange", function () {
-                const activeColor = document.querySelector(".color-active");
-                const index = modelSlider.activeIndex + 1;
-                activeColor.classList.remove("color-active");
-                document
-                    .querySelector(`span[data-color="${index}"]`)
-                    .classList.add("color-active");
-                colorName.innerText =
-                    document.querySelector(".color-active").dataset.colorname;
-            });
-        }
     };
 
     function initCustomSelect() {

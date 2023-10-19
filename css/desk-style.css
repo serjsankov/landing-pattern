@@ -203,6 +203,11 @@
     width: 100%;
 }
 
+.models__upper {
+    display: flex;
+    justify-content: space-between;
+}
+
 .models__card-container {
     display: flex;
     justify-content: space-between;
@@ -304,10 +309,18 @@
 .models__colors-bg {
     width: 32px;
     height: 32px;
+
+    cursor: pointer;
 }
 
 .models__swiper {
     margin-top: 0;
+
+    width: 630px;
+}
+
+.swiper-models-name  .swiper-button-next {
+    top: 70%;
 }
 
 /*=======================================================*/
@@ -420,6 +433,69 @@
 /*=======================================================*/
 
 
+/*=============== #TRADE ==============*/
+
+.trade {
+    background: url(../img/trade_desk.webp)no-repeat;
+    background-size: cover;
+
+    padding: 31px 0 41px;
+
+    margin-top: 90px;
+}
+
+.trade__title {
+    width: 558px;
+    margin-left: auto;
+    text-align: right;
+}
+
+.trade__container {
+    margin-top: 38px;
+}
+
+.trade__form {
+    width: 500px;
+
+    margin-right: 0;
+}
+
+.trade__form-flex {
+    margin-bottom: 21px;
+}
+
+.trade__form-input {
+    margin-top: 41px;
+
+    height: 53px;
+
+    padding-left: 27px;
+
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.trade .select2-container .select2-selection--single .select2-selection__rendered {
+    font-size: 20px;
+    line-height: 22px;
+
+    padding-left: 27px;
+}
+
+
+.select2-results__option {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+
+.trade .select2-container--default .select2-selection--single {
+    height: 53px;
+}
+
+/*=======================================================*/
+
+
 /*=============== #CONTACTS ==============*/
 
 .contacts {
@@ -497,6 +573,99 @@
 
 .footer__text {
     flex-basis: 40%;
+}
+
+/*=======================================================*/
+
+
+/*=============== #POPUP ==============*/
+
+.popup {
+    width: 600px;
+
+    padding: 34px 44px 33px;
+}
+
+#modalCredit {
+    background: url(../img/modal-credit_desk.webp)no-repeat;
+    background-size: cover;
+}
+
+#modalSpecial {
+    background: url(../img/modal-special_desk.webp)no-repeat;
+    background-size: cover;
+}
+
+.popup__head {
+    font-size: 36px;
+    line-height: 38px;
+}
+
+#modalSpecial .popup__head {
+    font-size: 29px;
+    line-height: 33px;
+}
+
+.popup__list {
+    margin: 24px auto 35px;
+
+    gap: 7px;
+}
+
+#modalSpecial .popup__list {
+    gap: 17px;
+
+    margin: 21px auto 38px;
+}
+
+.popup__list-item.margin_left,
+.popup__list-item.margin_minus {
+    margin: 0;
+}
+
+.popup__list-item {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.popup__form-inputs {
+    gap: 14px;
+}
+
+.popup__input {
+    height: 45px;
+
+    padding-left: 23px;
+
+    font-size: 15px;
+    line-height: 17px;
+}
+
+.popup__btn {
+    height: 56px;
+
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.fancybox__content>.f-button.is-close-btn {
+    top: 10px;
+    right: 10px;
+}
+
+#modalSuc .popup__head,
+#modalSuc2 .popup__head {
+    font-size: 35px;
+    line-height: 42px;
+}
+
+#modalSuc,
+#modalSuc2 {
+    height: 289px;
+}
+
+.popup__cont {
+    padding: 0 61px;
 }
 
 /*=======================================================*/
@@ -696,6 +865,18 @@
 
     .footer__info-toggle {
         margin-top: 20px;
+    }
+
+    .trade__form {
+        width: 395px;
+    }
+
+    .trade__title {
+        width: 414px;
+    }
+
+    .models__swiper {
+        width: 430px;
     }
 }
 

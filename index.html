@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <link rel="stylesheet" href="./css/reset-style.css" />
   <link rel="stylesheet" href="./css/swiper.min.css" />
   <link rel="stylesheet" href="./css/fancybox.min.css" />
@@ -57,7 +60,7 @@
               </li>
             </ul>
           </div>
-          <button class="btn header__menu-btn bg_orange">
+          <button class="btn header__menu-btn bg_orange" data-fancybox data-src="#modalSpecial">
             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
               <path d="M12.6665 1.58333V6.33333H17.4165" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
               <path d="M18.2082 0.791672L12.6665 6.33334" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
@@ -115,7 +118,7 @@
                 <span class="time-count__text">секунд</span>
               </div>
             </div>
-            <button class="btn bg_orange main-banner__btn">Оставить заявку</button>
+            <button class="btn bg_orange main-banner__btn" data-fancybox data-src="#modalSuc2">Оставить заявку</button>
           </div>
         </div>
       </div>
@@ -176,28 +179,17 @@
           <div class="models__card-container">
             <div class="models__card-images">
               <div class="models__card-colors">
-                <span class="models__card-color-name">Выбранный цвет: <b class="js_color_name"> Серый</b></span>
+                <span class="models__card-color-name">Выбранный цвет: <b class="js_color_name" data-model="lada"> Серый</b></span>
                 <div class="models__colors model__color">
-                  <span class="models__colors-bg color-active" style="background-color: red;" data-color="1" data-colorname="red"></span>
-                  <span class="models__colors-bg" style="background-color: black;" data-color="2" data-colorname="Black"></span>
-                  <span class="models__colors-bg" style="background-color: pink;" data-color="3" data-colorname="Pink"></span>
+                  <span class="models__colors-bg js_color color-active" style="background-color: red;" data-color="1" data-colorname="red" data-model="lada"></span>
+                  <span class="models__colors-bg js_color" style="background-color: black;" data-color="2" data-colorname="Black" data-model="lada"></span>
+                  <span class="models__colors-bg js_color" style="background-color: pink;" data-color="3" data-colorname="Pink" data-model="lada"></span>
                 </div>
               </div>
               <div class="models__card-swiper">
-                <div class="swiper modelSwiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="./img/test-model.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./img/test-model.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./img/test-model.png" alt="">
-                    </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                </div>
+                <img class="models__card-img js_card__img js-active" src="./img/test-model.png" alt="" data-model="lada">
+                <img class="models__card-img js_card__img" src="./img/test-model.png" alt="" data-model="lada">
+                <img class="models__card-img js_card__img" src="./img/test-model.png" alt="" data-model="lada">
               </div>
               <div class="models__card-prices desk_hide">
                 <span class="model__price-flex models__price-old">1 885 000 ₽</span>
@@ -237,28 +229,17 @@
           <div class="models__card-container">
             <div class="models__card-images">
               <div class="models__card-colors">
-                <span class="models__card-color-name">Выбранный цвет: <b class="js_color_name"> Серый</b></span>
+                <span class="models__card-color-name">Выбранный цвет: <b class="js_color_name" data-model="granta"> Серый</b></span>
                 <div class="models__colors model__color">
-                  <span class="models__colors-bg color-active" style="background-color: red;" data-color="1" data-colorname="red"></span>
-                  <span class="models__colors-bg" style="background-color: black;" data-color="2" data-colorname="Black"></span>
-                  <span class="models__colors-bg" style="background-color: pink;" data-color="3" data-colorname="Pink"></span>
+                  <span class="models__colors-bg js_color color-active" style="background-color: red;" data-color="1" data-colorname="red" data-model="granta"></span>
+                  <span class="models__colors-bg js_color" style="background-color: black;" data-color="2" data-colorname="Black" data-model="granta"></span>
+                  <span class="models__colors-bg js_color" style="background-color: pink;" data-color="3" data-colorname="Pink" data-model="granta"></span>
                 </div>
               </div>
               <div class="models__card-swiper">
-                <div class="swiper modelSwiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="./img/test-model.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./img/test-model.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./img/test-model.png" alt="">
-                    </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                </div>
+                <img class="models__card-img js_card__img js-active" src="./img/test-model.png" alt="" data-model="granta">
+                <img class="models__card-img js_card__img" src="./img/test-model.png" alt="" data-model="granta">
+                <img class="models__card-img js_card__img" src="./img/test-model.png" alt="" data-model="granta">
               </div>
               <div class="models__card-prices desk_hide">
                 <span class="model__price-flex models__price-old">1 885 000 ₽</span>
@@ -286,7 +267,7 @@
               <div class="models__card-prices mob_hide">
                 <span class="model__price-flex models__price-old">1 885 000 ₽</span>
                 <span class="model__price-flex models__price"><span>Цена от</span> <span class="text_color"> 1 687 000 ₽</span></span>
-                <span class="model__price-flex models__price-month"><span>Платеж от </span>12 000 ₽/мес</span>
+                <span class="model__price-flex models__price-month"><span>Платеж от</span> 12 000 ₽/мес</span>
               </div>
               <button class="btn bg_orange model">Получить предложение</button>
               <button class="btn border model">Купить в кредит</button>
@@ -465,6 +446,85 @@
       </form>
     </div>
   </section>
+  <section class="trade banner" id="trade-in">
+    <div class="container">
+      <h2 class="banner__title trade__title">
+        Trade-in с выгодой 
+        до 300 000 ₽ на <span class="text_color">Lada</span>
+      </h2>
+      <div class="trade__container">
+        <form action="" class="form trade__form">
+              <div class="trade__form-flex">
+                <div class="trade__form-select">
+                  <select name="tradeincarbrand" id="">
+                    <option value="" selected>Марка</option>
+                  </select>
+                </div>
+                <div class="trade__form-select">
+                  <select name="tradeincaryear" id="">
+                    <option value="" selected>Год</option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1992">1992</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                  </select>
+                </div>
+              </div>
+              <div class="trade__form-select">
+                <select name="tradeincarmodel" id="">
+                  <option value="" selected>Модель</option>
+                </select>
+              </div>
+              <input type="tel"
+                placeholder="Введите ваш телефон"
+                required name="phone"
+                class="trade__form-input">
+
+            <button class="btn trade__form-button bg_orange js--send-btn">Отправить заявку</button>
+            <div class="form-checkbox">
+              <label for="checkbox__input-text">
+                <span class="checkbox">
+                  <input class="form__input-check" type="checkbox" checked="" required="">
+                  <span class="custom-checkbox"></span>
+                </span>
+                <span class="checkbox-text">
+                  Вы даете согласие на обработку <a href="/policy" class="checkbox-link">персональных данных</a>
+                </span>
+              </label>
+            </div>
+        </form>
+      </div>
+    </div>
+  </section>
   <section class="contacts">
     <div class="contacts__map">
       <div class="contacts__bg">
@@ -535,6 +595,83 @@
       </div>
     </div>
   </footer>
+  <div class="popup" id="modalCredit">
+    <div class="popup__body">
+      <span class="popup__head"><span class="text_color">Lada</span> в кредит по 
+        условиям 2022 года!
+      </span>
+      <ul class="popup__list">
+        <li class="popup__list-item">Ставка по кредиту <b>от 4,9%</b></li>
+        <li class="popup__list-item">Гарантия <b>5 лет или 150 000км</b></li>
+        <li class="popup__list-item"><b>Оформление </b> по <b>2-м документам</b></li>
+      </ul>
+      <form class="popup__form">
+          <div class="popup__form-inputs">
+            <input type="text" name="name" class="input popup__input" placeholder="Имя">
+            <input type="tel" name="phone" required class="input popup__input" placeholder="+7 (____) ____-__-__">
+          </div>
+          <button class="btn bg_orange popup__btn">Отправить заявку</button>
+          <div class="form-checkbox">
+            <label for="checkbox__input-text">
+              <span class="checkbox">
+                <input class="form__input-check" type="checkbox" checked="" required="">
+                <span class="custom-checkbox"></span>
+              </span>
+              <span class="checkbox-text">
+                Вы даете согласие на обработку <a href="/policy" class="checkbox-link">персональных данных</a>
+              </span>
+            </label>
+          </div>
+      </form>
+    </div>
+  </div>
+  <div class="popup" id="modalSpecial">
+    <div class="popup__body">
+      <span class="popup__head">
+        Оставьте заявку и получите 
+        выгодное предложение от <span class="text_color">Lada</span>
+      </span>
+      <ul class="popup__list">
+        <li class="popup__list-item">Скидки <b>до 400 000 ₽</b> на все модели</li>
+        <li class="popup__list-item margin_left">Бонус за Trade-In <b>до 300 000 ₽</b></li>
+        <li class="popup__list-item margin_minus"><b>КАСКО </b> или <b>3 платежа</b> по кредиту в подарок</li>
+      </ul>
+      <form class="popup__form">
+          <div class="popup__form-inputs">
+            <input type="text" name="name" class="input popup__input" placeholder="Имя">
+            <input type="tel" name="phone" required class="input popup__input" placeholder="+7 (____) ____-__-__">
+          </div>
+          <button class="btn bg_orange popup__btn">Отправить заявку</button>
+          <div class="form-checkbox">
+            <label for="checkbox__input-text">
+              <span class="checkbox">
+                <input class="form__input-check" type="checkbox" checked="" required="">
+                <span class="custom-checkbox"></span>
+              </span>
+              <span class="checkbox-text">
+                Вы даете согласие на обработку <a href="/policy" class="checkbox-link">персональных данных</a>
+              </span>
+            </label>
+          </div>
+      </form>
+    </div>
+  </div>
+  <div class="popup" id="modalSuc">
+    <div class="popup__cont">
+      <span class="popup__head">
+        Ваш запрос отправлен!
+  наш менеджер свяжется 
+  с Вами через <span class="text_color">2-3 минуты</span>
+      </span>
+    </div>
+  </div>
+  <div class="popup" id="modalSuc2">
+    <div class="popup__cont">
+      <span class="popup__head">
+        Вы уже отправляли <span class="text_color">заявку!</span>
+      </span>
+    </div>
+  </div>
   <script src="./libs/jquery.min.js"></script>
   <script src="./libs/swiper-bundle.min.js"></script>
   <script src="./libs/masked-input.min.js"></script>
