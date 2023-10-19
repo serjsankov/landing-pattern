@@ -129,6 +129,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
     function initClicks() {
+        $('.js_footer_info_toggle').on('click', function() {
+            $('.footer__info-toggle').toggle();
+        });
         document.addEventListener("click", (event) => {
             if (event.target.closest(".burger")) {
                 header.classList.toggle("active");

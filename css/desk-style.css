@@ -15,6 +15,38 @@
 }
 
 
+.banner__title {
+    font-size: 49px;
+    line-height: 51px;
+}
+
+.banner__list {
+    gap: 15px;
+
+    margin-top: 23px;
+}
+
+.banner__list-item {
+    font-size: 25px;
+    line-height: 27px;
+}
+
+.banner__inputs {
+    margin-top: 36px;
+
+    gap: 18px;
+}
+
+.input {
+    font-size: 15px;
+    line-height: 17px;
+}
+
+.banner__btn {
+    font-size: 18px;
+    line-height: 20px;
+}
+
 /*=============== #HEADER ==============*/
 
 .header__logo-img {
@@ -287,11 +319,17 @@
     padding-top: 85px;
 }
 
+.equips__container {
+    justify-content: inherit;
+}
+
 .equips__filter {
     margin-top: 78px;
 
     gap: 151px;
     flex-direction: row;
+
+    width: auto;
 }
 
 .equips__select {
@@ -307,9 +345,6 @@
 }
 
 .equips__card svg {
-    bottom: 0;
-    position: absolute;
-
     left: 50%;
     transform: translate3d(-50%, 0, 0);
 }
@@ -358,6 +393,115 @@
 /*=======================================================*/
 
 
+/*=============== #CREDIT ==============*/
+
+.credit {
+    background: url(../img/credit_desk.webp)no-repeat;
+    background-size: cover;
+    padding: 37px 0 28px;
+}
+
+.banner__form {
+    width: 492px;
+}
+
+.banner__input {
+    height: 54px;
+}
+
+.credit__btn {
+    margin-top: 15px;
+}
+
+.credit__title {
+    width: 541px;
+}
+
+/*=======================================================*/
+
+
+/*=============== #CONTACTS ==============*/
+
+.contacts {
+    padding-top: 21px;
+}
+
+.contacts__map {
+    background: url(../img/map_desk.webp)no-repeat;
+    background-size: cover;
+
+    padding: 220px 0 56px;
+}
+
+.contacts__bg {
+    background: none;
+
+    backdrop-filter: none;
+}
+
+.contacts__info {
+    border-radius: 30px;
+    background: rgba(76, 88, 101, 0.67);
+    
+    backdrop-filter: blur(7.5px);
+
+    padding: 30px 24px 21px 26px;
+
+    margin-left: 0;
+
+    width: 560px;
+}
+
+.contacts__info-item {
+    font-size: 18px;
+    line-height: 20px;
+
+    gap: 10px;
+}
+
+.contacts__logo {
+    max-width: none;
+}
+
+
+/*=======================================================*/
+
+
+/*=============== #FOOTER ==============*/
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__links {
+    margin-bottom: 0;
+
+    white-space: nowrap;
+}
+
+.footer__info {
+    margin-top: 0;
+
+    flex-basis: 37%;
+}
+
+.footer {
+    padding: 33px 0 41px;
+}
+
+.footer__btn {
+    margin: 13px 0 27px;
+}
+
+.footer__text {
+    flex-basis: 40%;
+}
+
+/*=======================================================*/
+
+
 
 @media screen and (max-width: 1900px) {
     .main-banner__timer {
@@ -391,6 +535,12 @@
 @media screen and (max-width: 1600px) {
     .main-banner {
         padding: 115px 0 30px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .credit {
+        background-position: center;
     }
 }
 
@@ -460,6 +610,93 @@
     .time-count__item {
         width: 75px;
     }
+
+    .models__card-images {
+        width: 280px;
+    }
+
+    .model__card-item {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .models__card-list {
+        gap: 10px;
+    }
+
+    .models__price .text_color {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .models__price-month,
+    .models__price,
+    .models__price-old {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .btn.model {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .equips__info-item {
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    .equips__img {
+        width: 280px;
+    }
+
+    .models__card-name {
+        font-size: 30px;
+        line-height: 32px;
+
+        margin-bottom: 25px;
+    }
+
+    .equips__price {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .equips__price-old {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .equips__card-btn {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .banner__title {
+        font-size: 35px;
+        line-height: 37px;
+    }
+
+    .credit__title {
+        width: 510px;
+    }
+
+    .banner__list-item {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .banner__form {
+        width: 378px;
+    }
+
+    .footer__container {
+        gap: 20px;
+    }
+
+    .footer__info-toggle {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 1280px) {
@@ -482,5 +719,10 @@
 
     .main-banner__actions {
         width: 333px;
+    }
+
+    .contacts__map {
+        padding: 283px 0 15px;
+        background-position: center;
     }
 }
