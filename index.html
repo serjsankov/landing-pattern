@@ -19,13 +19,289 @@
       href="./css/desk-style.css"
       media="(min-width: 1025px)"
     />
-    <title>Landing page</title>
+    <title>JETTA</title>
 </head>
 <body>
+  <header class="header">
+    <div class="container">
+      <div class="header__container">
+        <div class="header__logo">
+          <img src="./img/logo.svg" alt="logo" class="header__logo-img">
+        </div>
+        <a href="tel:+7 (495) 111 11-11" class="header__number-mob">
+          <img src="./img/phone-mob.svg" alt="call">
+          <span>+7 (495) 111 11-11</span>
+        </a>
+        <div class="burger">
+          <span class="burger__line line_1"></span>
+          <span class="burger__line line_2"></span>
+          <span class="burger__line line_3"></span>
+        </div>
+        <div class="header__menu">
+          <nav class="header__nav">
+            <a href="#model" class="header__nav-link">Модельный ряд</a>
+            <a href="#equip" class="header__nav-link">Комплектации</a>
+            <a href="#autocredit" class="header__nav-link">Автокредит</a>
+            <a href="#trade-in" class="header__nav-link">Trade-In</a>
+            <a href="#contact" class="header__nav-link">Контакты</a>
+          </nav>
+          <div class="header__menu-info">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="tel:+7 (495) 111 11-11">
+                  <svg class="header__menu-svg desk_hide" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <g clip-path="url(#clip0_231_1219)">
+                    <path d="M8.77917 2.91671C9.34893 3.02787 9.87256 3.30652 10.283 3.717C10.6935 4.12748 10.9722 4.65111 11.0833 5.22087M8.77917 0.583374C9.96291 0.714878 11.0668 1.24498 11.9095 2.08663C12.7522 2.92828 13.2837 4.03146 13.4167 5.21504M12.8333 9.87004V11.62C12.834 11.7825 12.8007 11.9433 12.7356 12.0922C12.6705 12.241 12.5751 12.3746 12.4554 12.4845C12.3357 12.5943 12.1943 12.6779 12.0404 12.73C11.8865 12.782 11.7235 12.8013 11.5617 12.7867C9.76665 12.5917 8.04242 11.9783 6.5275 10.9959C5.11807 10.1003 3.92311 8.90531 3.0275 7.49587C2.04166 5.97408 1.42814 4.24145 1.23667 2.43837C1.22209 2.27706 1.24126 2.11448 1.29296 1.96099C1.34466 1.80749 1.42775 1.66644 1.53695 1.54682C1.64615 1.4272 1.77905 1.33162 1.92721 1.26618C2.07537 1.20074 2.23553 1.16686 2.3975 1.16671H4.1475C4.4306 1.16392 4.70505 1.26417 4.9197 1.44877C5.13434 1.63337 5.27455 1.88972 5.31417 2.17004C5.38803 2.73008 5.52501 3.27996 5.7225 3.80921C5.80099 4.018 5.81797 4.24491 5.77145 4.46305C5.72492 4.6812 5.61684 4.88144 5.46 5.04004L4.71917 5.78087C5.54958 7.24128 6.75877 8.45047 8.21917 9.28087L8.96 8.54004C9.1186 8.3832 9.31884 8.27512 9.53699 8.22859C9.75513 8.18207 9.98205 8.19906 10.1908 8.27754C10.7201 8.47503 11.27 8.61201 11.83 8.68587C12.1134 8.72585 12.3722 8.86858 12.5571 9.08691C12.7421 9.30525 12.8404 9.58396 12.8333 9.87004Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_231_1219">
+                    <rect width="14" height="14" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                    <svg class="header__menu-svg mob_hide" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <g clip-path="url(#clip0_194_135)">
+                        <path d="M8.77917 2.91671C9.34893 3.02787 9.87256 3.30652 10.283 3.717C10.6935 4.12748 10.9722 4.65111 11.0833 5.22087M8.77917 0.583374C9.96291 0.714878 11.0668 1.24498 11.9095 2.08663C12.7522 2.92828 13.2837 4.03146 13.4167 5.21504M12.8333 9.87004V11.62C12.834 11.7825 12.8007 11.9433 12.7356 12.0922C12.6705 12.241 12.5751 12.3746 12.4554 12.4845C12.3357 12.5943 12.1943 12.6779 12.0404 12.73C11.8865 12.782 11.7235 12.8013 11.5617 12.7867C9.76665 12.5917 8.04242 11.9783 6.5275 10.9959C5.11807 10.1003 3.92311 8.90531 3.0275 7.49587C2.04166 5.97408 1.42814 4.24145 1.23667 2.43837C1.22209 2.27706 1.24126 2.11448 1.29296 1.96099C1.34466 1.80749 1.42775 1.66644 1.53695 1.54682C1.64615 1.4272 1.77905 1.33162 1.92721 1.26618C2.07537 1.20074 2.23553 1.16686 2.3975 1.16671H4.1475C4.4306 1.16392 4.70505 1.26417 4.9197 1.44877C5.13434 1.63337 5.27455 1.88972 5.31417 2.17004C5.38803 2.73008 5.52501 3.27996 5.7225 3.80921C5.80099 4.018 5.81797 4.24491 5.77145 4.46305C5.72492 4.6812 5.61684 4.88144 5.46 5.04004L4.71917 5.78087C5.54958 7.24128 6.75877 8.45047 8.21917 9.28087L8.96 8.54004C9.1186 8.3832 9.31884 8.27512 9.53699 8.22859C9.75513 8.18207 9.98205 8.19906 10.1908 8.27754C10.7201 8.47503 11.27 8.61201 11.83 8.68587C12.1134 8.72585 12.3722 8.86858 12.5571 9.08691C12.7421 9.30525 12.8404 9.58396 12.8333 9.87004Z" stroke="#0056B7" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_194_135">
+                          <rect width="14" height="14" fill="white"/>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  <span>+7 (495) 111 11-11</span>
+                </a>
+              </li>
+              <li class="header__menu-item flex_end">
+                <svg class="header__menu-svg desk_hide" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <path d="M12.25 5.83337C12.25 9.91671 7 13.4167 7 13.4167C7 13.4167 1.75 9.91671 1.75 5.83337C1.75 4.44099 2.30312 3.10563 3.28769 2.12106C4.27226 1.1365 5.60761 0.583374 7 0.583374C8.39239 0.583374 9.72774 1.1365 10.7123 2.12106C11.6969 3.10563 12.25 4.44099 12.25 5.83337Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7 7.58337C7.9665 7.58337 8.75 6.79987 8.75 5.83337C8.75 4.86688 7.9665 4.08337 7 4.08337C6.0335 4.08337 5.25 4.86688 5.25 5.83337C5.25 6.79987 6.0335 7.58337 7 7.58337Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <svg class="header__menu-svg mob_hide" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                  <path d="M11.375 5.41663C11.375 9.20829 6.5 12.4583 6.5 12.4583C6.5 12.4583 1.625 9.20829 1.625 5.41663C1.625 4.1237 2.13861 2.88372 3.05285 1.96948C3.96709 1.05524 5.20707 0.541626 6.5 0.541626C7.79293 0.541626 9.03291 1.05524 9.94715 1.96948C10.8614 2.88372 11.375 4.1237 11.375 5.41663Z" stroke="#0056B7" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.5 7.04163C7.39746 7.04163 8.125 6.31409 8.125 5.41663C8.125 4.51916 7.39746 3.79163 6.5 3.79163C5.60254 3.79163 4.875 4.51916 4.875 5.41663C4.875 6.31409 5.60254 7.04163 6.5 7.04163Z" stroke="#0056B7" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>33 км мкад 6 стр 6</span>
+              </li>
+              <li class="header__menu-item basis_100 center desk_hide">
+                <span>Ежедневно с 08.00 до 21.00</span>
+              </li>
+            </ul>
+          </div>
+          <div class="header__menu-cont">
+            <button class="btn header__menu-btn" data-fancybox data-src="#modalSpecial">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path d="M14.6666 1.83337V7.33337H20.1666" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21.0833 0.916626L14.6666 7.33329" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20.1667 15.51V18.26C20.1677 18.5153 20.1154 18.768 20.0132 19.0019C19.9109 19.2358 19.7609 19.4458 19.5728 19.6184C19.3846 19.791 19.1625 19.9224 18.9207 20.0042C18.6789 20.0859 18.4226 20.1163 18.1684 20.0933C15.3476 19.7868 12.6381 18.823 10.2575 17.2792C8.0427 15.8718 6.16491 13.994 4.75752 11.7792C3.20833 9.38778 2.24424 6.66509 1.94335 3.83167C1.92045 3.57819 1.95057 3.3227 2.03181 3.0815C2.11305 2.84029 2.24363 2.61864 2.41522 2.43066C2.58682 2.24268 2.79567 2.09249 3.0285 1.98965C3.26132 1.88681 3.513 1.83358 3.76752 1.83334H6.51752C6.96238 1.82896 7.39366 1.9865 7.73097 2.27658C8.06827 2.56666 8.28859 2.9695 8.35085 3.41001C8.46692 4.29007 8.68218 5.15417 8.99252 5.98584C9.11585 6.31394 9.14254 6.67051 9.06943 7.01331C8.99633 7.35612 8.82648 7.67078 8.58002 7.92001L7.41585 9.08417C8.72078 11.3791 10.6209 13.2792 12.9159 14.5842L14.08 13.42C14.3293 13.1736 14.6439 13.0037 14.9867 12.9306C15.3295 12.8575 15.6861 12.8842 16.0142 13.0075C16.8459 13.3178 17.71 13.5331 18.59 13.6492C19.0353 13.712 19.442 13.9363 19.7327 14.2794C20.0234 14.6225 20.1778 15.0605 20.1667 15.51Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Заказать звонок</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__line"></div>
+  </header>
+  <section class="main-banner">
+    <div class="container">
+      <div class="main-banner__container">
+        <div class="main-banner__texts">\
+          <h1 class="main-banner__title">Специальное 
+            предложение на <span class="big_text">Jetta</span>
+          </h1>
+          <div class="main-banner__actions">
+            <span>выгода <b>до 400 000₽</b></span>
+            <span>на первые <b>10 авто</b></span>
+          </div>
+        </div>
+        <div class="main-banner__texts">
+          <ul class="main-banner__list">
+            <li class="main-banner__list-item">
+              <span><b>3 платежа</b>  по кредиту в подарок</span>
+            </li>
+            <li class="main-banner__list-item">
+              <span>Гарантия <b> 5 лет или 150 000 км</b></span>
+            </li>
+            <li class="main-banner__list-item">
+              <span>Бонус за Trade-In <b>до 300 000 ₽</b></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="actions">
+    <div class="container">
+      <div class="actions__container">
+        <span class="actions__text">
+          до повышения 
+          цен осталось:
+        </span>
+        <div class="timer">
+          <div class="time-count__item time-count__days">
+            <div class="time-count__val">00</div>
+            <span class="time-count__text">дней</span>
+          </div>
+          <span class="time-coun__separation">:</span>
+          <div class="time-count__item time-count__hours">
+            <div class="time-count__val">00</div>
+            <span class="time-count__text">часов</span>
+          </div>
+          <span class="time-coun__separation">:</span>
+          <div class="time-count__item time-count__minutes">
+            <div class="time-count__val">00</div>
+            <span class="time-count__text">минут</span>
+          </div>
+          <span class="time-coun__separation">:</span>
+          <div class="time-count__item time-count__seconds">
+            <div class="time-count__val">00</div>
+            <span class="time-count__text">секунд</span>
+          </div>
+        </div>
+        <button class="btn actions__btn bg_blue">Зафиксировать скидку</button>
+      </div>
+    </div>
+  </section>
+  <section class="models section">
+      <div class="container">
+        <div class="section__upper">
+          <h2 class="section__title">Модельный ряд</h2>
+        </div>
+      </div>
+      <div class="models__container">
+        <div class="models-card">
+          <div class="container">
+            <div class="models-card__cont">
+              <div class="models-card__texts">
+                <span class="models-card__name">jetta VAЗ</span>
+                <div class="models-card__prices">
+                  <span class="models-card__price">Цена от 1 095 200₽</span>
+                  <span class="models-card__old-price">от 2 095 200₽</span>
+                </div>
+              </div>
+              <div class="models-card__img">
+                <span class="models-card__img-name">VAЗ</span>
+                <img src="./img/test-model.png" alt="">
+              </div>
+              <div class="models-card__images">
+                <div class="swiper swiper-images">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="./img/test-prev.png" class="models-card__images-link">
+                        <img class="models-card__images-img" src="./img/test-prev.png" alt="">
+                      </a>
+                      </div>
+                    <div class="swiper-slide">
+                      <a href="./img/test-prev.png" class="models-card__images-link">
+                        <img class="models-card__images-img" src="./img/test-prev.png" alt="">
+                      </a>
+                      </div>
+                    <div class="swiper-slide">
+                      <a href="./img/test-prev.png" class="models-card__images-link">
+                        <img class="models-card__images-img" src="./img/test-prev.png" alt="">
+                      </a>
+                      </div>
+                    <div class="swiper-slide">
+                      <a href="./img/test-prev.png" class="models-card__images-link">
+                        <img class="models-card__images-img" src="./img/test-prev.png" alt="">
+                      </a>
+                      </div>
+                    <div class="swiper-slide">
+                      <a href="./img/test-prev.png" class="models-card__images-link">
+                        <img class="models-card__images-img" src="./img/test-prev.png" alt="">
+                      </a>
+                      </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+              <ul class="models-card__actions">
+                <li class="models-card__actions-item">
+                  <img src="./img/actions-ok.svg" alt="icon">
+                  <span>Ставка от 4,9%</span>
+                </li>
+                <li class="models-card__actions-item">
+                  <img src="./img/actions-ok.svg" alt="icon">
+                  <span>Рассрочка 0%</span>
+                </li>
+                <li class="models-card__actions-item">
+                  <img src="./img/actions-ok.svg" alt="icon">
+                  <span>Без первого взноса</span>
+                </li>
+                <li class="models-card__actions-item">
+                  <img src="./img/actions-ok.svg" alt="icon">
+                  <span>Подарки от дилера</span>
+                </li>
+                <li class="models-card__actions-item">
+                  <img src="./img/actions-ok.svg" alt="icon">
+                  <span>Trade-In -300 000 ₽</span>
+                </li>
+                <li class="models-card__actions-item">
+                  <img src="./img/actions-ok.svg" alt="icon">
+                  <span>Гарантия 5 лет</span>
+                </li>
+              </ul>
+              <div class="models-card__flex">
+                <div class="models-card__colors-info">
+                  <span class="models-card__color-name">Выбранный цвет: <b> бежевый</b></span>
+                  <div class="models-card__colors">
+                    <span class="models-card__color color-active" style="background: red;"></span>
+                    <span class="models-card__color" style="background: red;"></span>
+                    <span class="models-card__color" style="background: red;"></span>
+                    <span class="models-card__color" style="background: red;"></span>
+                    <span class="models-card__color" style="background: red;"></span>
+                  </div>
+                </div>
+                <div class="models-card__credit">
+                  <span>Платеж в кредит от</span>
+                  <b>10 000Р/мес.</b>
+                </div>
+              </div>
+              <div class="models-card__btns">
+                <button class="models-card__button btn bg_blue">Получить предложени</button>
+                <button class="models-card__button btn border">Рассчитать кредит</button>
+              </div>
+            </div>
+          </div>
+          <div class="models-card__line"></div>
+        </div>
+      </div>
+  </section>
+  <!-- <footer class="footer">
+    <div class="container">
+      <div class="footer__container">
+        <div class="footer__links">
+          <a href="" class="footer__text bold">Условия кредитования</a>
+          <a href="" class="footer__text bold">Пользовательское соглашение</a>
+          <a href="" class="footer__text bold">Политика конфиденциальности</a>
+        </div>
+        <p class="footer__text bold basis">
+          ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "МК СМАРТИНВЕСТ"
+ИНН 9725002820, ОГРН 1197746118206 от 18 февраля 2019 г., Юр. Адрес: 115114, город Москва, Дербеневская наб, д. 7 стр. 2, этаж 3 офис 52
+Обращаем ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положением ч. 2 ст. 437 Гражданского кодекса Российской Федерации.
+        </p>
+        <div class="footer__info">
+          <p class="footer__text">
+            Обращаем ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положением ч. 2 ст. 437 Гражданского кодекса Российской Федерации.
+          </p>
+          <button class="footer__btn js_footer_info_toggle">Подробнее</button>
+        </div>
+      </div>
+      <div class="footer__info-toggle">
+        <p class="footer__text">
+          Обращаем ваше внимание на то, что данный Интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса Российской Федерации. Для получения подробной информации о стоимости автомобилей обращайтесь к менеджерам по продажам. Любая информация, содержащаяся на настоящем сайте, носит исключительно справочный характер и ни при каких обстоятельствах не может быть расценена как предложение заключить договор (публичная оферта). Дилер не дает гарантий по поводу своевременности, точности и полноты информации на веб-сайте, а также по поводу беспрепятственного доступа к нему в любое время. Технические характеристики и оборудование автомобилей, условия приобретения автомобилей, цены, спецпредложения и комплектации автомобилей, указанные на сайте, приведены для примера и могут быть изменены в любое время без предварительного уведомления. Для получения подробной информации об актуальных ценах на продукцию и наличии автомобилей обращайтесь в дилерский центр. Приобретение любой продукции бренда осуществляется в соответствии с условиями индивидуального договора купли-продажи. Представленное изображение автомобиля может отличаться от реализуемого. Не является публичной офертой. ПТС - Паспорт транспортного средства. На данном сайте используются зарегистрированные товарные знаки, перечисленные в разделе Правовая информация. Указана цена на автомобиль в начальной комплектации на автомобили 2022 модельного года. Для заказов с подтвержденной производственной к.н. 50/2021. Количество автомобилей ограничено. Размер платежа в день означает величину затрат заемщика, эквивалентную ежемесячному платежу при условии 30 (тридцати) календарных дней в месяце, взявшего кредит по программе кредитования ВТБ, Сетелем, Русфинанс Банк, Банк Союз, Экспобанк, Совкомбанк, Альфа Банк, Тинькофф, Плюсбанк, Банк Оранжевый, Росбанк, Ситибанк, (далее – «Банк») на покупку нового автомобиля с расчетной розничной ценой в начально комплектации, на срок 60 мес., с первоначальным взносом 57,92% от стоимости автомобиля, остаточным платежом (далее ОП) 20% от стоимости автомобиля и процентной ставкой 14,5%. Данная информация не является офертой Банка, расчет является приблизительным. Полная стоимость кредита и конкретные параметры кредита будут рассчитаны на основании Анкеты клиента, направляемой в Банк для одобрения кредитной заявки. Основные условия кредитования ВТБ, Сетелем, Русфинанс Банк, Банк Союз, Экспобанк, Совкомбанк, Альфа Банк, Тинькофф, Плюсбанк, Банк Оранжевый, Росбанк, Ситибанк, (далее Банк) на покупку нового автомобиля по продукту «Кредит с остаточным платежом на приобретение нового автомобиля» валюта кредита – рубли РФ; сумма кредита от 120 тыс. до 5.8 млн. ₽ Процентная ставка (в % годовых) при сроке от 12 до 60 мес. – 14,5% при первоначальном взносе (далее ПВ) от 15% (включительно). При ПВ менее 20% необходимо предоставление полного пакета документов. Минимальный размер остаточного платежа (далее ОП) в % от стоимости автомобиля – 20%; максимальный размер ОП при сроке при сроке кредита 12 мес. – 60%, при сроках от 13 до 24 мес. – 50%, при сроках от 25 до 36 мес. – 45%, при сроках от 37 до 48 мес. – 30%, при сроках от 49 до 60 мес. – 20%. Обеспечение по кредиту – залог приобретаемого автомобиля. Условия кредита действительны до 01.06.2022 и могут быть изменены Банком. Лицензия ЦБ РФ № 3500, г. Москва.
+        </p>
+      </div>
+    </div>
+  </footer> -->
     <script src="./libs/jquery.min.js"></script>
+    <script src="./libs/swiper-bundle.min.js"></script>
     <script src="./libs/masked-input.min.js"></script>
     <script src="./libs/fancybox.min.js"></script>
     <script src="./libs/select2.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/timer.js"></script>
 </body>
 </html>

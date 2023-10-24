@@ -1,0 +1,442 @@
+.container {
+    max-width: 1280px;
+
+    padding: 0;
+
+    margin: 0 auto;
+}
+
+.section__title {
+    font-size: 39px;
+    line-height: 41px;
+}
+
+.section__title::after {
+    height: 5px;
+}
+
+
+/*=============== #HEADER ==============*/
+
+.header {
+    border: none;
+}
+
+.header__container {
+    padding: 20px 0;
+}
+
+.header__logo-img {
+    max-width: 113px;
+}
+
+.header__line {
+    height: 1px;
+    width: 83%;
+
+    background: var(--color-white);
+
+    margin-left: auto;
+}
+
+.header__number-mob {
+    display: none;
+}
+
+.burger {
+    display: none;
+}
+
+.header__menu {
+    position: inherit;
+
+    background: none;
+
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 88%;
+}
+
+.header__nav {
+    flex-direction: row;
+    gap: inherit;
+    justify-content: space-between;
+
+    padding: 0;
+
+    flex-basis: 50%;
+}
+
+.header__menu-cont {
+    padding: 0;
+
+    flex-basis: 22%;
+}
+
+.header__menu-item.desk_hide {
+    display: none;
+}
+
+.header__menu-list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.header__menu-svg.desk_hide {
+    display: none;
+}
+
+.header__menu-svg.mob_hide {
+    display: block;
+}
+
+.header__menu-btn svg {
+    display: block;
+}
+
+.header__menu-item,
+.header__menu-link {
+    text-decoration: none;
+}
+
+
+/*=======================================================*/
+
+
+/*=============== #MAIN-BANNER ==============*/
+
+.main-banner {
+    background: url(../img/main-banner_desk.webp)no-repeat;
+    background-size: cover;
+
+    aspect-ratio: 1920/731;
+
+    padding: 177px 0 43px;
+}
+
+.main-banner__title {
+    font-size: 49px;
+    line-height: 51px;
+}
+
+.main-banner__title .big_text {
+    font-size: 145px;
+    line-height: 147px;
+}
+
+.main-banner__actions {
+    margin-top: 32px;
+}
+
+.main-banner__actions span {
+    font-size: 40px;
+    line-height: 42px;
+
+    color: var(--color-gray);
+}
+
+.main-banner__list {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-banner__list-item {
+    border: none;
+
+    padding: 0;
+
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.header__menu-info {
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav-link:hover {
+    font-weight: 700;
+}
+
+/*=======================================================*/
+
+
+/*=============== #ACTIONS ==============*/
+
+.actions {
+    padding: 42px 0;
+}
+
+.actions__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions__btn {
+    margin: 0;
+}
+
+.time-count__val {
+    font-size: 59px;
+    line-height: 61px;
+}
+
+.time-count__text {
+    font-size: 17px;
+    line-height: 19px;
+}
+
+.time-coun__separation {
+    font-size: 59px;
+    line-height: 61px;
+}
+
+.time-count__item {
+    width: 65px;
+}
+
+.timer {
+    margin: 0;
+}
+
+.actions__btn {
+    font-size: 18px;
+    line-height: 20px;
+
+    flex-basis: 29%;
+}
+
+.actions__text {
+    font-size: 27px;
+    line-height: 29px;
+    flex-basis: 23%;
+    text-align: left;
+}
+
+/*=======================================================*/
+
+
+/*=============== #MODELS ==============*/
+
+.models {
+    padding-top: 72px;
+}
+
+.models__container {
+    margin-top: 43px;
+}
+
+.models-card {
+    width: 100%;
+}
+
+.models-card__images {
+    width: 135px;
+    height: 436px;
+
+    margin-top: -50px;
+}
+
+.models-card__cont {
+    display: grid;
+    grid-template-areas: 
+    "texts img images"
+    "texts img images"
+    "btns info images"
+  ;
+
+  position: relative;
+}
+
+.models-card__texts {
+    grid-area: texts;
+}
+.models-card__img {
+    grid-area: img;
+}
+.models-card__images {
+    grid-area: images;
+}
+.models-card__flex {
+    grid-area: info;
+}
+.models-card__btns {
+    grid-area: btns;
+}
+
+.swiper-images::before,
+.swiper-images::after {
+    display: none;
+}
+
+.swiper-images {
+    height: 100%;
+}
+
+.swiper-images .swiper-wrapper {
+    flex-direction: column;
+}
+
+.models-card__img img {
+    max-width: 670px;
+}
+
+.models-card__img-name {
+    position: absolute;
+}
+
+.models-card__name {
+    font-size: 60px;
+    line-height: 62px;
+}
+
+.models-card__price {
+    font-size: 26px;
+    line-height: 28px;
+}
+
+.models-card__old-price {
+    margin-top: 5px;
+}
+
+.models-card__flex {
+    margin-top: 0;
+}
+
+.models-card__color-name {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.models-card__credit {
+    font-size: 24px;
+    line-height: 26px;
+}
+
+.models-card__credit b {
+    font-size: 41px;
+    line-height: 46px;
+}
+
+.models-card__btns {
+    margin-top: 0;
+}
+
+.models-card__color {
+    width: 40px;
+    height: 40px;
+}
+
+
+.models-card__colors {
+    gap: 16px;
+
+    margin-top: 13px;
+}
+
+.models-card__actions {
+    width: 776px;
+
+    border-radius: 10px;
+
+    padding: 16px 15px 22px;
+
+    z-index: -1;
+
+    bottom: 175px;
+}
+
+.models-card__actions-item {
+    font-size: 17px;
+    line-height: 19px;
+
+    gap: 7px;
+}
+
+.models-card__flex {
+    padding: 0 60px 0 86px;
+
+    align-items: flex-end;
+}
+
+.models-card__btns {
+    margin-top: -50px;
+}
+
+/*=======================================================*/
+
+
+@media screen and (max-width: 1660px) {
+    .main-banner {
+        padding: 100px 0 30px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .main-banner__title {
+        font-size: 35px;
+        line-height: 37px;
+    }
+    .main-banner__title .big_text {
+        font-size: 110px;
+        line-height: 112px;
+    }
+    .main-banner__actions span {
+        font-size: 26px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    .container {
+        max-width: 990px;
+    }
+
+    .header__container {
+        padding: 10px 0;
+    }
+
+    .main-banner__list-item {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .header__line {
+        width: 86%;
+    }
+
+    .actions__text {
+        font-size: 21px;
+        line-height: 23px;
+    }
+
+    .time-count__val,
+    .time-coun__separation {
+        font-size: 45px;
+        line-height: 47px;
+    }
+
+    .time-count__text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .time-count__item {
+        width: 59px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .main-banner__title .big_text {
+        font-size: 85px;
+        line-height: 87px;
+    }
+
+    .main-banner__title {
+        font-size: 28px;
+        line-height: 30px;
+    }
+}

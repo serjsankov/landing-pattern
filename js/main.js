@@ -9,6 +9,26 @@ window.addEventListener("DOMContentLoaded", () => {
   // initScroolMagic();
   initFancy();
   initCustomSelect();
+  initSwiperImages();
+
+  function initSwiperImages () {
+    var swiperImages = new Swiper(".swiper-images", {
+        slidesPerView: 3,
+        spaceBetween: 8,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            1024: {
+                direction: "vertical",
+                slidesPerView: 5,
+                freeMode: true,
+                spaceBetween: 9,
+            },
+        },
+    });
+  };
 
   function initCustomSelect () {
     $('select').select2({
