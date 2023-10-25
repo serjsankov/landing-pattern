@@ -217,32 +217,34 @@
                   <div class="swiper-button-prev"></div>
                 </div>
               </div>
-              <ul class="models-card__actions">
-                <li class="models-card__actions-item">
-                  <img src="./img/actions-ok.svg" alt="icon">
-                  <span>Ставка от 4,9%</span>
-                </li>
-                <li class="models-card__actions-item">
-                  <img src="./img/actions-ok.svg" alt="icon">
-                  <span>Рассрочка 0%</span>
-                </li>
-                <li class="models-card__actions-item">
-                  <img src="./img/actions-ok.svg" alt="icon">
-                  <span>Без первого взноса</span>
-                </li>
-                <li class="models-card__actions-item">
-                  <img src="./img/actions-ok.svg" alt="icon">
-                  <span>Подарки от дилера</span>
-                </li>
-                <li class="models-card__actions-item">
-                  <img src="./img/actions-ok.svg" alt="icon">
-                  <span>Trade-In -300 000 ₽</span>
-                </li>
-                <li class="models-card__actions-item">
-                  <img src="./img/actions-ok.svg" alt="icon">
-                  <span>Гарантия 5 лет</span>
-                </li>
-              </ul>
+              <div class="models-card__actions">
+                <ul class="models-card__actions-list">
+                  <li class="models-card__actions-item">
+                    <img src="./img/actions-ok.svg" alt="icon">
+                    <span>Ставка от 4,9%</span>
+                  </li>
+                  <li class="models-card__actions-item">
+                    <img src="./img/actions-ok.svg" alt="icon">
+                    <span>Рассрочка 0%</span>
+                  </li>
+                  <li class="models-card__actions-item">
+                    <img src="./img/actions-ok.svg" alt="icon">
+                    <span>Без первого взноса</span>
+                  </li>
+                  <li class="models-card__actions-item">
+                    <img src="./img/actions-ok.svg" alt="icon">
+                    <span>Подарки от дилера</span>
+                  </li>
+                  <li class="models-card__actions-item">
+                    <img src="./img/actions-ok.svg" alt="icon">
+                    <span>Trade-In -300 000 ₽</span>
+                  </li>
+                  <li class="models-card__actions-item">
+                    <img src="./img/actions-ok.svg" alt="icon">
+                    <span>Гарантия 5 лет</span>
+                  </li>
+                </ul>
+              </div>
               <div class="models-card__flex">
                 <div class="models-card__colors-info">
                   <span class="models-card__color-name">Выбранный цвет: <b> бежевый</b></span>
@@ -268,6 +270,78 @@
           <div class="models-card__line"></div>
         </div>
       </div>
+  </section>
+  <section class="equips section">
+    <div class="container">
+      <div class="section__upper">
+        <h2 class="section__title">Комплектации</h2>
+      </div>
+      <div class="equips__filter">
+        <div class="">
+          <div class="equips__select">
+            <select name="" id="">
+              <option value="">Модель</option>
+              <!-- {% for model in models %}
+               <option value="{{model.id}}">{{model.title | replace({'New': ""})}}</option>
+            {% endfor %} -->
+            </select>
+          </div>
+        </div>
+        <div class="">
+          <div class="equips__select">
+            <select class="js--equipment" name="param1">
+              <option value="">Комплектация</option>
+               <!-- {% for equipment in equipments %}
+                <option value="{{ equipment.id }}" data-model="{{ equipment.model.id }}">{{ equipment.title }}</option>
+                {% endfor %} -->
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="equips__container">
+      <div class="equips-card">
+        <div class="equips-card__engine">
+          <div class="container">
+            <span class="equips-card__engine-name">1.5 АМТ Exellent</span>
+          </div>
+        </div>
+        <div class="container">
+          <div class="equips-card__cont">
+            <div class="equips-card__text">
+              <span class="equips-card__name desk_hide">jetta VAЗ</span>
+              <span class="equips-card__name mob_hide">1.5 АМТ Exellent</span>
+            </div>
+            <div class="equips-card__img">
+              <img src="./img/test-equips.png" alt="">
+            </div>
+            <ul class="equips-card__list">
+              <li class="equips-card__list-item">
+                <img src="./img/kpp.svg" alt="icon">
+                <span>АКПП 6</span>
+              </li>
+              <li class="equips-card__list-item">
+                <img src="./img/priv.svg" alt="icon">
+                <span>Полный (4WD)</span>
+              </li>
+              <li class="equips-card__list-item">
+                <img src="./img/power.svg" alt="icon">
+                <span>190 л.с.</span>
+              </li>
+            </ul>
+            <div class="equips-card__prices">
+              <span class="equips-card__price">от 1 950 000 ₽</span>
+              <span class="equips-card__price-old"> от 2 095 200₽</span>
+              <span class="equips-card__price-month">от 12 000 ₽/мес</span>
+            </div>
+            <div class="equips-card__btns">
+              <button class="btn border equips-card-button">Рассчитать кредит</button>
+              <button class="btn bg_blue equips-card-button">Получить выгоду</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <!-- <footer class="footer">
     <div class="container">

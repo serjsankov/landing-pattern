@@ -302,9 +302,6 @@
     margin-top: 5px;
 }
 
-.models-card__flex {
-    margin-top: 0;
-}
 
 .models-card__color-name {
     font-size: 14px;
@@ -346,7 +343,11 @@
 
     z-index: -1;
 
-    bottom: 175px;
+    bottom: 140px;
+}
+
+.models-card__actions-list {
+    width: 54%;
 }
 
 .models-card__actions-item {
@@ -357,13 +358,135 @@
 }
 
 .models-card__flex {
-    padding: 0 60px 0 86px;
+    width: 80%;
+
+    margin: 0 auto;
 
     align-items: flex-end;
 }
 
-.models-card__btns {
-    margin-top: -50px;
+.models-card__img {
+    margin-bottom: -50px;
+    margin-left: 50px;
+}
+
+
+/*=======================================================*/
+
+
+/*=============== #EQUIPS ==============*/
+
+.equips {
+    padding-top: 54px;
+}
+
+.equips-card {
+    width: 100%;
+}
+
+.equips__filter {
+    margin-top: 54px;
+
+    width: 100%;
+
+    flex-direction: row;
+    gap: 151px;
+}
+
+.equips__select {
+    width: 370px;
+}
+
+.equips__container {
+    margin-top: 52px;
+}
+
+.equips-card__engine {
+    display: none;
+}
+
+.equips-card__img {
+    display: none;
+}
+
+.equips-card__name.desk_hide {
+    display: none;
+}
+
+.equips-card__name.mob_hide {
+    display: block;
+}
+
+.equips-card__name {
+    font-size: 20px;
+    line-height: 22px;
+    color: var(--color-gray);
+    text-transform: lowercase;
+}
+
+.equips-card__cont {
+    padding-top: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.equips-card__btns {
+    margin-top: 0;
+
+    flex-direction: row;
+
+    flex-basis: 39%;
+}
+
+.equips-card__prices {
+    margin-top: 0;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.equips-card__price-month {
+    font-size: 15px;
+    line-height: 17px;
+
+    margin-top: 0;
+
+    order: 1;
+
+    margin-bottom: 6px;
+}
+
+.equips-card__price-old {
+    font-size: 12px;
+    line-height: 14px;
+
+    order: 3;
+}
+
+.equips-card__price {
+    font-size: 20px;
+    line-height: 22px;
+
+    order: 2;
+}
+
+.equips-card-button {
+    flex-basis: 50%;
+}
+
+.equips-card__list-item {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.equips-card__list-item img {
+    display: none;
+}
+
+.equips-card__list {
+    flex-basis: 23%;
 }
 
 /*=======================================================*/
@@ -426,6 +549,80 @@
 
     .time-count__item {
         width: 59px;
+    }
+
+    .models-card__credit b {
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+    .models-card__credit {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .models-card__color {
+        width: 30px;
+        height: 30px;
+    }
+
+    .models-card__colors {
+        gap: 9px;
+        margin-top: 10px;
+    }
+
+    .models-card__actions-list {
+        width: 100%;
+    }
+
+    .models-card__actions {
+        width: 480px;
+
+        bottom: 125px;
+    }
+
+    .models-card__images {
+        width: 110px;
+    }
+
+    .models-card__img {
+        margin-left: 95px;
+        margin-bottom: 0;
+    }
+
+    .models-card__actions-item {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .models-card__images {
+        height: 370px;
+    }
+
+    .models-card__img img {
+        width: auto;
+
+        max-width: 470px;
+    }
+
+    .models-card__name {
+        font-size: 53px;
+        line-height: 55px;
+    }
+
+    .models-card__price {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .models-card__old-price {
+        font-size: 19px;
+        line-height: 21px;
+    }
+
+    .equips-card__list-item {
+        font-size: 13px;
+        line-height: 15px;
     }
 }
 
