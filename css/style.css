@@ -60,6 +60,49 @@ body {
     background: var(--color-grey);
 }
 
+.form-checkbox label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    width: 100%;
+}
+
+.form__input-check[type=checkbox] {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    z-index: 2;
+}
+
+.form__input-check[type=checkbox]+.custom-checkbox {
+    display: block;
+    width: 14px;
+    height: 13px;
+    border: 1px solid var(--color-white);
+    border-radius: 2px;
+}
+
+.form__input-check[type=checkbox]:checked+.custom-checkbox {
+    background-image: url(../img/check.svg);
+    background-repeat: no-repeat;
+    background-size: 11px;
+    background-position: center;
+}
+
+.checkbox-text,
+.checkbox-link {
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--color-white);
+    font-weight: 400;
+}
+
+.checkbox-link {
+    font-weight: bold;
+}
+
+
 .input {}
 
 .section {}
@@ -912,6 +955,279 @@ box-shadow: 0px -2px 21px 0px rgba(119, 114, 114, 0.49);
 /*=======================================================*/
 
 
+/*=============== #CREDIT ==============*/
+
+.credit {
+    padding-top: 35px;
+}
+
+.credit__bg {
+    background: url(../img/credit_mob.webp)no-repeat;
+    background-size: cover;
+
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    /* aspect-ratio: 360/705; */
+    padding-top: 306px;
+    padding-bottom: 11px;
+}
+
+.banner__title {
+    font-size: 21px;
+    line-height: 23px;
+    font-weight: 700;
+    color: var(--color-white);
+
+    display: block;
+
+    text-transform: uppercase;
+}
+
+.credit__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    margin-top: 23px;
+}
+
+.credit__list-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--color-white);
+}
+
+.credit__list-item b {
+    font-weight: bold;
+}
+
+.credit__list-item img {
+    width: 18px;
+}
+
+.banner__form-inputs {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 19px;
+}
+
+.banner__form-input {
+    width: 47%;
+
+    border: none;
+
+    background: none;
+
+    height: 45px;
+
+    border-radius: 42px;
+    
+    border: 1px solid var(--color-white);
+
+    padding-left: 19px;
+
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    color: var(--color-white);
+}
+
+.banner__form-input::placeholder {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    color: var(--color-white);
+}
+
+.banner__button {
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 600;
+    color: var(--color-white);
+
+    margin-top: 16px;
+}
+
+/*=======================================================*/
+
+
+/*=============== #TRADE ==============*/
+
+.trade {
+    padding-top: 27px;
+}
+
+.trade__bg {
+    background: url(../img/trade_mob.webp)no-repeat;
+    background-size: cover;
+
+    margin-top: 32px;
+
+    padding-top: 282px;
+    padding-bottom: 30px;
+
+    position: relative;
+}
+
+.trade__list {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 25px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.trade__list-ball {
+    border: 2px solid var(--color-white);
+
+    border-radius: 50%;
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.trade__list-ball-bg {
+    background: #515F6C;
+
+    border-radius: 50%;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trade__list-ball-text {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.trade__list-text {
+    display: block;
+
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    color: var(--color-white);
+}
+
+.trade__list-text.left {
+    text-align: left;
+}
+
+.trade__list-text.center {
+    text-align: center;
+}
+
+.trade__list-text.right {
+    text-align: right;
+}
+
+.trade__list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trade__list-item.margin_1 {
+    margin-top: 20px;
+}
+
+.trade__list-item.margin_2 {
+    margin-top: 7px;
+}
+
+.trade__list-item.margin_4 {
+    margin-top: 5px;
+}
+
+.trade__list-text.margin_1 {
+    margin-top: 22px;
+}
+
+.trade__list-text.margin_2,
+.trade__list-text.margin_3 {
+    margin-top: 7px;
+}
+
+.trade__list-text.margin_4 {
+    margin-top: 57px;
+}
+
+.trade__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 30px;
+}
+
+.trade__form .banner__form-inputs {
+    flex-basis: 45%;
+}
+
+.trade__form .banner__form-input {
+    width: 100%;
+}
+
+.trade__form .banner__button {
+    margin-top: 0;
+}
+
+.form-checkbox.mob_hide {
+    display: none;
+}
+
+.form-checkbox.desk_hide {
+    flex-basis: 100%;
+}
+
+.trade__form .banner__btns {
+    flex-basis: 47%;
+}
+
+.trade__form .banner__inputs {
+    flex-basis: 47%;
+}
+
+.trade__line {
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: calc(100% + 32px);
+    left: -16px;
+    z-index: -1;
+}
+
+.trade__line.mob_hide {
+    display: none;
+}
+
+
+/*=======================================================*/
+
+
 
 @media screen and (min-width: 450px) {
     .actions__btn {
@@ -940,5 +1256,19 @@ box-shadow: 0px -2px 21px 0px rgba(119, 114, 114, 0.49);
     
     .equips-card {
         width: 400px;
+    }
+
+    .banner__form {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .trade__line {
+        top: 0;
+    }
+
+    .trade__list-text.margin_4 {
+        margin-top: 33px;
     }
 }

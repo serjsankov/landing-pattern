@@ -492,9 +492,240 @@
 /*=======================================================*/
 
 
+/*=============== #CREDIT ==============*/
+
+.credit {
+    padding-top: 98px;
+}
+
+.credit__bg {
+    background: url(../img/credit_desk.webp)no-repeat;
+    background-size: cover;
+
+    padding: 34px 0 18px;
+    margin-top: 0;
+
+    display: block;
+}
+
+.banner .section__title {
+    display: none;
+}
+
+.banner__title {
+    font-size: 36px;
+    line-height: 38px;
+
+    width: 796px;
+}
+
+.credit__list {
+    margin-top: 35px;
+
+    gap: 18px;
+}
+
+.credit__list-item img {
+    width: 28px;
+}
+
+.credit__list-item {
+    gap: 22px;
+
+    font-size: 25px;
+    line-height: 27px;
+}
+
+.banner__form {
+    width: 100%;
+
+    display: flex;
+    gap: 20px;
+
+    margin-top: 27px;
+}
+
+.banner__form-inputs {
+    margin-top: 0;
+
+    gap: 20px;
+    flex-basis: 39%;
+}
+
+.banner__button {
+    margin-top: 0;
+}
+
+.banner__form-input {
+    width: 100%;
+    height: 53px;
+
+    padding-left: 18px;
+
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.banner__form-input::placeholder {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.credit__btn {
+    flex-basis: 19%;
+}
+
+/*=======================================================*/
+
+
+/*=============== #TRADE ==============*/
+
+.trade {
+    padding-top: 28px;
+}
+
+.trade__bg {
+    background: url(../img/trade_desk.webp)no-repeat;
+    background-size: cover;
+
+    padding: 30px 0 28px;
+
+    margin-top: 0;
+
+    overflow: hidden;
+}
+
+.trade__title {
+    width: 747px;
+
+    margin-left: auto;
+
+    font-size: 39px;
+    line-height: 41px;
+}
+
+.trade__list {
+    margin-top: 22px;
+
+    width: 750px;
+
+    margin-left: auto;
+}
+
+.trade__list-ball {
+    width: 54px;
+    height: 54px;
+
+    border: 5px solid var(--color-white);
+}
+
+.trade__list-ball-text {
+    font-size: 25px;
+    line-height: 27px;
+}
+
+.trade__list-text {
+    font-size: 16px;
+    line-height: 18px;
+
+    text-align: center;
+}
+
+.trade__list-text.margin_1 {
+    margin-top: 14px;
+}
+
+.trade__list-text.margin_2 {
+    margin-top: 15px;
+}
+
+.trade__list-text.margin_3 {
+    margin-top: 16px;
+}
+
+.trade__list-text.margin_4 {
+    margin-top: 12px;
+}
+
+.trade__list-text.right {
+    text-align: center;
+}
+
+.trade__list-text.left {
+    text-align: center;
+}
+
+.trade__form {
+    margin-top: 31px;
+
+    width: 750px;
+
+    margin-left: auto;
+}
+
+.form-checkbox.desk_hide {
+    display: none;
+}
+
+.form-checkbox.mob_hide {
+    display: block;
+}
+
+.trade__list-item.margin_1 {
+    margin-top: 40px;
+}
+
+.trade__list-item.margin_2 {
+    margin-top: 10px;
+}
+
+.trade__list-item.margin_4 {
+    margin-top: 7px;
+}
+
+.trade__form .banner__inputs {
+    flex-basis: 49%;
+}
+
+.trade__form .banner__btns {
+    flex-basis: 49%;
+}
+
+.trade__line.desk_hide {
+    display: none;
+}
+
+.trade__line.mob_hide {
+    display: block;
+}
+
+.trade__line {
+    top: auto;
+    bottom: -32px;
+    right: 0;
+    left: auto;
+
+    z-index: 0;
+    
+    width: 1543px;
+}
+
+/*=======================================================*/
+
+
 @media screen and (max-width: 1660px) {
     .main-banner {
         padding: 100px 0 30px;
+    }
+
+    .credit__bg {
+        background-position: right;
+    }
+
+    .trade__line {
+        width: 1240px;
+
+        bottom: 28px;
     }
 }
 
@@ -510,6 +741,13 @@
     .main-banner__actions span {
         font-size: 26px;
         line-height: 28px;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .trade__line {
+        width: 100%;
+        bottom: 0;
     }
 }
 
@@ -624,6 +862,18 @@
         font-size: 13px;
         line-height: 15px;
     }
+
+    .credit__btn {
+        flex-basis: 25%;
+    }
+
+    .banner__form-inputs {
+        flex-basis: 45%;
+    }
+
+    .trade__line {
+        bottom: 35px;
+    }
 }
 
 @media screen and (max-width: 1280px) {
@@ -635,5 +885,11 @@
     .main-banner__title {
         font-size: 28px;
         line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 1135px) {
+    .trade__line {
+        bottom: 60px;
     }
 }
