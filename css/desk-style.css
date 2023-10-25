@@ -1,3 +1,7 @@
+button {
+    cursor: pointer;
+}
+
 .container {
     max-width: 1280px;
 
@@ -489,6 +493,7 @@
     flex-basis: 23%;
 }
 
+
 /*=======================================================*/
 
 
@@ -713,6 +718,127 @@
 /*=======================================================*/
 
 
+/*=============== #CONTACTS ==============*/
+
+.contacts__bg {
+    background: url(../img/contact__desk.webp)no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 451px;
+}
+
+.contacts__upper {
+    padding-top: 35px;
+}
+
+.contacts__list {
+    gap: inherit;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 0;
+
+    flex-basis: 55%;
+}
+
+.contacts__cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin-top: 5px;
+}
+
+.contacts__btn {
+    margin-top: 0;
+
+    width: auto;
+    flex-basis: 29%;
+}
+
+/*=======================================================*/
+
+
+/*=============== #FOOTER ==============*/
+
+.footer {
+    margin-top: 53px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__links {
+    margin-bottom: 0;
+
+    white-space: nowrap;
+}
+
+.footer__info {
+    margin-top: 0;
+
+    flex-basis: 37%;
+}
+
+.footer {
+    padding: 33px 0 41px;
+}
+
+.footer__btn {
+    margin: 13px 0 27px;
+
+    cursor: pointer;
+}
+
+.footer__text {
+    flex-basis: 40%;
+}
+
+
+/*=======================================================*/
+
+
+.popup {
+    width: 607px;
+
+    padding: 28px 43px 15px;
+}
+
+#modalSpecial {
+    background: url(../img/modal-special_desk.webp)no-repeat;
+    background-size: cover;
+}
+
+
+.fancybox__content>.f-button.is-close-btn {
+    top: 11px;
+
+    opacity: 1;
+}
+
+.popup__head {
+    font-size: 31px;
+    line-height: 33px;
+}
+
+.popup__info {
+    padding-left: 43px;
+
+    margin-left: -43px;
+
+    width: 65%;
+}
+
+.popup__form {
+    margin-top: 20px;
+}
+
+
+
 @media screen and (max-width: 1660px) {
     .main-banner {
         padding: 100px 0 30px;
@@ -873,6 +999,14 @@
 
     .trade__line {
         bottom: 35px;
+    }
+
+    .contacts__list {
+        flex-basis: 70%;
+    }
+
+    .contacts__btn {
+        flex-basis: 25%;
     }
 }
 
