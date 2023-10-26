@@ -10,6 +10,45 @@ window.addEventListener("DOMContentLoaded", () => {
   initFancy();
   initCustomSelect();
   initSwiperImages();
+  initClickColor();
+
+  $('.header__nav-link').on('click', function() {
+    $('.header').removeClass('active');
+    // document.body.style.overflow = "scroll";
+    $('body').css('overflow', 'scroll');
+});
+
+  function initClickColor() { 
+    let colors = document.querySelectorAll(".js_color");
+    let imagesCar = document.querySelectorAll(".js_card__img");
+    let colorText = document.querySelectorAll('.js_color_name');
+
+    colors.forEach((color, colorIndex) => {
+        color.addEventListener("click", (e) => {
+            colors.forEach((el, elIndex) => {
+                if (color.dataset.model === el.dataset.model) {
+                    el.classList.remove("color-active");
+                    imagesCar.forEach((img, imgIndex) => {
+                        if (color.dataset.model === img.dataset.model) {
+                            img.classList.remove("js-active");
+                        }
+
+                        if (colorIndex === imgIndex) {
+                            color.classList.add("color-active");
+                            img.classList.add("js-active");
+
+                            colorText.forEach(el=> {
+                                if(el.dataset.model == color.dataset.model) {
+                                    el.textContent = color.dataset.colorname;
+                                }
+                            });
+                        }
+                    })
+                }
+            })
+        })
+    })
+};
 
   function initSwiperImages () {
     var swiperImages = new Swiper(".swiper-images", {

@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./css/reset-style.css" />
     <link rel="stylesheet" href="./css/swiper.min.css" />
     <link rel="stylesheet" href="./css/fancybox.min.css" />
@@ -163,7 +168,7 @@
       </div>
     </div>
   </section>
-  <section class="models section">
+  <section class="models section" id="model">
       <div class="container">
         <div class="section__upper">
           <h2 class="section__title">Модельный ряд</h2>
@@ -182,7 +187,10 @@
               </div>
               <div class="models-card__img">
                 <span class="models-card__img-name">VAЗ</span>
-                <img src="./img/test-model.png" alt="">
+                <img class="js_card__img models-card__img-image js-active" src="./img/test-model.png" alt="" data-model="002">
+                <img class="js_card__img models-card__img-image" src="./img/test-model.png" alt="" data-model="002">
+                <img class="js_card__img models-card__img-image" src="./img/test-model.png" alt="" data-model="002">
+                <img class="js_card__img models-card__img-image" src="./img/test-model.png" alt="" data-model="002">
               </div>
               <div class="models-card__images">
                 <div class="swiper swiper-images">
@@ -247,13 +255,113 @@
               </div>
               <div class="models-card__flex">
                 <div class="models-card__colors-info">
-                  <span class="models-card__color-name">Выбранный цвет: <b> бежевый</b></span>
+                  <span class="models-card__color-name">Выбранный цвет: <b class="js_color_name" data-model="002"> бежевый</b></span>
                   <div class="models-card__colors">
-                    <span class="models-card__color color-active" style="background: red;"></span>
-                    <span class="models-card__color" style="background: red;"></span>
-                    <span class="models-card__color" style="background: red;"></span>
-                    <span class="models-card__color" style="background: red;"></span>
-                    <span class="models-card__color" style="background: red;"></span>
+                    <span class="models-card__color color-active js_color" style="background: red;" data-model="002" data-colorname="red"></span>
+                    <span class="models-card__color js_color" style="background: pink;" data-model="002" data-colorname="pink"></span>
+                    <span class="models-card__color js_color" style="background: blue;" data-model="002" data-colorname="blue"></span>
+                    <span class="models-card__color js_color" style="background: green;" data-model="002" data-colorname="green"></span>
+                  </div>
+                </div>
+                <div class="models-card__credit">
+                  <span>Платеж в кредит от</span>
+                  <b>10 000Р/мес.</b>
+                </div>
+              </div>
+              <div class="models-card__btns">
+                <button class="models-card__button btn bg_blue">Получить предложени</button>
+                <button class="models-card__button btn border">Рассчитать кредит</button>
+              </div>
+            </div>
+          </div>
+          <div class="models-card__line"></div>
+        </div>
+        <div class="models-card">
+          <div class="container">
+            <div class="models-card__cont">
+              <div class="models-card__texts">
+                <span class="models-card__name">jetta VAЗ</span>
+                <div class="models-card__prices">
+                  <span class="models-card__price">Цена от 1 095 200₽</span>
+                  <span class="models-card__old-price">от 2 095 200₽</span>
+                </div>
+              </div>
+              <div class="models-card__img">
+                <span class="models-card__img-name">VAЗ</span>
+                <img class="js_card__img models-card__img-image js-active" src="./img/test-model.png" alt="" data-model="001">
+                <img class="js_card__img models-card__img-image" src="./img/test-model.png" alt="" data-model="001">
+                <img class="js_card__img models-card__img-image" src="./img/test-model.png" alt="" data-model="001">
+                <img class="js_card__img models-card__img-image" src="./img/test-model.png" alt="" data-model="001">
+              </div>
+              <div class="models-card__images">
+                <div class="swiper swiper-images">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="./img/test-prev.png" class="models-card__images-link">
+                        <img class="models-card__images-img" src="./img/test-prev.png" alt="">
+                      </a>
+                      </div>
+                    <div class="swiper-slide">
+                      <a href="./img/test-prev.png" class="models-card__images-link">
+                        <img class="models-card__images-img" src="./img/test-prev.png" alt="">
+                      </a>
+                      </div>
+                    <div class="swiper-slide">
+                      <a href="./img/test-prev.png" class="models-card__images-link">
+                        <img class="models-card__images-img" src="./img/test-prev.png" alt="">
+                      </a>
+                      </div>
+                    <div class="swiper-slide">
+                      <a href="./img/test-prev.png" class="models-card__images-link">
+                        <img class="models-card__images-img" src="./img/test-prev.png" alt="">
+                      </a>
+                      </div>
+                    <div class="swiper-slide">
+                      <a href="./img/test-prev.png" class="models-card__images-link">
+                        <img class="models-card__images-img" src="./img/test-prev.png" alt="">
+                      </a>
+                      </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+              <div class="models-card__actions">
+                <ul class="models-card__actions-list">
+                  <li class="models-card__actions-item">
+                    <img src="./img/actions-ok.svg" alt="icon">
+                    <span>Ставка от 4,9%</span>
+                  </li>
+                  <li class="models-card__actions-item">
+                    <img src="./img/actions-ok.svg" alt="icon">
+                    <span>Рассрочка 0%</span>
+                  </li>
+                  <li class="models-card__actions-item">
+                    <img src="./img/actions-ok.svg" alt="icon">
+                    <span>Без первого взноса</span>
+                  </li>
+                  <li class="models-card__actions-item">
+                    <img src="./img/actions-ok.svg" alt="icon">
+                    <span>Подарки от дилера</span>
+                  </li>
+                  <li class="models-card__actions-item">
+                    <img src="./img/actions-ok.svg" alt="icon">
+                    <span>Trade-In -300 000 ₽</span>
+                  </li>
+                  <li class="models-card__actions-item">
+                    <img src="./img/actions-ok.svg" alt="icon">
+                    <span>Гарантия 5 лет</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="models-card__flex">
+                <div class="models-card__colors-info">
+                  <span class="models-card__color-name">Выбранный цвет: <b class="js_color_name" data-model="001"> бежевый</b></span>
+                  <div class="models-card__colors">
+                    <span class="models-card__color color-active js_color" style="background: red;" data-model="001" data-colorname="red"></span>
+                    <span class="models-card__color js_color" style="background: pink;" data-model="001" data-colorname="pink"></span>
+                    <span class="models-card__color js_color" style="background: blue;" data-model="001" data-colorname="blue"></span>
+                    <span class="models-card__color js_color" style="background: green;" data-model="001" data-colorname="green"></span>
                   </div>
                 </div>
                 <div class="models-card__credit">
@@ -271,7 +379,7 @@
         </div>
       </div>
   </section>
-  <section class="equips section">
+  <section class="equips section" id="equip">
     <div class="container">
       <div class="section__upper">
         <h2 class="section__title">Комплектации</h2>
@@ -344,7 +452,7 @@
       </div>
     </div>
   </section>
-  <section class="credit section banner">
+  <section class="credit section banner" id="autocredit">
     <div class="container">
       <div class="section__upper">
         <h2 class="section__title">Автокредит</h2>
@@ -397,7 +505,7 @@
       </div>
     </div>
   </section>
-  <section class="trade banner section">
+  <section class="trade banner section" id="trade-in">
     <div class="container">
       <div class="section__upper">
         <h2 class="section__title">Trade-in</h2>
@@ -589,6 +697,58 @@
           </label>
         </div>
       </form>
+    </div>
+  </div>
+  <div class="popup" id="modalOffer">
+    <div class="popup__container">
+      <span class="popup__head">Получите лучшее 
+        предложение на <span class="big_text">jetta</span>
+      </span>
+      <div class="popup__info">
+        <span class="popup__info-text">Скидка до 40% на все модели</span>
+      </div>
+      <ul class="popup__list">
+        <li class="popup__list-item">
+          <span>- Экспресс-кредит<b> от 4,9%</b></span>
+        </li>
+        <li class="popup__list-item">
+          <span>- Бонус <b> до 300 000₽</b> по Trade-in в подарок</span>
+        </li>
+      </ul>
+      <form action="" class="popup__form">
+        <div class="popup__form-inputs">
+          <input type="text" name="name" class="popup__form-input" placeholder="Имя">
+          <input type="tel" name="phone" class="popup__form-input" placeholder="+7 (____) ____-__-__" required>
+        </div>
+        <button class="btn bg_blue popup__form-btn">Отправить заявку</button>
+        <div class="form-checkbox">
+          <label class="checkbox__input-text" for="check-offer-pop">
+            <span class="checkbox">
+              <input class="form__input-check" type="checkbox" id="check-offer-pop" checked="" required="">
+              <span class="custom-checkbox"></span>
+            </span>
+            <span class="checkbox-text">
+              Вы даете согласие на обработку <a href="/policy" class="checkbox-link">персональных данных</a>
+            </span>
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="popup" id="modalSus">
+    <div class="popup__cont">
+      <span class="popup__head">
+        Ваша заявка отправлена!
+наш менеджер свяжется 
+с Вами через <span class="color_text_blue"> 2-3 минут</span>
+      </span>
+    </div>
+  </div>
+  <div class="popup" id="modalSus2">
+    <div class="popup__cont">
+      <span class="popup__head">
+        Вы уже отправляли <span class="color_text_blue"> заявку!</span>
+      </span>
     </div>
   </div>
     <script src="./libs/jquery.min.js"></script>

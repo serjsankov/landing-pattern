@@ -231,6 +231,8 @@ button {
 
 .models__container {
     margin-top: 43px;
+
+    gap: 95px;
 }
 
 .models-card {
@@ -289,7 +291,11 @@ button {
 }
 
 .models-card__img-name {
-    position: absolute;
+    right: auto;
+    left: -160px;
+    top: -21px;
+    font-size: 190px;
+    line-height: 192px;
 }
 
 .models-card__name {
@@ -329,6 +335,8 @@ button {
 .models-card__color {
     width: 40px;
     height: 40px;
+
+    cursor: pointer;
 }
 
 
@@ -813,6 +821,11 @@ button {
     background-size: cover;
 }
 
+#modalSus,
+#modalSus2 {
+    height: 289px;
+}
+
 
 .fancybox__content>.f-button.is-close-btn {
     top: 11px;
@@ -820,9 +833,19 @@ button {
     opacity: 1;
 }
 
+.fancybox__content>.f-button.is-close-btn  {
+    right: 13px;
+}
+
 .popup__head {
     font-size: 31px;
     line-height: 33px;
+}
+
+#modalSus .popup__head,
+#modalSus2 .popup__head {
+    font-size: 35px;
+    line-height: 37px;
 }
 
 .popup__info {
@@ -833,8 +856,37 @@ button {
     width: 65%;
 }
 
+#modalOffer .popup__info {
+    width: 75%;
+}
+
 .popup__form {
     margin-top: 20px;
+}
+
+.popup__form-input {
+    height: 45px;
+
+    padding-left: 25px;
+
+    font-size: 15px;
+    line-height: 17px
+}
+
+.popup__form-input::placeholder {
+    font-size: 15px;
+    line-height: 17px
+}
+
+.popup__form-inputs {
+    gap: 14px;
+}
+
+.popup__form-btn {
+    margin-top: 17px;
+
+    font-size: 18px;
+    line-height: 20px;
 }
 
 
@@ -1007,6 +1059,13 @@ button {
 
     .contacts__btn {
         flex-basis: 25%;
+    }
+
+    .models-card__img-name {
+        font-size: 150px;
+        line-height: 152px;
+
+        top: -13px;
     }
 }
 
