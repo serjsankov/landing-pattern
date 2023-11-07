@@ -1,0 +1,13 @@
+/*=============== #BANNERS ==============*/
+
+.banner {
+    width: 100%;
+    height: 300px;
+}
+
+.trade-in,
+.credit {
+    background-position: center;
+}
+
+/*=======================================================*/

@@ -9,6 +9,51 @@ window.addEventListener("DOMContentLoaded", () => {
   // initScroolMagic();
   initFancy();
   initCustomSelect();
+  initClickColor();
+
+  var swiperModelColor = new Swiper(".model_swiper_colors", {
+    slidesPerView: 10,
+    spaceBetween: 8,
+    loop: true,
+    breakpoints: {
+        1024: {
+            slidesPerView: 5,
+            spaceBetween: 15,
+        }
+    }
+  });
+
+  function initClickColor() { 
+    let colors = document.querySelectorAll(".js_color");
+    let imagesCar = document.querySelectorAll(".js_card__img");
+    let colorText = document.querySelectorAll('.js_color_name');
+
+    colors.forEach((color, colorIndex) => {
+        color.addEventListener("click", (e) => {
+            colors.forEach((el, elIndex) => {
+                if (color.dataset.model === el.dataset.model) {
+                    el.classList.remove("color-active");
+                    imagesCar.forEach((img, imgIndex) => {
+                        if (color.dataset.model === img.dataset.model) {
+                            img.classList.remove("js-active");
+                        }
+
+                        if (colorIndex === imgIndex) {
+                            color.classList.add("color-active");
+                            img.classList.add("js-active");
+
+                            colorText.forEach(el=> {
+                                if(el.dataset.model == color.dataset.model) {
+                                    el.textContent = color.dataset.colorname.split('/')[0];
+                                }
+                            });
+                        }
+                    })
+                }
+            })
+        })
+    })
+};
 
   function initCustomSelect () {
     $('select').select2({

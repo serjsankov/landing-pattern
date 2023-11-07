@@ -6,46 +6,26 @@
 
 
 .section__title {
-    font-size: 39px;
-    line-height: 41px;
+    font-size: 60px;
+    line-height: 62px;
+    font-weight: 600;
 }
 
-.section__upper::before {
-    height: 71px;
+.section__upper {
+    padding-bottom: 30px;
 }
 
-
-.banner__title {
-    font-size: 49px;
-    line-height: 51px;
+.section__upper::after {
+    height: 3px;
+    width: calc(50% + 659px);
 }
 
-.banner__list {
-    gap: 15px;
-
-    margin-top: 23px;
-}
-
-.banner__list-item {
-    font-size: 25px;
-    line-height: 27px;
-}
-
-.banner__inputs {
-    margin-top: 36px;
-
-    gap: 18px;
-}
 
 .input {
     font-size: 15px;
     line-height: 17px;
 }
 
-.banner__btn {
-    font-size: 18px;
-    line-height: 20px;
-}
 
 /*=============== #HEADER ==============*/
 
@@ -194,19 +174,28 @@
     margin-top: 156px;
 
     display: flex;
+    justify-content: space-between;
 }
 
 .main-banner__text {
-    font-size: 27px;
-    line-height: 33px;
+    font-size: 26px;
+    line-height: 38px;
     text-align: left;
 
-    flex-basis: 30%;
+    flex-basis: 21%;
+}
+
+.main-banner__text .big_text {
+    font-size: 50px;
+    line-height: 52px;
+
+    display: block;
 }
 
 .main-banner__btn {
-    margin-top: 0;
-    flex-basis: 38%;
+    flex-basis: 28%;
+    height: 66px;
+    margin: 0;
 }
 
 .time-count__item {
@@ -214,18 +203,20 @@
 }
 
 .time-count__val {
-    font-size: 59px;
-    line-height: 61px;
+    font-size: 42px;
+    line-height: 44px;
 }
 
 .time-count__text {
-    font-size: 17px;
-    line-height: 19px;
+    font-size: 13px;
+    line-height: 15px;
 }
 
 .timer {
-    margin-top: 0;
-    flex-basis: 53%;
+    flex-basis: 39%;
+    gap: inherit;
+    justify-content: space-between;
+    margin: 0;
 }
 
 .main-banner__container {
@@ -234,4 +225,960 @@
     gap: 30px;
 }
 
+.pie {
+    width: 95px;
+    height: 95px;
+
+    bottom: -18px;
+    left: 5px;
+}
+
+.main-banner__btn.mob_hide {
+    display: flex;
+
+    height: 62px;
+    width: 392px;
+
+    flex-basis: auto;
+
+    margin: 30px 0 0;
+}
+
 /*=======================================================*/
+
+
+/*=============== #MODELS ==============*/
+
+.models {
+    padding-top: 70px;
+}
+
+.models__container {
+    margin-top: 40px;
+
+    gap: 53px;
+}
+
+.model__card {
+    width: 100%;
+
+    padding-bottom: 72px;
+}
+
+.model__card-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.model__card-swiper {
+    margin-top: 16px;
+}
+
+.model__card-img {
+    max-width: 480px;
+}
+
+.model__card-colors {
+    display: flex;
+    flex-direction: column;
+}
+
+.models__colors {
+    order: 3;
+
+    align-self: center;
+
+    width: 196px;
+    height: 27px;
+
+    margin-top: 15px;
+}
+
+.model__card-head {
+    font-size: 60px;
+    line-height: 62px;
+}
+
+.model__card::after {
+    height: 4px;
+}
+
+.model__card-list {
+    margin-top: 0;
+
+    gap: 30px;
+}
+
+.model__card-item {
+    gap: 17px;
+
+    font-size: 23px;
+    line-height: 25px;
+}
+
+.model__card-item img {
+    width: 25px;
+    height: 25px;
+}
+
+.model__card-old {
+    font-size: 22px;
+    line-height: 24px;
+}
+
+.model__card-price {
+    font-size: 33px;
+    line-height: 35px;
+
+    margin-top: 8px;
+}
+
+.model__card-price .text_color {
+    font-size: 36px;
+    line-height: 38px;
+}
+
+.model__card-month {
+    font-size: 22px;
+    line-height: 24px;
+
+    margin-top: 24px;
+}
+
+.model__card-month .text_color {
+    font-size: 25px;
+    line-height: 27px;
+}
+
+.model__card-btn {
+    height: 53px;
+
+    font-size: 23px;
+    line-height: 25px;
+}
+
+.model__card-btns {
+    gap: 15px;
+}
+
+.models__color-bg {
+    width: 27px;
+    height: 27px;
+}
+
+/*=======================================================*/
+
+
+/*=============== #EQUIPS ==============*/
+
+.equips {
+    padding: 70px 0 95px;
+}
+
+.equips__filter {
+    width: 100%;
+
+    margin-top: 50px;
+
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.equips__select {
+    width: 514px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-size: 25px;
+    line-height: 15px;
+}
+
+.select2-container--default .select2-selection--single {
+    border-bottom: 3px solid var(--color-orange);
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    width: 22px;
+    height: 11px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    width: 22px;
+    height: 11px;
+
+    background-size: cover;
+}
+
+.equips__container {
+    margin-top: 40px;
+}
+
+.equip__card {
+    width: 100%;
+
+    padding-bottom: 22px;
+}
+
+.equip__card::after {
+    height: 5px;
+}
+
+.equip__card-cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.equip__card-head {
+    font-size: 40px;
+    line-height: 42px;
+
+    margin-bottom: 40px;
+}
+
+.equip__card-name {
+    display: block;
+
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 600;
+    color: var(--color-grey);
+
+    margin-bottom: 33px;
+}
+
+.equip__card-text,
+.equip__card-spec {
+    font-weight: 600;
+}
+
+.equip__card-button {
+    font-size: 23px;
+    line-height: 25px;
+}
+
+.equip__card-btns {
+    margin-top: 0;
+}
+
+.equip__card-prices,
+.equip__card-info {
+    margin-top: 0;
+}
+
+.equip__card-prices {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 23%;
+
+    margin-top: 32px;
+}
+
+.equip__card-info {
+    flex-basis: 40%;
+}
+
+.equips__button {
+    height: 30px;
+
+    font-size: 15px;
+    line-height: 17px;
+
+    margin: 15px auto 0;
+}
+
+/*=======================================================*/
+
+
+/*=============== #BANNERS ==============*/
+
+.banner {
+    padding: 33px 0 44px;
+}
+
+
+.banner__title {
+    font-size: 47px;
+    line-height: 49px;
+}
+
+.banner__button {
+    display: none;
+}
+
+
+.banner__list-item {
+    font-size: 24px;
+    line-height: 26px;
+}
+
+.banner__form {
+    display: block;
+
+    width: 648px;
+}
+
+.banner__input {
+    padding-left: 16px;
+
+    height: 53px;
+
+    background: var(--color-white);
+
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 400;
+    color: rgba(76, 88, 101, 0.50);
+
+    border-radius: 10px;
+
+    border: none;
+}
+
+.banner__input::placeholder {
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 400;
+    color: rgba(76, 88, 101, 0.50);
+}
+
+.banner__inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.banner__form-button {
+    height: 53px;
+
+    margin-top: 15px;
+
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.banner .select2-container .select2-selection--single {
+    height: auto;
+
+    background: none;
+
+    border-bottom: 1px solid var(--color-white);
+}
+
+.banner .select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-size: 24px;
+    line-height: 53px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.70);
+
+    padding-bottom: 0;
+}
+
+.banner .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    background: url(../img/arrow-select-ban.svg)no-repeat;
+
+    top: 20px;
+}
+
+
+/******** #CREDIT ********/
+
+.credit {
+    background: url(../img/credit_desk.webp)no-repeat;
+    background-size: cover;
+
+    aspect-ratio: 1920/518;
+
+    height: auto;
+}
+
+.credit__title {
+    font-size: 44px;
+    line-height: 46px;
+
+    width: 588px;
+}
+
+.credit_percent {
+    width: 159px;
+
+    padding-bottom: 4px;
+}
+
+.credit__list {
+    margin-top: 0;
+
+    gap: 20px;
+}
+
+.credit__form {
+    margin-top: 35px;
+}
+
+/******** #TRADE-IN ********/
+
+.trade-in {
+    background: url(../img/trade_desk.webp)no-repeat;
+    background-size: cover;
+
+    aspect-ratio: 1920/828;
+
+    margin-top: 70px;
+
+    height: auto;
+}
+
+.trade-in__title.mob_hide {
+    display: block;
+}
+
+.trade-in__title.desk_hide {
+    display: none;
+}
+
+.trade-in__upper {
+    position: relative;
+
+    padding-bottom: 10px;
+}
+
+.trade-in__upper::after {
+    content: "";
+
+    display: block;
+
+    height: 3px;
+    width: calc(50% + 659px);
+
+    background: var(--color-orange);
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.trade-in__text {
+    margin-top: 31px;
+
+    font-size: 39px;
+    line-height: 41px;
+}
+
+.trade-in__discount {
+    width: 242px;
+    line-height: 40px;
+}
+
+.trade-in__list {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 56px;
+}
+
+.trade-in__list-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.trade-in__list-ball {
+    width: 85px;
+    height: 85px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--color-orange);
+
+    font-size: 55px;
+    line-height: 57px;
+    font-weight: 600;
+    color: var(--color-white);
+}
+
+.trade-in__list-text {
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 500;
+    color: var(--color-white);
+}
+
+.trade__form {
+    margin-left: auto;
+}
+
+.trade__form-selects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+.trade-in__inputs {
+    margin-top: 67px;
+}
+
+
+/*=======================================================*/
+
+/*=============== #CONTACTS ==============*/
+
+.contacts {
+    height: auto;
+
+    background: none;
+
+    padding-top: 149px;
+}
+
+.contacts__upper {
+    display: block;
+}
+
+.contacts__bg {
+    margin-top: 32px;
+
+    background: url(../img/con_desk.webp)no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    aspect-ratio: 1920/526;
+
+    padding-bottom: 56px;
+}
+
+.contacts__img {
+    display: block;
+}
+
+.contacts__info {
+    display: flex;
+    align-items: center;
+    gap: 67px;
+}
+
+.contacts__cont {
+    padding: 19px 0;
+}
+
+.contacts__cont::before {
+    width: 100%;
+
+    background: url(../img/con_line.png)no-repeat;
+    background-size: cover;
+    width: 51%;
+    background-position: center;
+}
+
+.contacts__info-list {
+    gap: 16px;
+}
+
+.contacts__info-text {
+    font-size: 23px;
+    line-height: 25px;
+}
+
+.contacts__info-link {
+    font-size: 32px;
+    line-height: 34px;
+}
+
+/*=======================================================*/
+
+
+/*=============== #FOOTER ==============*/
+
+.footer {
+    padding: 77px 0 64px;
+}
+
+.footer__block-mob {
+    display: none;
+}
+
+.footer__links.mob_hide {
+    display: flex;
+}
+
+.footer__links {
+    flex-direction: row;
+    gap: 48px;
+
+    margin-top: 58px;
+}
+
+.footer__container {
+    padding-top: 0;
+}
+
+.footer__text {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.footer__text.big {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+/*=======================================================*/
+
+
+/*=============== #MEDIA ==============*/
+
+
+@media screen and (max-width: 1600px) {
+    .main-banner__title,
+    .main-banner__title .title_small {
+        font-size: 40px;
+        line-height: 42px;
+    }
+
+    .main-banner__actions-head {
+        font-size: 38px;
+        line-height: 40px;
+    }
+
+    .main-banner__actions-text {
+        font-size: 25px;
+        line-height: 27px;
+    }
+
+    .main-banner__text {
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    .main-banner__text .big_text {
+        font-size: 45px;
+        line-height: 47px;
+    }
+
+    .credit__form {
+        margin-top: 18px;
+    }
+
+    .credit__title {
+        font-size: 30px;
+        line-height: 32px;
+        width: 396px;
+        margin-bottom: 10px;
+    }
+
+    .trade-in__list {
+        margin-top: 25px;
+    }
+
+    .trade-in__text {
+        margin-top: 18px;
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    .trade-in__discount {
+        width: 177px;
+        line-height: 32px;
+    }
+
+    .trade-in__list-ball {
+        width: 60px;
+        height: 60px;
+
+        font-size: 35px;
+        line-height: 37px;
+    }
+
+    .trade-in__list-text {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    
+    .trade-in__inputs {
+        margin-top: 35px;
+    }
+
+    .credit__list {
+        gap: 10px;
+    }
+
+    .banner__list-item {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .banner {
+        padding: 15px 0 20px;
+    }
+
+    .contacts__info-list {
+        gap: 9px;
+    }
+    
+    .contacts__info-text {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .contacts__info-link {
+        font-size: 27px;
+        line-height: 29px;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .container {
+        max-width: 900px;
+    }
+
+    .section__title {
+        font-size: 44px;
+        line-height: 46px;
+    }
+
+    .section__upper::after,
+    .trade-in__upper::after {
+        width: calc(50% + 450px);
+    }
+
+    .header__logo-img {
+        max-width: 100px;
+    }
+
+    .header__nav-link {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .header__info-text {
+        font-size: 12px;
+        line-height: 14px;
+
+        flex-basis: 25%;
+    }
+
+    .main-banner__title, .main-banner__title .title_small {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .main-banner__actions-head {
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    .main-banner__actions-text {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .main-banner__text {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .main-banner__text .big_text {
+        font-size: 33px;
+        line-height: 35px;
+    }
+
+    .time-count__val {
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    .time-count__text {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .pie {
+        width: 75px;
+        height: 75px;
+
+        bottom: -17px;
+        left: 14px;
+    }
+
+    .main-banner__btn {
+        font-size: 17px;
+        line-height: 19px;
+    }
+
+    .main-banner__btn.mob_hide {
+        width: 310px;
+    }
+
+    .main-banner {
+        padding: 90px 0 40px;
+    }
+
+    .main-banner__timer {
+        margin-top: 0;
+    }
+
+    .model__card-head {
+        font-size: 34px;
+        line-height: 36px;
+    }
+
+    .model__card-img {
+        max-width: 275px;
+    }
+
+    .model__card-item {
+        font-size: 17px;
+        line-height: 19px;
+        gap: 10px;
+    }
+
+    .model__card-price {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .model__card-price .text_color {
+        font-size: 27px;
+        line-height: 29px;
+    }
+
+    .model__card-month {
+        font-size: 18px;
+        line-height: 20px;
+
+        margin-top: 15px;
+    }
+
+    .model__card-month .text_color {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .model__card-btn {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .model__card {
+        padding-bottom: 30px;
+    }
+
+    .model__card-list {
+        gap: 20px;
+    }
+
+    .equip__card-head {
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    .equip__card-img img {
+        max-width: 280px;
+    }
+
+    .equip__card-price b {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .equip__card-price {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .equip__card-button {
+        font-size: 17px;
+        line-height: 19px;
+    }
+
+    .equip__card-name {
+        font-size: 22px;
+        line-height: 35px;
+    }
+
+    .equip__card-info {
+        flex-basis: 35%;
+    }
+
+    .equip__card-prices {
+        flex-basis: 26%;
+    }
+
+    .equips__select {
+        width: 414px;
+    }
+
+    .banner__input {
+        height: 40px;
+
+        font-size: 16px;
+        line-height: 18px;
+
+        flex-basis: 49%;
+    }
+
+    .banner__input::placeholder {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .banner__form-button {
+        height: 40px;
+    }
+
+    .banner__form {
+        width: 448px;
+    }
+
+    .banner .select2-container--default .select2-selection--single .select2-selection__rendered {
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    .credit__title {
+        width: auto;
+
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .credit_percent {
+        width: 86px;
+    }
+
+    .trade__form-selects {
+        gap: 15px;
+    }
+
+    .contacts {
+        padding-top: 50px;
+    }
+
+    .contacts__info {
+        gap: 5px;
+    }
+
+    .contacts__cont::before {
+        background-position: right;
+    }
+
+    .contacts__img {
+        max-width: 150px;
+    }
+
+    .contacts__info-text {
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    .contacts__info-link {
+        font-size: 20px;
+        line-height: 22px;
+    }
+}
