@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="stylesheet" href="./css/reset-style.css" />
     <link rel="stylesheet" href="./css/swiper.min.css" />
     <link rel="stylesheet" href="./css/fancybox.min.css" />
@@ -141,7 +144,7 @@
                 </div>
               </div>
             </div>
-            <button class="btn bg_orange main-banner__btn" data-fancybox data-src="#modalSuc2">Зафиксировать цену</button>
+            <button class="btn bg_orange main-banner__btn" data-fancybox data-src="#modalSuc">Зафиксировать цену</button>
           </div>
         </div>
       </div>
@@ -559,6 +562,86 @@
       </div>
     </div>
   </footer>
+  <div class="popup" id="modalCredit">
+    <div class="popup__cont">
+      <div class="popup__texts">
+        <span class="popup__credit-head">
+          Выгодный автокредит<br> на Lada от <span class="popup__credit-percent">4,9%</span>
+        </span>
+      </div>
+      <div class="popup__space">
+        <ul class="popup__list mob_hide">
+          <li class="popup__list-item">Скидка за кредит до 70 000₽</li>
+          <li class="popup__list-item">Первоначальный взнос от 0 ₽</li>
+          <li class="popup__list-item">Оформление по 2- м документам</li>
+        </ul>
+        <form action="" class="popup__form">
+          <div class="popup__form-inputs">
+            <input type="text" class="popup__form-input" placeholder="Имя" name="name">
+            <input type="tel" class="popup__form-input" placeholder="+7 ( ___ ) ___-__-__" name="phone" required>
+          </div>
+          <button class="popup__form-btn btn bg_orange">Оставить заявку</button>
+          <div class="form-checkbox">
+            <label for="check-trade">
+              <span class="checkbox">
+                <input class="form__input-check" type="checkbox" id="check-trade" checked="" required="">
+                <span class="custom-checkbox"></span>
+              </span>
+              <span class="checkbox-text">
+                Вы даете согласие на обработку <a href="/policy" class="checkbox-link">персональных данных</a>
+              </span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="popup" id="modalSpecial">
+    <div class="popup__cont">
+      <div class="popup__texts">
+        <span class="popup__special-head">
+          Получите лучшее<br> предложение на Lada
+        </span>
+      </div>
+      <div class="popup__space">
+        <ul class="popup__list">
+          <li class="popup__list-item">Скидка до 40% на все модели</li>
+          <li class="popup__list-item">Экспресс-кредит от 4,9%</li>
+          <li class="popup__list-item">Бонус до 300 000₽ по Trade-in</li>
+          <li class="popup__list-item">КАСКО и 3 ТО в подарок</li>
+        </ul>
+        <form action="" class="popup__form">
+          <div class="popup__form-inputs">
+            <input type="text" class="popup__form-input" placeholder="Имя" name="name">
+            <input type="tel" class="popup__form-input" placeholder="+7 ( ___ ) ___-__-__" name="phone" required>
+          </div>
+          <button class="popup__form-btn btn bg_orange">Оставить заявку</button>
+          <div class="form-checkbox">
+            <label for="check-trade">
+              <span class="checkbox">
+                <input class="form__input-check" type="checkbox" id="check-trade" checked="" required="">
+                <span class="custom-checkbox"></span>
+              </span>
+              <span class="checkbox-text">
+                Вы даете согласие на обработку <a href="/policy" class="checkbox-link">персональных данных</a>
+              </span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="popup" id="modalSuc">
+    <div class="popup__cont">
+      <div class="popup__texts">
+        <span class="popup__suc-head">
+          Спасибо за заявку!
+        </span>
+        <span class="popup__suc-sub-head">Менеджер свяжется с вами
+          в течение 2-3 минут!</span>
+      </div>
+    </div>
+  </div>
     <script src="./libs/jquery.min.js"></script>
     <script src="./libs/swiper-bundle.min.js"></script>
     <script src="./libs/masked-input.min.js"></script>

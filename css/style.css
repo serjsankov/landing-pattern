@@ -1239,6 +1239,185 @@ body {
 /*=======================================================*/
 
 
+/*=============== #POPUP ==============*/
+
+.popup {
+  /* width: 360px; */
+  width: 98%;
+
+  display: none;
+
+  padding: 34px 40px 34px;
+}
+
+#modalCredit {
+  background: url(../img/pop-credit_mob.webp)no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#modalSpecial {
+  background: url(../img/pop-special_mob.webp)no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  padding: 18px 17px 24px;
+}
+
+#modalSuc {
+  background: url(../img/pop-special_mob.webp)no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  padding: 29px 20px;
+
+  height: 320px;
+}
+
+.popup__credit-head {
+  font-size: 23px;
+  line-height: 25px;
+  font-weight: 600;
+  color: var(--color-white);
+
+  display: block;
+}
+
+.popup__suc-head {
+  display: block;
+
+  font-size: 31px;
+  line-height: 33px;
+  font-weight: 600;
+  color: var(--color-white);
+  text-align: right;
+}
+
+.popup__suc-sub-head {
+  font-size: 19px;
+  line-height: 21px;
+  font-weight: 600;
+  color: var(--color-white);
+  text-align: right;
+
+  margin-top: 28px;
+
+  display: block;
+}
+
+.popup__special-head {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+  color: var(--color-white);
+
+  display: block;
+
+  background: url(../img/bg_special.png)no-repeat;
+  background-size: cover;
+
+  margin-left: -17px;
+    padding-left: 17px;
+    width: 213px;
+    height: 41px;
+}
+
+.popup__list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  margin-top: 29px;
+
+  list-style: disc;
+
+  padding-left: 17px;
+}
+
+.popup__list.mob_hide {
+  display: none;
+}
+
+.popup__list-item {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+.popup__form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+#modalCredit .popup__form {
+  margin-top: 58px;
+}
+
+#modalSpecial .popup__form {
+  width: 235px;
+
+  margin: 31px auto 0;
+}
+
+.popup__form-input {
+  width: 100%;
+
+  background: none;
+
+  border-radius: 10px;
+  border: none;
+  border-bottom: 2px solid var(--color-orange);
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--color-white);
+  text-align: center;
+
+  padding-bottom: 7px;
+}
+
+.popup__form-input::placeholder {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.popup__form-btn {
+  height: 22px;
+
+  margin-top: 14px;
+
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  
+  border-radius: 0;
+}
+
+.is-compact .fancybox__content>.f-button.is-close-btn {
+  background: none;
+
+  opacity: 1;
+}
+
+.popup__credit-percent {
+  display: inline-block;
+
+  background: url(../img/credit_percent.svg)no-repeat;
+  background-size: cover;
+  background-position: right;
+  width: 77px;
+  padding-left: 5px;
+}
+
+/*=======================================================*/
+
+
 /*=============== #MEDIA ==============*/
 
 @media screen and (min-width: 450px) {
@@ -1281,5 +1460,9 @@ body {
 
   .contacts__cont::before {
     width: 400px;
+  }
+
+  .popup {
+    width: 360px;
   }
 }

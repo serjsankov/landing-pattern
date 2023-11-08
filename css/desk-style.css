@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+button {
+    cursor: pointer;
+}
+
 
 .section__title {
     font-size: 60px;
@@ -827,6 +831,142 @@
     font-size: 16px;
     line-height: 18px;
 }
+
+/*=======================================================*/
+
+
+/*=============== #POPUP ==============*/
+
+.popup {
+    width: 853px;
+    height: 378px;
+
+    padding: 26px;
+}
+
+#modalCredit {
+    background: url(../img/pop-credit_desk.webp)no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #modalSpecial {
+    background: url(../img/pop-special_desk.webp)no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #modalSuc {
+    background: url(../img/pop-special_desk.webp)no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+    padding: 42px 36px;
+  
+    height: 378px;
+  }
+
+  #modalSuc .popup__cont {
+    justify-content: flex-end;
+  }
+
+  .popup__suc-head {
+    font-size: 55px;
+    line-height: 57px;
+  }
+
+  .popup__suc-sub-head {
+    font-size: 30px;
+    line-height: 32px;
+
+    margin-top: 27px;
+
+    width: 460px;
+
+    margin-left: auto;
+  }
+
+
+  .popup__special-head {
+    margin: 0;
+    padding: 0;
+
+    font-size: 34px;
+    line-height: 41px;
+
+    width: 100%;
+    height: auto;
+
+    background: none;
+  }
+
+  .popup__credit-head {
+    font-size: 31px;
+    line-height: 33px;
+  }
+
+  .popup__credit-percent {
+    width: 109px;
+  }
+
+  .popup__texts {
+    align-self: flex-start;
+  }
+
+  .popup__cont {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    height: 100%;
+  }
+
+  #modalSpecial .popup__form,
+  #modalCredit .popup__form {
+    width: 356px;
+    margin: 0;
+  }
+
+  .popup__space {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .fancybox__content>.f-button.is-close-btn {
+    top: 0;
+
+    opacity: 1;
+  }
+
+  .popup__list {
+    margin-top: 10px;
+
+    gap: 17px;
+  }
+
+  .popup__list.mob_hide {
+    display: flex;
+  }
+
+  .popup__list-item {
+    font-size: 17px;
+    line-height: 19px;
+  }
+
+  .popup__form-btn {
+    height: 32px;
+
+    margin-top: 20px;
+
+    font-size: 15px;
+    line-height: 17px;
+  }
+
+  .popup__form-inputs {
+    gap: 36px;
+  }
 
 /*=======================================================*/
 
