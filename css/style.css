@@ -1,8 +1,67 @@
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller Regular'), local('Muller-Regular'),
+        url('../fonts/MullerRegular.woff2') format('woff2'),
+        url('../fonts/MullerRegular.woff') format('woff'),
+        url('../fonts/MullerRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Muller';
+    src: local('Muller Medium'), local('Muller-Medium'),
+        url('../fonts/MullerMedium.woff2') format('woff2'),
+        url('../fonts/MullerMedium.woff') format('woff'),
+        url('../fonts/MullerMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Muller';
+    src: local('Muller Bold'), local('Muller-Bold'),
+        url('../fonts/MullerBold.woff2') format('woff2'),
+        url('../fonts/MullerBold.woff') format('woff'),
+        url('../fonts/MullerBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Muller';
+    src: local('Muller Extra Bold'), local('Muller-Extra-Bold'),
+        url('../fonts/MullerExtraBold.woff2') format('woff2'),
+        url('../fonts/MullerExtraBold.woff') format('woff'),
+        url('../fonts/MullerExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Orbitron';
+    src: local('Orbitron Regular'), local('Orbitron-Regular'),
+        url('../fonts/Orbitron-Regular.woff2') format('woff2'),
+        url('../fonts/Orbitron-Regular.woff') format('woff'),
+        url('../fonts/Orbitron-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
 :root {
-  --family-gotham: 'Gotham Pro';
-  --family-agressive: 'AGRESSIVE';
+  --family-muller: 'Muller';
+  --family-orbitron: 'Orbitron';
   --color-black: #000000;
   --color-white: #FFFFFF;
+  --color-green: #38AB96;
+  --color-green-black: #12323F;
+  --color-orange: #D75941;
+}
+
+body {
+    font-family: var(--family-muller);
+
+    background: var(--color-green-black);
 }
 
 .btn {
@@ -11,6 +70,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.btn.bg_green {
+    background: var(--color-green);
 }
 
 .input {}
@@ -25,6 +88,82 @@
   padding: 0 16px;
 }
 
+
+/******* #HEADER *******/
+
+.header-top {
+    background: var(--color-green-black);
+}
+
+.header-top__container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 7px 0;
+}
+
+.header-top__item {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 400;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo img {
+    max-width: 158px;
+}
+
+.header__btn {
+   margin-top: 84px;
+}
+
+.header__button {
+    height: 55px;
+
+    background: var(--color-green);
+
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--color-white);
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.header__nav-link {
+    display: block;
+
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.header__nav-link:hover {
+    color: var(--color-green);
+}
+
+.header-bottom {
+
+}
+
 .header__container {
     display: flex;
     align-items: center;
@@ -33,31 +172,75 @@
 
 .burger {
     width: 24px;
-    height: 24px;
+    height: 16px;
 
     position: relative;
 }
 
-.burger__line {
+.burger__flex {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+
     position: absolute;
-    left: 0;
 
     width: 100%;
-    height: 2px;
+}
 
-    background: var(--color-black);
+.burger__flex._flex1 {
+    top: 0;
+}
+
+.burger__flex._flex2 {
+    top: 6px;
+}
+
+.burger__flex._flex3 {
+    bottom: 0;
+}
+
+.burger__ball {
+    width: 4px;
+    height: 4px;
+
+    background: var(--color-green);
+
+    border-radius: 50%;
 
     display: block;
 }
 
-.burger__line.line_1 {
-    top: 0;
+.burger__line {
+    width: 19px;
+    height: 3px;
+
+    background: var(--color-white);
+
+    display: block;
+
+    border-radius: 5px;
+
+    display: block;
 }
 
-.burger__line.line_2 {
-    top: 4px;
+
+.header__menu {
+    position: fixed;
+    right: -100%;
+    top: 50px;
+
+    width: 100%;
+
+    padding: 62px 15px 15px;
+
+    background: var(--color-green-black);
+
+    transition: all .4s;
 }
 
-.burger__line.line_3 {
-    top: 8px;
+.header.active .header__menu {
+    right: 0;
 }
+
+
+/*===========================================*/
