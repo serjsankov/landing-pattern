@@ -1,26 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset-style.css" />
-    <link rel="stylesheet" href="./css/swiper.min.css" />
-    <link rel="stylesheet" href="./css/fancybox.min.css" />
-    <link rel="stylesheet" href="./css/sumoselect2.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="./css/tablet-style.css"
-      media="(min-width: 768px)"
-    />
-    <link
-      rel="stylesheet"
-      href="./css/desk-style.css"
-      media="(min-width: 1025px)"
-    />
-    <title>Landing page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset-style.css" />
+  <link rel="stylesheet" href="./css/swiper.min.css" />
+  <link rel="stylesheet" href="./css/fancybox.min.css" />
+  <link rel="stylesheet" href="./css/sumoselect2.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/tablet-style.css" media="(min-width: 768px)" />
+  <link rel="stylesheet" href="./css/desk-style.css" media="(min-width: 1025px)" />
+  <title>Landing page</title>
 </head>
+
 <body>
   <header class="header">
     <div class="header-top">
@@ -85,10 +79,34 @@
       </div>
     </div>
   </header>
-    <script src="./libs/jquery.min.js"></script>
-    <script src="./libs/masked-input.min.js"></script>
-    <script src="./libs/fancybox.min.js"></script>
-    <script src="./libs/select2.js"></script>
-    <script src="./js/main.js"></script>
+  <section class="main-banner">
+    <div class="container"></div>
+    <div class="main-banner__block-form">
+      <div class="container">
+        <span class="main-banner__form-head">Оставьте заявку и зафиксируйте условия</span>
+        <form action="" class="main-banner__form form">
+          <div class="main-banner__form-block">
+            <div class="form__inputs">
+              <input type="text" name="name" placeholder="Имя" class="form__input input main-banner__form-input">
+              <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" class="form__input input main-banner__form-input" required>
+            </div>
+          </div>
+          <button class="btn main-banner__form-button bg_green">
+            <span>
+              Зафиксировать
+              предложение
+            </span>
+            <img src="./img/main-banner_btn.svg" alt="icon">
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="./libs/jquery.min.js"></script>
+  <script src="./libs/masked-input.min.js"></script>
+  <script src="./libs/fancybox.min.js"></script>
+  <script src="./libs/select2.js"></script>
+  <script src="./js/main.js"></script>
 </body>
+
 </html>
