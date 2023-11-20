@@ -80,29 +80,181 @@
     </div>
   </header>
   <section class="main-banner">
-    <div class="container"></div>
-    <div class="main-banner__block-form">
+    <div class="main-banner__bg">
       <div class="container">
-        <span class="main-banner__form-head">Оставьте заявку и зафиксируйте условия</span>
-        <form action="" class="main-banner__form form">
-          <div class="main-banner__form-block">
-            <div class="form__inputs">
-              <input type="text" name="name" placeholder="Имя" class="form__input input main-banner__form-input">
-              <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" class="form__input input main-banner__form-input" required>
+        <div class="main-banner__bg-cont">
+          <div class="main-banner__texts">
+            <h1 class="main-banner__title">
+              Автомобили Jetour<br> 
+              с максимальной выгодой <span class="small_text">до 400 000 ₽</span>
+            </h1>
+            <ul class="main-banner__list">
+              <li class="main-banner__list-item">
+                <span class="main-banner__list-block">
+                  <span class="main-banner__list-box">
+                    <img src="./img/ok.svg" alt="icon">
+                  </span>
+                </span>
+                <span>
+                  Доп. оборудование<br>
+                  или КАСКО в подарок
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="main-banner__timer">
+            <div class="main-banner__time-texts">
+              <span>Срок действия акции до </span><span class="text_bg">31.07. 2023</span>
+            </div>
+            <div class="timer">
+              <div class="time-count__item time-count__days">
+                <div class="time-count__val">00</div>
+                <span class="time-count__text">дней</span>
+              </div>
+              <span class="time-coun__separation">:</span>
+              <div class="time-count__item time-count__hours">
+                <div class="time-count__val">00</div>
+                <span class="time-count__text">часов</span>
+              </div>
+              <span class="time-coun__separation">:</span>
+              <div class="time-count__item time-count__minutes">
+                <div class="time-count__val">00</div>
+                <span class="time-count__text">минут</span>
+              </div>
+              <span class="time-coun__separation">:</span>
+              <div class="time-count__item time-count__seconds">
+                <div class="time-count__val">00</div>
+                <span class="time-count__text">секунд</span>
+              </div>
             </div>
           </div>
-          <button class="btn main-banner__form-button bg_green">
-            <span>
-              Зафиксировать
-              предложение
-            </span>
-            <img src="./img/main-banner_btn.svg" alt="icon">
-          </button>
-        </form>
+        </div>
+      </div>
+    </div>
+    <div class="main-banner__block-form">
+      <div class="main-banner__block-bg">
+        <div class="container">
+          <form action="" class="main-banner__form form">
+            <div class="main-banner__form-flex">
+              <div class="main-banner__form-white">
+                <span class="main-banner__form-head">Оставьте заявку<br> и зафиксируйте условия</span>
+                <div class="main-banner__form-block">
+                  <div class="form__inputs">
+                    <input type="text" name="name" placeholder="Имя" class="form__input input main-banner__form-input">
+                    <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" class="form__input input main-banner__form-input" required>
+                  </div>
+                  <div class="form-checkbox">
+                    <label for="check-main">
+                      <span class="checkbox">
+                        <input class="form__input-check" type="checkbox" id="check-main" checked="">
+                        <span class="custom-checkbox"></span>
+                      </span>
+                      <span class="checkbox-text">
+                        Отправляя форму я даю согласие на <a href="/policy" class="checkbox-link">обработку персональных данных</a>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <button class="btn main-banner__form-button bg_green">
+                <span>
+                  Зафиксировать<br>
+                  предложение
+                </span>
+                <img src="./img/main-banner_btn.svg" alt="icon">
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="actions">
+    <div class="container">
+      <div class="actions__container">
+        <div class="actions__item">
+          <span>
+            Бонус за Trade-In<br>
+            <b>до 300 000₽</b>
+          </span>
+        </div>
+        <div class="actions__item">
+          <span>Доп. скидка за кредит<br> <b>до 70 000₽</b></span>
+        </div>
+        <div class="actions__item">
+          <span>Льготная ставка  <b> от 4.9%</b></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="models" id="model">
+    <div class="container">
+      <div class="section__upper">
+        <h2 class="section__title">Модельный ряд</h2>
+      </div>
+      <div class="models__container">
+        <div class="model-card">
+          <div class="model-card__car">
+            <span class="model-card__head">Dashing</span>
+            <img src="./img/brand.webp" alt="brand" class="model-card__img-position">
+            <div class="model-card__car-block">
+              <div class="model-card__car-img">
+                <img src="./img/test-model.png" alt="car">
+              </div>
+              <div class="model-card__car-images">
+                <div class="swiper swiper-images">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide js-active">
+                      <a href="" class="model-card__img-link">
+                        <img src="./img/test-model-1.png" alt="" class="model-card__img">
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="" class="model-card__img-link">
+                        <img src="./img/test-model-1.png" alt="" class="model-card__img">
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="" class="model-card__img-link">
+                        <img src="./img/test-model-1.png" alt="" class="model-card__img">
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="" class="model-card__img-link">
+                        <img src="./img/test-model-1.png" alt="" class="model-card__img">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="model-card__car-colors">
+                <div class="model-card__colors">
+                  <span class="models-card__color" style="background: red;"></span>
+                  <span class="models-card__color" style="background: red;"></span>
+                  <span class="models-card__color" style="background: red;"></span>
+                  <span class="models-card__color" style="background: red;"></span>
+                  <span class="models-card__color" style="background: red;"></span>
+                  <span class="models-card__color" style="background: red;"></span>
+                  <span class="models-card__color" style="background: red;"></span>
+                </div>
+                <span class="model-card__color-text">Цвет: <span class="js_color_text"> Серебристо-бело-молочный</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="model-card__info">
+            <ul class="model-card__list">
+              <li class="model-card__list-item">Кредит от 4,9%</li>
+              <li class="model-card__list-item">Рассрочка 0%</li>
+              <li class="model-card__list-item">Trade-In в вашу пользу</li>
+              <li class="model-card__list-item">КАСКО в подарок</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </section>
   <script src="./libs/jquery.min.js"></script>
+  <script src="./libs/swiper-bundle.min.js"></script>
   <script src="./libs/masked-input.min.js"></script>
   <script src="./libs/fancybox.min.js"></script>
   <script src="./libs/select2.js"></script>

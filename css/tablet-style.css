@@ -1,0 +1,38 @@
+.container {
+    padding: 0 32px;
+}
+
+
+/******* #MAIN-BANNER *******/
+
+.main-banner__bg {
+    aspect-ratio: 768/450;
+
+    background-position: center;
+}
+
+.main-banner__form-button::before {
+    width: 32px;
+
+    left: -32px;
+}
+
+.main-banner__form-button::after {
+    width: 32px;
+
+    right: -32px;
+}
+
+.actions__item::before {
+    width: 32px;
+
+    left: -32px;
+}
+
+.actions__item::after {
+    width: 32px;
+
+    right: -32px;
+}
+
+/*===========================================*/

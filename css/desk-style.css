@@ -1,0 +1,415 @@
+.container {
+    max-width: 1500px;
+
+    padding: 0;
+    margin: 0 auto;
+}
+
+/******* #HEADER *******/
+
+.header {
+    z-index: 1;
+}
+
+.burger {
+    display: none;
+}
+
+.header-top__item {
+    font-size: 15px;
+    line-height: 17px;
+}
+
+.header-top__container {
+    justify-content: flex-end;
+    gap: 31px;
+
+    padding: 9px 0;
+}
+
+.header__logo img {
+    max-width: 314px;
+}
+
+.header__container {
+    padding: 30px 0 ;
+}
+
+.header__menu {
+    position: initial;
+
+    background: none;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav {
+    flex-direction: row;
+
+    flex-basis: 75%;
+    justify-content: flex-end;
+    gap: 60px;
+}
+
+.header__btn {
+    margin-top: 0;
+
+    flex-basis: 17%;
+}
+
+.header__button {
+    font-size: 14px;
+    line-height: 16px;
+
+    height: 33px;
+}
+
+.header__nav-link {
+    transition: all .4s;
+}
+
+/*===========================================*/
+
+
+/******* #MAIN-BANNER *******/
+
+.main-banner {
+    padding: 183px 0 352px;
+
+    background: url(../img/main-banner_desk.webp)no-repeat;
+    background-size: cover;
+
+    aspect-ratio: 1920/1100;
+
+    position: relative;
+}
+
+.main-banner__bg {
+    aspect-ratio: auto;
+
+    background: none;
+
+    padding: 0;
+
+    height: 100%;
+}
+
+.main-banner__block-form {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 1330px;
+
+    width: 100%;
+
+    padding: 0;
+
+    background: none;
+}
+
+.main-banner__block-bg {
+    position: relative;
+    z-index: 1;
+}
+
+.main-banner__block-bg::before {
+    content: "";
+
+    display: block;
+
+    height: 100%;
+    width: 30%;
+
+    background: var(--color-white);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.main-banner__form-button::after,
+.main-banner__form-button::before {
+    display: none;
+}
+
+.main-banner__title {
+    font-size: 48px;
+    line-height: 103.023%;
+}
+
+.main-banner__title .small_text {
+    display: inline-block;
+
+    font-size: 48px;
+    line-height: 50px;
+}
+
+.main-banner__list-item {
+    gap: 25px;
+    align-items: center;
+
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.main-banner__list-box {
+    width: 30px;
+    height: 30px;
+}
+
+.main-banner__time-texts {
+    font-size: 21px;
+    line-height: 23px;
+
+    margin-bottom: 22px;
+}
+
+.main-banner__time-texts .text_bg {
+    padding: 3px 14px 3px 16px;
+}
+
+.main-banner__form-head {
+    font-size: 32px;
+    line-height: 34px;
+
+    margin-bottom: 61px;
+}
+
+.form__inputs {
+    flex-direction: row;
+
+    width: 100%;
+}
+
+.main-banner__form-button {
+    margin-top: 0;
+
+    padding: 50px 0 0;
+    gap: 48px;
+    justify-content: center;
+    flex-direction: column-reverse;
+
+    text-align: center;
+
+    font-size: 20px;
+    line-height: 22px;
+
+    width: 360px;
+}
+
+.main-banner__form-button img {
+    transform: rotate(90deg);
+}
+
+.main-banner__form-flex {
+    display: flex;
+}
+
+.main-banner__form-white {
+    padding: 50px 20px 0 0;
+
+    background: var(--color-white);
+}
+
+.main-banner__form-input {
+    width: 360px;
+}
+
+.form__input {
+    padding-left: 17px;
+}
+
+.form-checkbox label {
+    gap: 10px;
+    align-items: center;
+}
+
+.timer {
+    margin: 0;
+}
+
+.time-count__val {
+    font-size: 37px;
+    line-height: 39px;
+}
+
+.time-count__text {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+/*===========================================*/
+
+
+
+/******* #ACTIONS *******/
+
+.actions {
+    padding-top: 50px;
+}
+
+.actions__container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.actions__item::before {
+    width: 22px;
+
+    left: -22px;
+}
+
+.actions__item::after {
+    display: none;
+}
+
+.actions__item {
+    padding-left: 60px;
+    font-size: 24px;
+    line-height: 26px;
+    flex-basis: 32%;
+    height: 188px;
+
+    transition: all .4s;
+}
+
+.actions__item:hover {
+    background: #35515D;
+}
+
+.actions__item::before {
+    width: 22px;
+
+    left: 0;
+}
+
+
+/*===========================================*/
+
+
+/******* #MEDIA *******/
+
+@media screen and (max-width: 1570px) {
+    .container {
+        max-width: 1100px;
+    }
+
+    .header__container {
+        padding: 10px 0;
+    }
+
+    .main-banner {
+        padding: 110px 0 230px;
+    }
+
+    .main-banner__title {
+        font-size: 29px;
+        line-height: 31px;
+    }
+
+    .main-banner__list-item {
+        font-size: 17px;
+        line-height: 19px;
+    }
+
+    .actions__item {
+        height: 135px;
+
+        padding-left: 35px;
+    }
+
+    .header__logo img {
+        max-width: 235px;
+    }
+
+    .header__nav {
+        gap: 20px;
+    }
+
+    .header__btn {
+        flex-basis: 21%;
+    }
+
+    .main-banner__form-head {
+        margin-bottom: 30px;
+    }
+
+    .main-banner__form-white {
+        padding: 30px 20px 0 0;
+    }
+
+    .main-banner__form-button {
+        padding: 20px 0 0;
+
+        gap: 19px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .container {
+        max-width: 995px;
+    }
+
+    .main-banner__form-head {
+        font-size: 20px;
+        line-height: 22px;
+
+        margin-bottom: 15px;
+    }
+
+    .main-banner__form-input {
+        width: 280px;
+    }
+
+    .main-banner__form-button {
+        font-size: 17px;
+        line-height: 19px;
+
+        width: 280px;
+    }
+
+    .main-banner {
+        padding: 98px 0 185px;
+    }
+
+    .main-banner__title {
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    .main-banner__title .small_text {
+        font-size: 23px;
+        line-height: 25px;
+    }
+
+    .main-banner__list {
+        margin-top: 20px;
+    }
+
+    .main-banner__list-box {
+        width: 20px;
+        height: 20px;
+    }
+
+    .main-banner__list-item {
+        gap: 15px;
+    }
+
+    .actions__item {
+        font-size: 18px;
+        line-height: 20px;
+
+        height: 100px;
+    }
+
+    .header__logo img {
+        max-width: 160px;
+    }
+}
+
+/*===========================================*/

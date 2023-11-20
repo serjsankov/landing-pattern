@@ -10,6 +10,11 @@ window.addEventListener("DOMContentLoaded", () => {
   initFancy();
   initCustomSelect();
 
+  var swiperImages = new Swiper(".swiper-images", {
+    slidesPerView: 'auto',
+    spaceBetween: 7,
+  });
+
   function initCustomSelect () {
     $('select').select2({
       width: '100%',
