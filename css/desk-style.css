@@ -5,6 +5,11 @@
     margin: 0 auto;
 }
 
+.section__title {
+    font-size: 32px;
+    line-height: 34px;
+}
+
 /******* #HEADER *******/
 
 .header {
@@ -292,6 +297,300 @@
 /*===========================================*/
 
 
+ /******* #MODELS *******/
+
+ .models {
+    padding-top: 95px;
+ }
+
+ .models__container {
+    margin-top: 48px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+ }
+
+ .model-card {
+    width: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(56, 171, 150, 0.50);
+
+    padding: 25px 20px 20px;
+ }
+
+ .model-card__line {
+    display: none;
+ }
+
+ .model-card__img-position {
+    right: 0;
+ }
+
+ .model-card__car-colors {
+    margin-top: 28px;
+ }
+
+ .model-card__car-images {
+    position: inherit;
+
+    order: 3;
+
+    margin-top: 25px;
+ }
+
+ .model-card__head {
+    font-size: 32px;
+    line-height: 34px;
+    font-weight: 700;
+ }
+
+ .model-card__list {
+    margin-top: 0;
+
+    grid-template-columns: 1fr;
+ }
+
+ .model-card__list-item {
+    font-size: 16px;
+    line-height: 18px;
+ }
+
+ .model-card__prices {
+    gap: 3px;
+ }
+
+ .model-card__car-img img {
+    max-width: 336px;
+ }
+
+ .model-card__car-img {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 38px;
+ }
+
+ .model-card__car-block {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+ }
+
+ .model-card__colors {
+    margin: 0;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    flex-direction: column;
+    gap: 10px;
+ }
+
+ .model-card__color-text {
+    text-align: left;
+    font-size: 16px;
+    line-height: 18px;
+ }
+
+ .model-card__info {
+    flex-basis: 37%;
+ }
+
+/*===========================================*/
+
+
+ /******* #EQIPS *******/
+
+.equips {
+    padding-top: 95px;
+}
+
+.equips__filter {
+    width: 100%;
+
+    flex-direction: row;
+    gap: 20px;
+}
+
+.equips__filter-block {
+    flex-basis: 50%;
+}
+
+.equips-container {
+    margin-top: 60px;
+
+    gap: 54px;
+}
+
+.equips-card {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.equips-car__model-head.desk_hide {
+    display: none;
+}
+
+.equips-car__model-head.mob_hide {
+    display: block;
+}
+
+.equips-car__model-head {
+    margin-top: 0;
+
+    font-size: 32px;
+    line-height: 34px;
+}
+
+.equips-card__list {
+    margin-top: 49px;
+
+    row-gap: 25px;
+}
+
+.equips-card__list-item {
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.equips-card__btns {
+    margin-top: 24px;
+
+    flex-direction: row;
+    gap: 15px;
+}
+
+.equips-card__prices-btns {
+    flex-basis: 36%;
+}
+
+.equips-card__prices-flex {
+    font-size: 32px;
+    line-height: 34px;
+    text-transform: initial;
+
+    flex-direction: row-reverse;
+}
+
+.equips-card__prices {
+    gap: 15px;
+
+    margin-top: 0;
+}
+
+.equips-card__old-price {
+    text-align: center;
+
+    padding-left: 123px;
+}
+
+.equips-card__info {
+    flex-basis: 32%;
+}
+
+.equips-card__head {
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.equips-card__price {
+    flex-basis: 48%;
+}
+
+/*===========================================*/
+
+
+ /******* #CREDIT *******/
+
+.credit__bg {
+    background: none;
+    aspect-ratio: auto;
+
+    padding: 0;
+}
+
+.credit {
+    background: url(../img/credit_desk.webp)no-repeat;
+    background-size: cover;
+
+    aspect-ratio: 1920/571;
+
+    margin-top: 95px;
+
+    padding: 50px 0 329px;
+
+    position: relative;
+}
+
+.credit__title {
+    font-size: 32px;
+    line-height: 34px;
+}
+
+.credit__list {
+    margin-top: 70px;
+
+    grid-template-columns: 1fr 3fr;
+    display: grid;
+}
+
+.credit__border {
+    width: 195px;
+    height: 195px;
+}
+
+.credit__ball {
+    width: 170px;
+    height: 170px;
+
+    font-size: 24px;
+    line-height: 26px;
+
+    gap: 24px;
+}
+
+.credit__percent {
+    font-size: 54px;
+    line-height: 56px;
+}
+
+.credit .main-banner__form-white {
+    padding: 30px 60px 58px 0;
+}
+
+.credit .form__inputs {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.credit .main-banner__form-button {
+    width: 295px;
+}
+
+/*===========================================*/
+
+
+
+ /******* #TRADE *******/
+
+.trade__container-mob {
+    display: none;
+}
+
+/*===========================================*/
+
+
 /******* #MEDIA *******/
 
 @media screen and (max-width: 1570px) {
@@ -347,6 +646,58 @@
         padding: 20px 0 0;
 
         gap: 19px;
+    }
+
+    .equips-card__info {
+        flex-basis: 24%;
+    }
+
+    .equips-card__prices-btns {
+        flex-basis: 44%;
+    }
+
+    .equips-card__prices-flex {
+        font-size: 28px;
+        line-height: 30px
+    }
+
+    .model-card__price {
+        font-size: 25px;
+        line-height: 27px;
+    }
+
+    .model-card__list-item {
+        font-size: 15px;
+        line-height: 17px;
+
+        white-space: normal;
+    }
+
+    .model-card {
+        gap: 10px;
+    }
+
+    .model-card__car-img img {
+        max-width: 277px;
+    }
+
+    .model-card__colors {
+        height: 185px;
+
+        gap: 5px;
+    }
+
+    .models-card__color {
+        width: 18px;
+        height: 18px;
+    }
+
+    .model-card__car-images {
+        width: 300px;
+    }
+
+    .credit__list {
+        grid-template-columns: 1fr 2fr;
     }
 }
 
@@ -409,6 +760,60 @@
 
     .header__logo img {
         max-width: 160px;
+    }
+
+    .model-card__car-images {
+        width: 270px;
+    }
+
+    .model-card__price {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .model-card__old-price {
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .model-card__list-item {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .model-card__car-img img {
+        max-width: 245px;
+    }
+
+    .credit {
+        padding: 50px 0 260px;
+    }
+
+    .credit__list {
+        margin-top: 40px;
+    }
+
+    .credit__border {
+        width: 140px;
+        height: 140px;
+    }
+
+    .credit__ball {
+        width: 120px;
+        height: 120px;
+
+        font-size: 18px;
+        line-height: 20px;
+
+        gap: 10px;
+    }
+
+    .credit__percent {
+        font-size: 31px;
+        line-height: 33px;
+    }
+
+    .credit .main-banner__form-white {
+        padding: 30px 20px 28px 0;
     }
 }
 

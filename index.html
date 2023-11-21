@@ -244,11 +244,389 @@
           <div class="model-card__info">
             <ul class="model-card__list">
               <li class="model-card__list-item">Кредит от 4,9%</li>
-              <li class="model-card__list-item">Рассрочка 0%</li>
               <li class="model-card__list-item">Trade-In в вашу пользу</li>
+              <li class="model-card__list-item">Рассрочка 0%</li>
               <li class="model-card__list-item">КАСКО в подарок</li>
             </ul>
+            <div class="model-card__prices">
+              <span class="model-card__old-price">2 865 900 ₽</span>
+              <div class="span model-card__price">от 1 550 000 ₽</div>
+            </div>
+            <div class="model-card__btns">
+              <button class="models-card__button-credit">
+                <span class="model-card__month-price">от 20 000 ₽/мес</span>
+                <span>Купить в кредит</span>
+              </button>
+              <button class="model-card__button-fix bg_green btn">Зафиксировать цену</button>
+            </div>
+            <div class="model-card__line"></div>
           </div>
+        </div>
+        <div class="model-card">
+          <div class="model-card__car">
+            <span class="model-card__head">Dashing</span>
+            <img src="./img/brand.webp" alt="brand" class="model-card__img-position">
+            <div class="model-card__car-block">
+              <div class="model-card__car-img">
+                <img src="./img/test-model.png" alt="car">
+              </div>
+              <div class="model-card__car-images">
+                <div class="swiper swiper-images">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide js-active">
+                      <a href="" class="model-card__img-link">
+                        <img src="./img/test-model-1.png" alt="" class="model-card__img">
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="" class="model-card__img-link">
+                        <img src="./img/test-model-1.png" alt="" class="model-card__img">
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="" class="model-card__img-link">
+                        <img src="./img/test-model-1.png" alt="" class="model-card__img">
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="" class="model-card__img-link">
+                        <img src="./img/test-model-1.png" alt="" class="model-card__img">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="model-card__car-colors">
+                <div class="model-card__colors">
+                  <span class="models-card__color" style="background: red;"></span>
+                  <span class="models-card__color" style="background: red;"></span>
+                  <span class="models-card__color" style="background: red;"></span>
+                  <span class="models-card__color" style="background: red;"></span>
+                  <span class="models-card__color" style="background: red;"></span>
+                  <span class="models-card__color" style="background: red;"></span>
+                  <span class="models-card__color" style="background: red;"></span>
+                </div>
+                <span class="model-card__color-text">Цвет: <span class="js_color_text"> Серебристо-бело-молочный</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="model-card__info">
+            <ul class="model-card__list">
+              <li class="model-card__list-item">Кредит от 4,9%</li>
+              <li class="model-card__list-item">Trade-In в вашу пользу</li>
+              <li class="model-card__list-item">Рассрочка 0%</li>
+              <li class="model-card__list-item">КАСКО в подарок</li>
+            </ul>
+            <div class="model-card__prices">
+              <span class="model-card__old-price">2 865 900 ₽</span>
+              <div class="span model-card__price">от 1 550 000 ₽</div>
+            </div>
+            <div class="model-card__btns">
+              <button class="models-card__button-credit">
+                <span class="model-card__month-price">от 20 000 ₽/мес</span>
+                <span>Купить в кредит</span>
+              </button>
+              <button class="model-card__button-fix bg_green btn">Зафиксировать цену</button>
+            </div>
+            <div class="model-card__line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="equips" id="equip">
+    <div class="container">
+      <div class="section__upper">
+        <h2 class="section__title">Комплектации</h2>
+      </div>
+      <div class="equips__filter">
+        <div class="equips__filter-block">
+          <div class="equips__select">
+          <select class="js--model" name="param1">
+            <option value="">Модель</option>
+            {% for model in models %}
+             <option value="{{model.id}}">{{model.title | replace({'New': ""})}}</option>
+          {% endfor %}
+          </select>
+          </div>
+        </div>
+        <div class="equips__filter-block">
+          <div class="equips__select">
+            <select class="js--equipment" name="param1">
+              <option value="">Комплектация</option>
+               {% for equipment in equipments %}
+                <option value="{{ equipment.id }}" data-model="{{ equipment.model.id }}">{{ equipment.title }}</option>
+                {% endfor %}
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="equips-container">
+        <div class="equips-card">
+          <div class="equips-card__car">
+            <div class="equips-card__car-texts">
+              <span class="equips-card__head">COMFORT 1.6</span>
+              <span class="equips-car__model-head desk_hide">Dashing</span>
+              <div class="equips-card__car-img">
+                <img src="./img/test-equip.png" alt="car">
+              </div>
+            </div>
+          </div>
+          <div class="equips-card__info">
+            <span class="equips-car__model-head mob_hide">Dashing</span>
+            <ul class="equips-card__list">
+              <li class="equips-card__list-item">190 л.с</li>
+              <li class="equips-card__list-item">АКПП 6</li>
+              <li class="equips-card__list-item">1.6 л</li>
+              <li class="equips-card__list-item">Полный (4WD)</li>
+            </ul>
+          </div>
+          <div class="equips-card__prices-btns">
+            <div class="equips-card__prices">
+              <span class="equips-card__old-price">2 865 900 ₽</span>
+              <div class="equips-card__prices-flex">
+                <span class="equips-card__price">от 1 550 000 ₽</span>
+                <span class="equips-card__month-price">от 20 000 ₽/мес</span>
+              </div>
+            </div>
+            <div class="equips-card__btns">
+              <button class="btn border equips-card__button">Купить в кредит</button>
+              <button class="btn bg_green equips-card__button">Зафиксировать цену</button>
+            </div>
+          </div>
+        </div>
+        <div class="equips-card">
+          <div class="equips-card__car">
+            <div class="equips-card__car-texts">
+              <span class="equips-card__head">COMFORT 1.6</span>
+              <span class="equips-car__model-head desk_hide">Dashing</span>
+              <div class="equips-card__car-img">
+                <img src="./img/test-equip.png" alt="car">
+              </div>
+            </div>
+          </div>
+          <div class="equips-card__info">
+            <span class="equips-car__model-head mob_hide">Dashing</span>
+            <ul class="equips-card__list">
+              <li class="equips-card__list-item">190 л.с</li>
+              <li class="equips-card__list-item">АКПП 6</li>
+              <li class="equips-card__list-item">1.6 л</li>
+              <li class="equips-card__list-item">Полный (4WD)</li>
+            </ul>
+          </div>
+          <div class="equips-card__prices-btns">
+            <div class="equips-card__prices">
+              <span class="equips-card__old-price">2 865 900 ₽</span>
+              <div class="equips-card__prices-flex">
+                <span class="equips-card__price">от 1 550 000 ₽</span>
+                <span class="equips-card__month-price">от 20 000 ₽/мес</span>
+              </div>
+            </div>
+            <div class="equips-card__btns">
+              <button class="btn border equips-card__button">Купить в кредит</button>
+              <button class="btn bg_green equips-card__button">Зафиксировать цену</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="credit" id="autocredit">
+    <div class="credit__bg">
+      <div class="container">
+        <div class="credit-container">
+          <h2 class="credit__title">кредит на jetour<br>
+            без первоначального взноса
+          </h2>
+          <ul class="credit__list">
+            <li class="credit__list-item">
+              <img src="./img/ok-credit.svg" alt="icon">
+              <span>Льготная ставка от 4,9%</span>
+            </li>
+            <li class="credit__list-item">
+              <img src="./img/ok-credit.svg" alt="icon">
+              <span>Дополнительная скидка до 70 000 ₽</span>
+            </li>
+            <li class="credit__list-item">
+              <img src="./img/ok-credit.svg" alt="icon">
+              <span>Досрочное погашение без штрафов</span>
+            </li>
+            <li class="credit__list-item">
+              <img src="./img/ok-credit.svg" alt="icon">
+              <span>3 месяца кредитный каникул</span>
+            </li>
+          </ul>
+          <div class="credit__border">
+            <div class="credit__ball">
+              <span>ставка от</span>
+              <span class="credit__percent">4,9%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-banner__block-form">
+      <div class="main-banner__block-bg">
+        <div class="container">
+          <form action="" class="main-banner__form form">
+            <div class="main-banner__form-flex">
+              <div class="main-banner__form-white">
+                <div class="main-banner__form-block">
+                  <div class="form__inputs">
+                    <input type="text" name="name" placeholder="Имя" class="form__input input main-banner__form-input">
+                    <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" class="form__input input main-banner__form-input" required="">
+                  </div>
+                  <div class="form-checkbox">
+                    <label for="check-main">
+                      <span class="checkbox">
+                        <input class="form__input-check" type="checkbox" id="check-main" checked="">
+                        <span class="custom-checkbox"></span>
+                      </span>
+                      <span class="checkbox-text">
+                        Отправляя форму я даю согласие на <a href="/policy" class="checkbox-link">обработку персональных данных</a>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <button class="btn main-banner__form-button bg_green">
+                <span>
+                  Отправить<br>
+                  заявку
+                </span>
+                <img src="./img/main-banner_btn.svg" alt="icon">
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="trade" id="trade-in">
+    <div class="trade__container-mob">
+      <div class="container">
+        <div class="trade__texts">
+          <span class="trade__head">обменяйте ваш старый<br>
+             авто на новый Jetour
+          </span>
+          <span class="trade__vigoda">
+            с выгодой до 300 000₽
+          </span>
+          <span class="trade__action">
+            Бесплатно оценим авто
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="trade__container">
+        <div class="trade__photos">
+          <div class="trade__photos-flex margin_left margin_bottom shadow_bottom">
+            <img src="./img/trade_1.png" alt="car" class="trade__photos-prev">
+            <img src="./img/trade_2.png" alt="car" class="trade__photos-prev">
+          </div>
+          <div class="trade__photos-main">
+            <picture>
+              <source srcset="./img/trade_mob.webp" media="(max-width: 1024px)">
+              <img src="./img/trade_desk.webp" alt="car" class="trade__photos-img">
+            </picture>
+          </div>
+          <div class="trade__photos-flex margin_right margin_top shadow_top">
+            <img src="./img/trade_3.png" alt="car" class="trade__photos-prev">
+            <img src="./img/trade_4.png" alt="car" class="trade__photos-prev">
+          </div>
+        </div>
+        <div class="trade__info">
+          <div class="trade__texts mob_hide">
+            <span class="trade__head">обменяйте ваш старый<br>
+               авто на новый Jetour
+            </span>
+            <span class="trade__vigoda">
+              с выгодой до 300 000₽
+            </span>
+            <span class="trade__action">
+              Бесплатно оценим авто
+            </span>
+          </div>
+          <form action="" class="form trade__form">
+            <div class="trade__form-flex">
+              <div class="trade__form-select">
+                <select name="tradeincarbrand" id="">
+                  <option value="" selected>Марка</option>
+                </select>
+              </div>
+              <div class="trade__form-select">
+                <select name="tradeincarmodel" id="" disabled>
+                  <option value="" selected>Модель</option>
+                </select>
+              </div>
+              <div class="trade__form-select">
+                <select name="tradeincaryear" id="">
+                  <option value="" selected>Год</option>
+                  <option value="1990">1990</option>
+                  <option value="1991">1991</option>
+                  <option value="1992">1992</option>
+                  <option value="1993">1993</option>
+                  <option value="1994">1994</option>
+                  <option value="1995">1995</option>
+                  <option value="1996">1996</option>
+                  <option value="1997">1997</option>
+                  <option value="1998">1998</option>
+                  <option value="1999">1999</option>
+                  <option value="2000">2000</option>
+                  <option value="2001">2001</option>
+                  <option value="2002">2002</option>
+                  <option value="2003">2003</option>
+                  <option value="2004">2004</option>
+                  <option value="2005">2005</option>
+                  <option value="2006">2006</option>
+                  <option value="2007">2007</option>
+                  <option value="2008">2008</option>
+                  <option value="2009">2009</option>
+                  <option value="2010">2010</option>
+                  <option value="2011">2011</option>
+                  <option value="2012">2012</option>
+                  <option value="2013">2013</option>
+                  <option value="2014">2014</option>
+                  <option value="2015">2015</option>
+                  <option value="2016">2016</option>
+                  <option value="2017">2017</option>
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                </select>
+              </div>
+            </div>
+            <div class="trade__form-inputs">
+              <input type="text"
+              placeholder="Имя"
+              required name="name"
+              class="trade__form-input">
+              <input type="tel"
+                placeholder="+7 (___) ___-__-__"
+                required name="phone"
+                class="trade__form-input">
+            </div>
+            <div class="trade__form-btns">
+              <button class="btn trade__form-button bg_orange js--send-btn">
+                <span>Отправить заявку</span>
+                <img src="./img/main-banner_btn.svg" alt="icon">
+              </button>
+              <div class="form-checkbox">
+                <label for="check-trade">
+                  <span class="checkbox">
+                    <input class="form__input-check" type="checkbox" id="check-trade" checked="" required="">
+                    <span class="custom-checkbox"></span>
+                  </span>
+                  <span class="checkbox-text">
+                    Вы даете согласие на обработку <a href="/policy" class="checkbox-link">персональных данных</a>
+                  </span>
+                </label>
+              </div>
+            </div>
+      </form>
         </div>
       </div>
     </div>

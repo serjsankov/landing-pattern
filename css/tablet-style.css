@@ -36,3 +36,14 @@
 }
 
 /*===========================================*/
+
+
+ /******* #CREDIT *******/
+
+ .credit__bg {
+    background: url(../img/credit_desk.webp)no-repeat;
+    aspect-ratio: 768/460;
+    background-position: center;
+ }
+
+/*===========================================*/
