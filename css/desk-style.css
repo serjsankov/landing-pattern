@@ -588,6 +588,169 @@
     display: none;
 }
 
+.trade {
+    padding-top: 100px;
+
+    position: relative;
+}
+
+.trade__texts.mob_hide {
+    display: block;
+}
+
+.trade__container {
+    margin-top: 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+.trade__info {
+    margin-top: 0;
+
+    width: 534px;
+}
+
+.trade__form-button::before,
+.trade__form-button::after {
+    display: none;
+}
+
+.trade__action {
+    width: 360px;
+}
+
+.trade__form {
+    width: 360px;
+
+    margin: 55px 0 0;
+}
+
+.trade__form-inputs {
+    margin-top: 45px;
+
+    gap: 20px;
+}
+
+.trade__form-btns {
+    margin-top: 25px;
+
+    gap: 20px;
+
+    flex-direction: column;
+}
+
+.trade__form-button {
+    justify-content: center;
+
+    background: none;
+
+    border: 1px solid var(--color-green);
+
+    color: var(--color-green);
+}
+
+.trade__form-button img {
+    display: none;
+}
+
+.trade__head {
+    font-size: 32px;
+    line-height: 34px;
+    font-weight: 800;
+}
+
+.trade__head br {
+    display: none;
+}
+
+.trade__form-flex {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.trade__form-select.desk_basis_100 {
+    flex-basis: 100%;
+}
+
+.trade__form-select.desk_basis_50 {
+    flex-basis: 48%;
+}
+
+.trade__photos {
+    width: auto;
+    flex-basis: 57%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin: 0;
+}
+
+.trade__photos-img {
+    max-width: none;
+}
+
+.trade__photos-main {
+    position: absolute;
+    left: -210px;
+    top: -102px;
+}
+
+.trade__photos-flex {
+    gap: 15px;
+}
+
+.trade__photos-prev {
+    width: 233px;
+}
+
+.trade__photos-flex.margin_left {
+    margin-left: 0;
+
+    flex-direction: row-reverse;
+}
+
+.trade__photos-flex.margin_bottom {
+    margin-bottom: 0;
+}
+
+.trade__photos-flex.margin_top {
+    margin-top: 0;
+
+    position: relative;
+}
+
+.trade__photos-flex.margin_right {
+    margin-right: 0;
+
+    justify-content: flex-start;
+}
+
+.trade__photos-flex.shadow_top .trade__photos-prev {
+    box-shadow: none;
+}
+
+.trade__vigoda {
+    font-size: 20px;
+    line-height: 22px;
+    
+    margin: 30px 0 25px;
+}
+
+.trade__form-input {
+    padding-left: 17px;
+}
+
+.trade__form-input::placeholder {
+    font-size: 20px;
+    line-height: 22px;
+}
+
 /*===========================================*/
 
 
@@ -698,6 +861,37 @@
 
     .credit__list {
         grid-template-columns: 1fr 2fr;
+    }
+
+    .trade__container {
+        gap: 20px;
+    }
+
+    .trade__photos-main {
+        top: 0;
+        left: -432px;
+    }
+
+    .trade__photos-img {
+        width: 65%;
+    }
+
+    .trade__form {
+        margin: 15px 0 0;
+    }
+
+    .trade__form-inputs {
+        margin-top: 15px;
+
+        gap: 10px;
+    }
+
+    .trade__vigoda {
+        margin: 15px 0;
+    }
+
+    .trade__form-btns {
+        gap: 10px;
     }
 }
 
@@ -814,6 +1008,15 @@
 
     .credit .main-banner__form-white {
         padding: 30px 20px 28px 0;
+    }
+
+    .trade__info {
+        width: 400px;
+    }
+
+    .trade__head {
+        font-size: 27px;
+        line-height: 29px;
     }
 }
 
