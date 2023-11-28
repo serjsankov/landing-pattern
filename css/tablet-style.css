@@ -1,0 +1,27 @@
+.container {
+    padding: 0 32px;
+}
+
+
+
+/********* #MAIN-BANNER *********/
+
+
+.main-banner {
+    background: url(../img/main-banner_desk.webp)no-repeat;
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 418/400;
+}
+
+.main-banner__List {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main-banner__btns {
+    margin: 10px 0 0;
+}
+
+
+/*********($ .|. $)*********/
+/**********|__O__|*********/

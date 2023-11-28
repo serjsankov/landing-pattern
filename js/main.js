@@ -10,6 +10,10 @@ window.addEventListener("DOMContentLoaded", () => {
   initFancy();
   initCustomSelect();
 
+  $('.js_btn_footer_toggle_text').on('click', function(e) {
+    $('.js_text_footer_toggle').toggle();
+  });
+
   function initCustomSelect () {
     $('select').select2({
       width: '100%',
