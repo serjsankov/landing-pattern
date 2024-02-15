@@ -1,9 +1,45 @@
 :root {
-  --family-gotham: 'Gotham Pro';
-  --family-agressive: 'AGRESSIVE';
-  --color-black: #000000;
+  --family-inter: 'Inter';
+  --color-black: #2c2c2c;
   --color-white: #FFFFFF;
+  --color-red: #ae2626;
 }
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter Bold'), local('Inter-Bold'),
+        url('../fonts/Inter-Bold.woff2') format('woff2'),
+        url('../fonts/Inter-Bold.woff') format('woff'),
+        url('../fonts/Inter-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    src: local('Inter Medium'), local('Inter-Medium'),
+        url('../fonts/Inter-Medium.woff2') format('woff2'),
+        url('../fonts/Inter-Medium.woff') format('woff'),
+        url('../fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    src: local('Inter Regular'), local('Inter-Regular'),
+        url('../fonts/Inter-Regular.woff2') format('woff2'),
+        url('../fonts/Inter-Regular.woff') format('woff'),
+        url('../fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  body {
+    font-family: var(--family-inter);
+
+    background: var(--color-black);
+  }
 
 .btn {
     width: 100%;
@@ -11,6 +47,36 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+}
+
+.bg_red {
+    background: var(--color-red);
+
+    color: var(--color-white);
+}
+
+._border {
+    border: 1px solid var(--color-black);
+
+    color: var(--color-black);
+
+    background: none;
+}
+
+._border._inversion {
+    border: 1px solid var(--color-white);
+
+    color: var(--color-white);
+
+    background: none;
+}
+
+.bg_none {
+    background: none;
 }
 
 .input {}
@@ -22,13 +88,23 @@
 .section__title {}
 
 .container {
-  padding: 0 16px;
+  padding: 0 20px;
 }
 
-.header__container {
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+}
+
+.header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    padding: 17px 0;
 }
 
 .burger {
@@ -45,9 +121,11 @@
     width: 100%;
     height: 2px;
 
-    background: var(--color-black);
+    background: var(--color-white);
 
     display: block;
+
+    transition: all .4s;
 }
 
 .burger__line.line_1 {
@@ -55,9 +133,115 @@
 }
 
 .burger__line.line_2 {
-    top: 4px;
+    top: 7px;
 }
 
 .burger__line.line_3 {
-    top: 8px;
+    top: 14px;
+}
+
+.header-logo__img {
+    max-width: 95px;
+}
+
+.header-info {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+
+.header-info__text {
+    display: block;
+
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 400;
+    color: var(--color-white);
+
+    text-align: right;
+}
+
+.header-info__texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.header-info__text-icon + span {
+    display: none;
+}
+
+.header-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 40px;
+
+    text-transform: uppercase;
+}
+
+.header-button.mob_hide {
+    display: none;
+}
+
+.header-menu {
+    position: fixed;
+    right: -100%;
+    top: 60px;
+
+    width: 100%;
+
+    background: var(--color-black);
+
+    padding: 30px 20px 14px;
+
+    transition: all .4s;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-nav__link {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--color-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+
+    padding: 0 0 30px;
+
+    border-bottom: 1px solid var(--color-white);
+
+    width: 100%;
+}
+
+.header-nav__link:last-child {
+    border: none;
+}
+
+.header.active .header-menu {
+    right: 0;
+}
+
+.header.active .burger__line.line_1 {
+    top: 7px;
+
+    transform: rotate(45deg);
+}
+
+.header.active .burger__line.line_2 {
+    opacity: 0;
+}
+
+.header.active .burger__line.line_3 {
+    top: 7px;
+
+    transform: rotate(-45deg);
 }

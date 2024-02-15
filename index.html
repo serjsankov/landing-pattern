@@ -19,9 +19,50 @@
       href="./css/desk-style.css"
       media="(min-width: 1025px)"
     />
-    <title>Landing page</title>
+    <title>KIA</title>
 </head>
 <body>
+  <header class="header">
+    <div class="container">
+      <div class="header-container">
+        <div class="header-menu">
+          <nav class="header-nav">
+            <a href="#models-list" class="header-nav__link">модельный ряд</a>
+            <a href="#auto" class="header-nav__link">авто в наличии</a>
+            <a href="#trade" class="header-nav__link">trade-in</a>
+            <a href="#autocredit" class="header-nav__link">кредит</a>
+            <a href="#contact" class="header-nav__link">контакты</a>
+          </nav>
+          <button class="header-button btn desk_hide _border _inversion">
+            обратный звонок
+          </button>
+        </div>
+        <div class="header-logo">
+          <img src="./img/logo.svg" alt="logo" class="header-logo__img">
+        </div>
+        <div class="header-info">
+          <div class="header-info__text-texts">
+            <span class="header-info__text">
+              Москва, 27км МКАД
+            </span>
+            <span class="header-info__text">Пн-Вс 09:00-21:00</span>
+          </div>
+          <a href="tel:+7 (999) 999-99-99" class="header-info__text">
+            <img src="./img/header-phone.svg" alt="icon-phone" class="header-info__text-icon">
+            <span>+7 (999) 999-99-99</span>
+          </a>
+          <button class="header-button btn mob_hide">
+            Обратный звонок
+          </button>
+        </div>
+        <div class="burger">
+          <span class="burger__line line_1"></span>
+          <span class="burger__line line_2"></span>
+          <span class="burger__line line_3"></span>
+        </div>
+      </div>
+    </div>
+  </header>
     <script src="./libs/jquery.min.js"></script>
     <script src="./libs/masked-input.min.js"></script>
     <script src="./libs/fancybox.min.js"></script>

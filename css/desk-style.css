@@ -1,0 +1,57 @@
+.container {
+    max-width: 1180px;
+
+    padding: 0;
+
+    margin: 0 auto;
+}
+
+/********* $HEADER *********/
+
+.header-container {
+    padding: 32px 0 0;
+}
+
+.burger {
+    display: none;
+}
+
+.header-logo__img {
+    max-width: 142px;
+}
+
+.header-menu {
+    position: static;
+
+    padding: 0;
+
+    width: max-content;
+    flex-basis: 40%;
+}
+
+.header-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+}
+
+.header-button.desk_hide {
+    display: none;
+}
+
+.header-button.mob_hide {
+    display: flex;
+}
+
+.header-nav__link {
+    padding-bottom: 0;
+
+    border: none;
+
+    font-size: 10px;
+    line-height: 12px;
+
+    width: max-content;
+}
+
+/**************************/
