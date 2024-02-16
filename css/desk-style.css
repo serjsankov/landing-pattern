@@ -54,4 +54,38 @@
     width: max-content;
 }
 
+.header-info__text-icon+span {
+    display: block;
+}
+
+.header-info__text-icon {
+    display: none;
+}
+
+.header-info__text:last-child {
+    display: none;
+}
+
+.header-info {
+    justify-content: space-between;
+
+    flex-basis: 38%;
+}
+
+.header-button {
+    flex-basis: 38%;
+}
+
+.header-info__text {
+    text-decoration: none;
+}
+
+
 /**************************/
+
+
+@media screen and (max-width: 1280px) {
+    .container {
+        max-width: 1000px;
+    }
+}
