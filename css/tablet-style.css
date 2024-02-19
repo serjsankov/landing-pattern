@@ -1,3 +1,28 @@
 .container {
     padding: 0 30px;
 }
+
+
+/********* $MAIN-BANNER *********/
+
+.main-banner__title {
+    width: 800px;
+
+    font-size: 32px;
+    line-height: 34px;
+}
+
+.main-banner__list {
+    margin-top: 53px;
+
+    gap: 15px;
+
+    padding-left: 36px;
+}
+
+.main-banner__list-item {
+    font-size: 20px;
+    line-height: 22px;
+}
+
+/**************************/
