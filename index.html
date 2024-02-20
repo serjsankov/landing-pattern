@@ -323,6 +323,28 @@
       <div class="section__upper">
         <h2 class="section__title">Комплектации</h2>
       </div>
+      <div class="equips__filter">
+        <div class="equips__filter-block">
+          <div class="equips__select">
+            <select class="js--model" name="param1">
+              <option value="">Модель</option>
+              {% for model in models %}
+              <option value="{{model.id}}">{{model.title | replace({'New': ""})}}</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+        <div class="equips__filter-block">
+          <div class="equips__select">
+            <select class="js--equipment" name="param1">
+              <option value="">Комплектация</option>
+              {% for equipment in equipments %}
+              <option value="{{ equipment.id }}" data-model="{{ equipment.model.id }}">{{ equipment.title }}</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+      </div>
       <div class="equips-list">
         <div class="equips-card">
           <div class="equips-card__info">

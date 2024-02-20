@@ -340,6 +340,82 @@
 /**************************/
 
 
+/********* $EQUIPS *********/
+
+.equips__filter {
+    width: 100%;
+    gap: 80px;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-bottom: 50px;
+}
+
+.equips__filter-block {
+    width: 300px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.equips-card {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(239, 239, 239, 1);
+    padding: 10px;
+}
+
+.equips-card__info {
+    padding: 0;
+
+    background: none;
+
+    align-self: flex-start;
+}
+
+.equips-card__texts-number.desk_hide {
+    display: none;
+}
+
+.equips-card__texts-number.mob_hide {
+    display: flex;
+}
+
+.equips-card__model {
+    margin-bottom: 24px;
+
+    font-size: 32px;
+    line-height: 34px;
+}
+
+.equips-card__texts-flex {
+    flex-direction: row-reverse;
+    gap: 17px;
+    justify-content: flex-end;
+}
+
+.equips-card__texts-number br {
+    display: none;
+}
+
+.equips-card__texts-number {
+    white-space: nowrap;
+
+    width: max-content;
+    align-items: center;
+
+    padding: 0 10px;
+}
+
+/**************************/
+
+
 @media screen and (max-width: 1710px) {
     .main-banner__container {
         padding: 95px 0 90px;
