@@ -134,7 +134,7 @@ body {
 }
 
 .header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
@@ -821,6 +821,10 @@ body {
     margin-top: 20px;
 }
 
+.equips-card__prices.mob_hide {
+    display: none;
+}
+
 .equips-card__price-old {
     display: block;
 
@@ -936,6 +940,347 @@ body {
 
 /**************************/
 
+
+/********* $BANNERS *********/
+
+.banner {
+    margin-top: 30px;
+}
+
+.banner__mob {
+    position: relative;
+
+    height: 223px;
+
+    padding-bottom: 20px;
+}
+
+.banner__mob-img {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+    object-fit: cover;
+}
+
+.banner__mob-img.mob_hide {
+    display: none;
+}
+
+.banner__title {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 700;
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+.banner__title.mob_hide {
+    display: none;
+}
+
+.banner__mob-container {
+    display: flex;
+    align-items: flex-end;
+
+    height: 100%;
+}
+
+.banner .container {
+    height: 100%;
+}
+
+.banner__bg {
+    padding: 24px 0 34px;
+
+    background: var(--color-black);
+}
+
+.banner-list {
+    padding-left: 10px;
+}
+
+.credits-list {
+    padding-left: 10px;
+
+    position: relative;
+}
+
+.credits-list::before {
+    content: "";
+
+    display: block;
+
+    width: 2px;
+    height: 100%;
+
+    background: var(--color-white);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.banner-list__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: var(--color-white);
+}
+
+.credit__form {
+    margin-top: 24px;
+}
+
+.banner__button {
+    margin-top: 20px;
+
+    height: 40px;
+
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.form__checkbox-check[type=checkbox]+.form-checkbox__custom {
+    background: none;
+
+    border: 2px solid var(--color-white);
+}
+
+.banner__ball {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 29px;
+    height: 29px;
+
+    border-radius: 50%;
+
+    background: var(--color-white);
+
+    border: 2px solid var(--color-red);
+
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: var(--color-black);
+}
+
+.trade-list {
+    padding-left: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.trade-list .banner-list__item {
+    flex-direction: row-reverse;
+
+    text-align: right;
+}
+
+.trade__form {
+    margin-top: 40px;
+}
+
+/**************************/
+
+
+/********* $CONTACTS *********/
+
+.contacts {
+    margin-top: 40px;
+}
+
+.contacts__img.mob_hide {
+    display: none;
+}
+
+.contacts__img {
+    width: 100%;
+}
+
+.contacts__bg {
+    background: var(--color-black);
+
+    padding: 15px 0 24px;
+}
+
+.contacts__title {
+    margin-bottom: 20px;
+
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.contacts__img-logo {
+    display: none;
+}
+
+.contacts__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contacts__list-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--color-white);
+}
+
+.contacts__button {
+    margin-top: 20px;
+
+    height: 40px;
+
+    text-transform: uppercase;
+}
+
+/**************************/
+
+
+/********* $FOOTER *********/
+
+.footer {
+    background: var(--color-black);
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__text {
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 400;
+    color: var(--color-white);
+}
+
+.footer__info {
+    margin-top: 30px;
+}
+
+/**************************/
+
+
+/********* $POPUP *********/
+
+.popup {
+    width: 100%;
+
+    display: none;
+
+    padding: 0;
+
+    border-radius: 12px;
+}
+
+#modalCredit {
+    background: url(../img/modal-credit_mob.webp)no-repeat;
+    background-size: cover;
+}
+
+#modalRequest {
+    background: url(../img/modal-req_mob.webp)no-repeat;
+    background-size: cover;
+}
+
+.popup__container {
+    padding: 15px 15px 21px;
+}
+
+.popup__head {
+    display: block;
+
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 700;
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+.popup-list {
+    margin-top: 20px;
+
+    list-style: disc;
+
+    padding-left: 15px;
+}
+
+.popup-list__item {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    color: var(--color-white);
+}
+
+.popup-list__item b {
+    font-weight: 700;
+}
+
+.popup-form {
+    margin-top: 40px;
+}
+
+.popup-form__container {
+    width: 180px;
+}
+
+.popup-form__input {
+    height: 40px;
+
+    background: var(--color-white);
+
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    color: var(--color-black);
+    text-align: center;
+}
+
+.popup-form__input::placeholder {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    color: var(--color-black);
+    text-align: center;
+}
+
+.popup-form__button {
+    margin-top: 10px;
+
+    height: 40px;
+}
+
+.is-compact .fancybox__content>.f-button.is-close-btn {
+    background: none;
+}
+
+/**************************/
+
 @media screen and (min-width: 450px) {
     .main-banner {
         aspect-ratio: auto;
@@ -965,5 +1310,21 @@ body {
         width: 400px;
 
         margin: 0 auto;
+    }
+
+    .banner__container {
+        width: 400px;
+
+        margin: 0 auto;
+    }
+
+    .contacts__button {
+        width: 400px;
+
+        margin: 20px auto 0;
+    }
+
+    .popup {
+        width: 360px;
     }
 }
