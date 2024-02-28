@@ -1,0 +1,553 @@
+.container {
+    max-width: 1180px;
+
+    padding: 0;
+    margin: 0 auto;
+}
+
+.btn {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.section__upper {
+    padding: 100px 0 50px;
+}
+
+.section__title {
+    font-size: 40px;
+    line-height: 42px;
+}
+
+.header-container {
+    padding: 11px 0;
+}
+
+.burger {
+    display: none;
+}
+
+.header-logo__img {
+    max-width: 122px;
+}
+
+.header-menu {
+    position: static;
+
+    padding: 0;
+
+    width: 100%;
+
+    background: none;
+}
+
+.header-logo__text {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    color: var(--color-white);
+
+    display: block;
+}
+
+.header-container__flex {
+    gap: 10px;
+}
+
+.header-button.mob_hide {
+    display: flex;
+}
+
+.header-info__text-icon {
+    display: none;
+}
+
+.header-info__text-icon+span {
+    display: block;
+}
+
+.header-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+}
+
+.header-bottom {
+    background: var(--color-main);
+}
+
+.header-button.desk_hide {
+    display: none;
+}
+
+.header-nav__link {
+    border: none;
+
+    font-size: 14px;
+    line-height: 16px;
+
+    padding: 11px 0;
+}
+
+.header-info__text {
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+
+    white-space: nowrap;
+}
+
+.header-info__text br {
+    display: none;
+}
+
+.header-info {
+    gap: 40px;
+
+    flex-basis: 52%;
+}
+
+
+/********* $MAIN-BANNER *********/
+
+.main-banner {
+    aspect-ratio: 1920/747;
+
+    padding: 41px 0 0;
+}
+
+.main-banner__title {
+    font-size: 64px;
+    line-height: 66px;
+
+    margin-bottom: 30px;
+}
+
+.main-banner__sub-title {
+    font-size: 40px;
+    line-height: 42px;
+}
+
+/**************************/
+
+
+/********* $MODELS *********/
+
+.models-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.models-cards {
+    margin-top: 100px;
+    gap: 50px;
+}
+
+.model-card {
+    width: 100%;
+
+    padding: 20px;
+}
+
+.model-card__cont {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.model-card__car {
+    width: 298px;
+
+    margin-bottom: 0;
+
+    align-self: flex-end;
+}
+
+.model-card__btns {
+    flex-direction: row;
+}
+
+.model-card__button {
+    height: 60px;
+}
+
+.model-card__real {
+    margin-bottom: 0;
+
+    width: 382px;
+
+    order: 3;
+}
+
+.model-card__colors {
+    margin-bottom: 0;
+}
+
+.model-card__head.desk_hide {
+    display: none;
+}
+
+.model-card__head.mob_hide {
+    display: block;
+}
+
+.model-card__head {
+    font-size: 40px;
+    line-height: 42px;
+
+    margin-bottom: 32px;
+}
+
+.model-card__price-old {
+    font-size: 32px;
+    line-height: 34px;
+
+    margin-bottom: 20px;
+}
+
+.model-card__images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 0;
+}
+
+.model-card__price {
+    font-size: 40px;
+    line-height: 42px;
+
+    margin-bottom: 21px;
+}
+
+.model-card__price-month {
+    font-size: 24px;
+    line-height: 26px;
+}
+
+.model-card__bg {
+    width: max-content;
+
+    position: static;
+}
+
+.model-card__cont picture {
+    position: absolute;
+
+    left: auto;
+    right: 20px;
+    top: 20px;
+}
+
+.model-card__actions.desk_hide {
+    display: none;
+}
+
+.model-card__actions.mob_hide {
+    display: flex;
+}
+
+.model-card__actions {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    height: 100%;
+
+    margin-bottom: 0;
+
+    margin-right: -75px;
+
+    padding: 20px 0 0;
+    position: relative;
+}
+
+.model-card__info {
+    flex-basis: 43%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.model-card__actions-item {
+    gap: 18px;
+}
+
+.model-card__actions-text {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+/**************************/
+
+
+/********* $EQUIPS *********/
+
+.equips__filter {
+    width: 100%;
+    gap: 80px;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-bottom: 50px;
+}
+
+.equips__filter-block {
+    width: 300px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.equips-card {
+    width: 100%;
+}
+
+.equips-card__cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.equips-card__top {
+    display: none;
+}
+
+.equips-card__info {
+    margin-bottom: 0;
+
+    order: 2;
+
+    margin-right: -40px;
+}
+
+.equips-card__images {
+    order: 1;
+}
+
+.equips-card__prices-btns {
+    order: 3;
+
+    flex-basis: 42%;
+}
+
+.equips-card__info-texts {
+    display: block;
+
+    margin-bottom: 26px;
+}
+
+.equips-card__model {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 40px;
+    line-height: 42px;
+    font-weight: 700;
+    color: var(--color-main);
+    white-space: nowrap;
+}
+
+.equips-card__head {
+    margin-bottom: 0;
+
+    font-size: 20px;
+    line-height: 22px;
+    color: var(--color-black);
+}
+
+.equips-card__specs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 16px;
+    column-gap: 28px;
+}
+
+.equips-card__specs-item.mob_hide {
+    display: flex;
+}
+
+.equips-card__specs-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.equips-card__specs-item svg {
+    display: block;
+}
+
+.equips-card__prices {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.equips-card__price-old {
+    font-size: 32px;
+    line-height: 34px;
+    color: rgba(34, 34, 34, 0.5);
+}
+
+.equips-card__price {
+    font-size: 40px;
+    line-height: 42px;
+    color: var(--color-black);
+}
+
+.equips-card__price-month {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--color-black);
+}
+
+.equips-card__img {
+    max-width: 304px;
+}
+
+.equips-card__btns {
+    flex-direction: row;
+
+    width: 100%;
+}
+
+/**************************/
+
+
+/********* $CONTACTS *********/
+
+.contacts {
+    position: relative;
+
+    margin-top: 100px;
+}
+
+.contacts__map {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 50%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.contacts__bg {
+    padding: 36px 0 56px;
+}
+
+.contacts__container {
+    width: 100%;
+    margin: 0;
+}
+
+.contacts__title {
+    font-size: 40px;
+    line-height: 42px;
+
+    margin-bottom: 40px;
+}
+
+.contacts__list {
+    margin-bottom: 40px;
+}
+
+.contacts__list-item {
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.contacts__button {
+    width: 240px;
+}
+
+/**************************/
+
+@media screen and (max-width: 1280px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    .header-info {
+        flex-basis: 61%;
+    }
+
+    .model-card__head {
+        font-size: 32px;
+        line-height: 34px;
+    }
+
+    .model-card__price-old {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .model-card__price {
+        font-size: 36px;
+        line-height: 38px;
+    }
+
+    .model-card__price-month {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .model-card__actions {
+        gap: 32px;
+
+        padding: 60px 0 0;
+
+        margin-right: -45px;
+    }
+
+    .model-card__actions-text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .model-card__real {
+        width: 298px;
+    }
+
+    .equips-card__model {
+        font-size: 32px;
+        line-height: 34px;
+    }
+
+    .equips-card__head {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .equips-card__specs-item {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .equips-card__price-old {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .equips-card__price {
+        font-size: 32px;
+        line-height: 34px;
+    }
+
+    .equips-card__price-month {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .equips-card__prices-btns {
+        flex-basis: 38%;
+    }
+}
