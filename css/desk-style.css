@@ -420,6 +420,132 @@
 
 /**************************/
 
+/********* $BANNERS *********/
+
+.banner {
+    margin-top: 100px;
+}
+
+.banner__mob {
+    display: none;
+}
+
+.banner__bg {
+    background: none;
+
+    position: relative;
+}
+
+.banner__mob-img.mob_hide {
+    display: block;
+}
+
+.credits__bg .banner__mob-img {
+    object-position: right;
+}
+
+.credits__bg {
+    padding: 36px 0 43px;
+}
+
+.trade__bg {
+    padding: 54px 0;
+}
+
+.banner__container {
+    width: 100%;
+}
+
+.banner__title.mob_hide {
+    display: block;
+}
+
+.banner__title {
+    font-size: 32px;
+    line-height: 34px;
+    text-transform: uppercase;
+}
+
+.credits__title {
+    margin-bottom: 30px;
+}
+
+.credits-list {
+    padding-left: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.banner-list__item {
+    font-size: 22px;
+    line-height: 24px;
+
+    gap: 20px;
+}
+
+.credits-list::before {
+    background: var(--color-red);
+}
+
+.banner__form {
+    margin-top: 40px;
+
+    width: 470px;
+}
+
+.banner__form-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.banner__button {
+    margin-top: 0;
+
+    flex-basis: 50%;
+}
+
+.banner .banner__input {
+    flex-basis: 50%;
+}
+
+.trade__title {
+    text-align: right;
+
+    margin-bottom: 40px;
+}
+
+.trade__form {
+    margin: 40px 0 0 auto;
+}
+
+.trade-list {
+    width: max-content;
+
+    margin-left: auto;
+}
+
+.credits-list__docs {
+    margin-top: 49px;
+}
+
+.credits-list__doc-head {
+    font-size: 32px;
+    line-height: 34px;
+
+    margin-bottom: 30px;
+}
+
+.credits-list__docs-list {
+    display: flex;
+    gap: 53px;
+    width: max-content;
+}
+
+/**************************/
+
 
 /********* $CONTACTS *********/
 
@@ -470,6 +596,119 @@
 }
 
 /**************************/
+
+/********* $FOOTER *********/
+
+.footer-text {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.footer-container {
+    flex-direction: row;
+}
+
+.footer-links__link {
+    white-space: nowrap;
+}
+
+/**************************/
+
+
+/********* $POPUP *********/
+
+.popup {
+    width: 600px;
+    height: 400px;
+
+    border-radius: 9px;
+
+    padding: 18px 20px 20px;
+}
+
+#modalCredit {
+    background: url(../img/modal-credit_desk.webp)no-repeat;
+    background-size: cover;
+}
+
+#modalRequest {
+    background: url(../img/modal-req_desk.webp)no-repeat;
+    background-size: cover;
+}
+
+#modal-success {
+    background: url(../img/modal-suc_desk.webp)no-repeat;
+    background-size: cover;
+}
+
+.popup__head {
+    font-size: 32px;
+    line-height: 34px;
+}
+
+.popup__list {
+    margin-top: 40px;
+}
+
+.popup__list.mob_hide {
+    display: block;
+}
+
+.popup__list-item {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.popup__form {
+    width: 510px;
+}
+
+.popup__form-cont {
+    flex-direction: row;
+}
+
+.popup__input {
+    height: 60px;
+}
+
+.popup__button {
+    height: 60px;
+}
+
+.popup .form__checkbox-text {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.fancybox__content>.f-button.is-close-btn {
+    top: 18px;
+    right: 14px;
+
+    width: 24px;
+    height: 24px;
+
+    border: 2px solid var(--color-white);
+
+    border-radius: 50%;
+}
+
+.f-button svg {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+    stroke: #FFF;
+    fill: #FFF;
+    stroke-width: 6px;
+}
+
+/**************************/
+
+.show-btn {
+    font-size: 16px;
+    line-height: 18px;
+
+    margin: 50px auto 0;
+}
 
 @media screen and (max-width: 1280px) {
     .container {

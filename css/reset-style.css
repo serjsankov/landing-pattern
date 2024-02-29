@@ -136,8 +136,6 @@ table {
 html {
     scroll-behavior: smooth !important;
     font-size: calc(11px + (46 - 14) * ((100vw - 320px) / (1920 - 320)));
-
-
 }
 
 input {
