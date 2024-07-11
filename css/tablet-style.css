@@ -1,0 +1,18 @@
+.container {
+    padding: 0 40px;
+}
+
+
+/* $EQUIPS */
+
+
+.equips__filter {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.equips__filter-block {
+    flex-basis: 33%;
+}
+
+/*___________________________________*/

@@ -83,7 +83,49 @@ window.addEventListener("DOMContentLoaded", () => {
 
       })
   }
-})
+
+let center = [55.630782, 37.466979];
+
+// var pixelCenter = map.getGlobalPixelCenter(center);
+
+const ymaps = window.ymaps;
+
+let sizePin;
+
+if (window.innerWidth > 1024) {
+    sizePin = [71, 71];
+} else {
+    sizePin = [46, 46];
+}
+
+function init() {
+    let map = new ymaps.Map('map', {
+        center: center,
+        zoom: 16,
+        controls: ['zoomControl']
+    });
+
+    let placemark = new ymaps.Placemark(center, {}, {
+        iconLayout: 'default#image',
+        iconImageHref: '../geely/img/pin.svg',
+        iconImageSize: sizePin, // Размер пина
+        iconImageOffset: [-24, -68], // Позиция пина
+    });
+
+    map.controls.remove('geolocationControl'); // удаляем геолокацию
+    map.controls.remove('searchControl'); // удаляем поиск
+    map.controls.remove('trafficControl'); // удаляем контроль трафика
+    map.controls.remove('typeSelector'); // удаляем тип
+    map.controls.remove('rulerControl'); // удаляем контрол правил
+    map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+    // map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+    // map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+
+    map.geoObjects.add(placemark) // Добавляем пин
+}
+
+ymaps.ready(init);
+});
 
 
 
